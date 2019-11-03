@@ -123,6 +123,7 @@ mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*500,destiWater*500,[sulfu
 mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*120,sulfuricAcid*50,[gravel*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*120,sulfuricAcid*50,[sand*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],1024);
+mods.immersiveengineering.Mixer.addRecipe(nitricAcid*1000,sulfuricAcid*1000,[nitrate],1024);
 
 //bottling
 mods.immersiveengineering.BottlingMachine.addRecipe(leadGrit,slag,plumbumSludge*60);
