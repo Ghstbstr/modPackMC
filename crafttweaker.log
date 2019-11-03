@@ -51,10 +51,60 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:golden_sword for removal from pool main of table
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_sword for removal from pool main of table
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: recipes.zs}
-[INITIALIZATION][CLIENT][ERROR] [crafttweaker | SIDE_CLIENT]: Error parsing recipes.zs:167 -- Invalid expression, last token: ,
+[INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
+[INITIALIZATION][CLIENT][INFO] Adding tooltip for <immersivetech:material>: "A mixture of solid chemical compound consisting of an ionic assembly of cations and anions"
+[INITIALIZATION][CLIENT][INFO] Removing Crusher Recipe for output: Gravel
+[INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Gravel
+[INITIALIZATION][CLIENT][INFO] Removing Crusher Recipe for output: Sand
+[INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Sand
+[INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Slag
+[INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Air
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Plumbum-Sludge
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Sulfuric-Acid
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Ferrum-Laterite-Sludge
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Cuprum-Sludge
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Sodiumhydroxide
+[INITIALIZATION][CLIENT][INFO] Adding Bottling Machine Recipe for Lead Grit
+[INITIALIZATION][CLIENT][INFO] Adding Bottling Machine Recipe for Iron Grit
+[INITIALIZATION][CLIENT][INFO] Adding Bottling Machine Recipe for Copper Grit
+[INITIALIZATION][CLIENT][INFO] Adding Bottling Machine Recipe for Ardite Powder
+[INITIALIZATION][CLIENT][INFO] Adding Bottling Machine Recipe for Cobalt Powder
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Uranylhydroxide
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Alumina
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Glowing Light Gray Water
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Uran-Nuclide
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Crystal-Slury
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Glowing Pink Water
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Glowing Orange Water
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Cobalthydroxide
+[INITIALIZATION][CLIENT][INFO] Adding Refinery Recipe for Glowing Purple Water
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Carbon-Slury and Item Slag
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 231ms
+[INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:dirt>:5
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 318ms
+[INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <tconstruct:ingots>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Oak Wood Planks with name CacteenToWood1
+[POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Obsidian with name EnchantmentTableToObsidian
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Gold Nugget with name Goldwashing
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Fuel Rod (Legacy) with name bigreactors-reactorfuelrod_vanillaglass-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Fluid Port (Legacy) with name bigreactors-turbinefluidport-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Casing (Legacy) with name bigreactors-reactorcasing-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Rotor Blade (Legacy) with name bigreactors-turbinerotorblade-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Casing Core (Legacy) with name bigreactors-reactorcasingcores-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Rotor Shaft (Legacy) with name bigreactors-turbinerotorshaft-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Access Port (Legacy) with name bigreactors-reactoraccessport-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Coolant Port (Legacy) with name bigreactors-reactorcoolantport-modified
 [AVAILABLE][CLIENT][INFO] Fixed the RecipeBook
 [AVAILABLE][CLIENT][ERROR] No entry with name minecraft:saddle exists in pool main
 [AVAILABLE][CLIENT][ERROR] No entry with name minecraft:iron_horse_armor exists in pool main
@@ -102,32 +152,3 @@
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [preinit]
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 0ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromChest.zs}
-[SERVER_STARTED][SERVER][ERROR] lootFromChest.zs:26 > Value already defined in this scope: lostcity_lostcitychest
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: recipes.zs}
-[SERVER_STARTED][SERVER][ERROR] recipes.zs:128 > No such static member in crafttweaker.item.IItemStack: arditeGrit
-[SERVER_STARTED][SERVER][ERROR] recipes.zs:129 > No such static member in crafttweaker.item.IItemStack: cobaltGrit
-[SERVER_STARTED][SERVER][ERROR] recipes.zs:134 > No such static member in crafttweaker.liquid.ILiquidStack: xyz
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 85ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [preinit]
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 0ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromChest.zs}
-[SERVER_STARTED][SERVER][ERROR] lootFromChest.zs:26 > Value already defined in this scope: lostcity_lostcitychest
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: recipes.zs}
-[SERVER_STARTED][SERVER][ERROR] recipes.zs:131 > No such static member in crafttweaker.item.IItemStack: arditeGrit
-[SERVER_STARTED][SERVER][ERROR] recipes.zs:132 > No such static member in crafttweaker.item.IItemStack: cobaltGrit
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 9ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [preinit]
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 0ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromChest.zs}
-[SERVER_STARTED][SERVER][ERROR] lootFromChest.zs:26 > Value already defined in this scope: lostcity_lostcitychest
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: recipes.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 5ms
