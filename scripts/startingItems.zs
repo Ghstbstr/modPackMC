@@ -1,0 +1,1 @@
+mods.initialinventory.InvHandler.addStartingItem(<minecraft:dirt>, 5);
