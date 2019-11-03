@@ -37,6 +37,9 @@ val blockSteelTiner=<tcomplement:storage:1>;
 recipes.remove(steelTinker);
 recipes.remove(blockSteelTiner);
 
+//exnihilo**************************
+val dust = <exnihilocreatio:block_dust>;
+
 
 
 //immersive Engineering:******************************************************************************
@@ -108,22 +111,26 @@ val arditicAcidumSulfoNitrosum = <liquid:glowing_water_pink>;
 val acidumSulfoNitrosum = <liquid:glowing_water_orange>;
 val cobalticAcidumSulfoNitrosum = <liquid:glowing_water_purple>;
 val silverNitrate = <liquid:glowing_water_silver>;
+val redstoneDust = <minecraft:redstone>;
+val pressingMold =  <immersiveengineering:mold:6>;
+val grainsOfInfinity = <enderio:item_material:20>;
+val yellorium = <bigreactors:ingotyellorium>;
 
 //crusher
 mods.immersiveengineering.Crusher.removeRecipe(gravel);
-mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,1024,industrialSalt,0.25);
-mods.immersiveengineering.Crusher.removeRecipe(sand);
+mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,2048,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(sand,gravel,1024,industrialSalt,0.25);
-mods.immersiveengineering.Crusher.addRecipe(slag,charCoal,2048,sulfur,0.1);
-mods.immersiveengineering.Crusher.addRecipe(null,sand,1024,nitrate,0.1);
+mods.immersiveengineering.Crusher.addRecipe(slag,charCoal,4096,sulfur,0.1);
+mods.immersiveengineering.Crusher.addRecipe(null,uraniumGrit,16384,yellorium,0.2);
+mods.immersiveengineering.Crusher.addRecipe(dust,sand,512);
 
 //mixer
-mods.immersiveengineering.Mixer.addRecipe(plumbumSludge*120,sulfuricAcid*50,[cobblestone*8],1024);
-mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*500,destiWater*500,[sulfur],1024);
-mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*120,sulfuricAcid*50,[gravel*4],1024);
+mods.immersiveengineering.Mixer.addRecipe(plumbumSludge*120,sulfuricAcid*50,[cobblestone*8],4096);
+mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*500,destiWater*500,[sulfur],2048);
+mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*120,sulfuricAcid*50,[gravel*4],2048);
 mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*120,sulfuricAcid*50,[sand*4],1024);
-mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],1024);
-mods.immersiveengineering.Mixer.addRecipe(nitricAcid*1000,sulfuricAcid*1000,[nitrate],1024);
+mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],8192);
+mods.immersiveengineering.Mixer.addRecipe(nitricAcid*1000,sulfuricAcid*1000,[nitrate],8192);
 
 //bottling
 mods.immersiveengineering.BottlingMachine.addRecipe(leadGrit,slag,plumbumSludge*60);
@@ -133,26 +140,28 @@ mods.immersiveengineering.BottlingMachine.addRecipe(arditeDust,sulfur,arditicAci
 mods.immersiveengineering.BottlingMachine.addRecipe(cobaltDust,silverGrit,cobaldHydroxide*1000);
 
 //refinery
-mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,1024);
-mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*120,sodiumHydroxide*50,1024);
-mods.immersiveengineering.Refinery.addRecipe(silverNitrate*150,cuprumSludge*120,nitricAcid*50,1024);
-mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,1024);
-mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,1024);
-mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*60,acidumSulfoNitrosum*100,1024);
-mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,1024);
-mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,1024);
-mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,1024);
+mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,32768);
+mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*120,sodiumHydroxide*50,16384);
+mods.immersiveengineering.Refinery.addRecipe(silverNitrate*150,cuprumSludge*120,nitricAcid*50,16384);
+mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,32768);
+mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,16384);
+mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*60,acidumSulfoNitrosum*100,32768);
+mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,32768);
+mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,32768);
+mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,32768);
 
 //fermenter
-mods.immersiveengineering.Fermenter.addRecipe(slag,carbonSlury*100,charCoal,1024);
+mods.immersiveengineering.Fermenter.addRecipe(slag,carbonSlury*100,charCoal,8192);
 
 //destilTower
 //addRecipe(fliud[] out, item[] out, fluid in, energy, time, change[])
-mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],crystalSlury*150,4096,8,[0.016,0.032,0.008]);
-mods.immersivepetroleum.Distillation.addRecipe([],[uraniumGrit],uranNuclide*200,4096,8,[0.06]);
-mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,4096,8,[0.25,0.125]);
+mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],crystalSlury*150,2048,80,[0.016,0.032,0.008]);
+mods.immersivepetroleum.Distillation.addRecipe([],[yellorium,uraniumGrit,grainsOfInfinity],uranNuclide*200,4096,80,[0.01,0.06,0.01]);
+mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,1024,80,[0.25,0.125]);
 
-
+//metalpress
+mods.immersiveengineering.MetalPress.addRecipe(redstoneDust,dust,pressingMold,1024,16);
+pressingMold.displayName="Metal Press Mold: Pressing";
 
 
 
@@ -160,9 +169,31 @@ mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*1
 //extrem reactors************************************************************************************
 val steelReactors = <bigreactors:ingotsteel>;
 val blockSteelReactors = <bigreactors:blocksteel>;
+val ingotUranium = <immersiveengineering:metal:5>;
 
 recipes.remove(steelReactors);
 recipes.remove(blockSteelReactors);
+<ore:ingotUranium>.remove(yellorium);
+
+/*
+val removeYelloriumFromCrafting = [
+    <immersiveengineering:metal:35>,
+    <bigreactors:reactorcontrolrod>,
+    <bigreactors:reactorcontroller>,
+    <bigreactors:ingotcyanite>,
+    <immersiveposts:fence_uranium>,
+    <bigreactors:reactorfuelrod>
+] as IItemStack[];
+
+recipes.removeShaped(<bigreactors:reactorcontrolrod>,[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<yellorium>,<*>]]);
+recipes.removeShaped(<bigreactors:reactorcontroller>,[[<*>,<*>,<*>],[<yellorium>,<*>,<yellorium>],[<*>,<*>,<*>]]);
+recipes.removeShaped(<bigreactors:reactorfuelrod>,[[<*>,<*>,<*>],[<*>,<yellorium>,<*>],[<*>,<*>,<*>]]);
+recipes.removeShaped(<immersiveposts:fence_uranium>,[[<*>,<*>,<*>],[<yellorium>,<*>,<yellorium>],[<yellorium>,<*>,<yellorium>]]);
+
+recipes.removeShapeless(<immersiveengineering:metal:35>,[yellorium]);
+recipes.removeShapeless(<bigreactors:ingotcyanite>,[yellorium]);
+*/
+recipes.removeShaped(<bigreactors:ingotcyanite>,[[sand,ingotUranium,null],[null,null,null],[null,null,null]]);
 
 val steelExchangeItems = [
     <bigreactors:turbinecontroller>,
@@ -182,7 +213,60 @@ for item in steelExchangeItems {
     recipes.replaceAllOccurences(iron, steel, item);
 }
 
+//psi**************************************************************
+val gold=<minecraft:gold_ingot>;
+val cadAssembler = <psi:cad_assembler>;
+val manasteel = <botania:manaresource>;
+recipes.replaceAllOccurences(gold,manasteel,cadAssembler);
 
+//tiny progression***********************************************************
+val juiceRemoveFromCrafting = [
+    <tp:juicer>,
+    <tp:carrot_juice>,
+    <tp:cactus_juice>,
+    <tp:pumpkin_juice>,
+    <tp:melon_juice>,
+    <tp:apple_juice>,
+    <tp:beet_juice>,
+    <tp:blackberry_juice>,
+    <tp:wheat_juice>,
+    <tp:pumpkin_juice>,
+    <tp:cactus_juice>,
+    <tp:maloberry_juice>,
+    <tp:raspberry_juice>,
+    <tp:carrot_juice>,
+    <tp:melon_juice>,
+    <tp:beet_juice>,
+    <tp:pear_juice>,
+    <tp:blueberry_juice>,
+    <tp:peach_juice>,
+    <tp:apple_juice>,
+    <tp:slime_juice>,
+    <tp:potatoe_juice>
+] as IItemStack[];
+
+for item in juiceRemoveFromCrafting {
+    recipes.remove(item);
+}
+
+//enderio******************************************
+val conduitRemoveFromCrafting = [
+    <enderio:item_endergy_conduit:6>,
+    <enderio:item_endergy_conduit:5>,
+    <enderio:item_endergy_conduit:4>,
+    <enderio:item_endergy_conduit:3>,
+    <enderio:item_endergy_conduit:2>,
+    <enderio:item_endergy_conduit:1>,
+    <enderio:item_endergy_conduit>,
+    <enderio:item_power_conduit:1>,
+    <enderio:item_power_conduit>,
+    <enderio:item_endergy_conduit:7>,
+    <enderio:item_power_conduit:2>
+] as IItemStack[];
+
+for item in conduitRemoveFromCrafting {
+    recipes.remove(item);
+}
 
 
 

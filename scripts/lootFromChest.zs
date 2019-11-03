@@ -23,7 +23,6 @@ val immersiveengineering_stronghold_library = LootTables.getTable("immersiveengi
 val immersiveengineering_village_blacksmith = LootTables.getTable("immersiveengineering:chests/village_blacksmith");
 //lostcity
 val lostcity_lostcitychest = LootTables.getTable("lostcities:chests/lostcitychest");
-val lostcity_lostcitychest = LootTables.getTable("lostcities:chests/lostcitychest");
 //more..
 
 
@@ -58,10 +57,10 @@ stronghold_corridor.getPool("main").removeEntry("minecraft:iron_horse_armor");
 stronghold_corridor.getPool("main").removeEntry("minecraft:golden_horse_armor");
 stronghold_corridor.getPool("main").removeEntry("minecraft:diamond_horse_armor");
 
-stronghold_corridor.getPool("main").removeEntry("minecraft:saddle");
-stronghold_corridor.getPool("main").removeEntry("minecraft:iron_horse_armor");
-stronghold_corridor.getPool("main").removeEntry("minecraft:golden_horse_armor");
-stronghold_corridor.getPool("main").removeEntry("minecraft:diamond_horse_armor");
+//stronghold_crossing.getPool("main").removeEntry("minecraft:saddle");
+//stronghold_crossing.getPool("main").removeEntry("minecraft:iron_horse_armor");
+//stronghold_crossing.getPool("main").removeEntry("minecraft:golden_horse_armor");
+//stronghold_crossing.getPool("main").removeEntry("minecraft:diamond_horse_armor");
 
 village_blacksmith.getPool("main").removeEntry("minecraft:saddle");
 

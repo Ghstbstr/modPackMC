@@ -91,6 +91,7 @@ key_key.conarm.toggle_chest.desc:35
 key_key.conarm.toggle_leg.desc:36
 key_key.personalBackpack:48
 key_cos.key.opencosarmorinventory:0
+key_psimisc.keybind:46
 key_key.toggle_shaders:0
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -113,6 +114,16 @@ key_waila.keybind.liquid:80
 key_waila.keybind.recipe:81
 key_waila.keybind.usage:75
 key_invtweaks.key.sort:19
+key_key.refinedstorage.focusSearchBar:15
+key_key.refinedstorage.clearGridCraftingMatrix:45:CONTROL
+key_key.refinedstorage.openWirelessGrid:0
+key_key.refinedstorage.openWirelessFluidGrid:0
+key_key.refinedstorage.openPortableGrid:0
+key_key.refinedstorage.openWirelessCraftingMonitor:0
+key_key.porterNextDestination:27
+key_key.porterPrevDestination:26
+key_key.debugDumpNBTItem:0
+key_key.debugDumpNBTBlock:0
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
 key_key.journeymap.minimap_type:26

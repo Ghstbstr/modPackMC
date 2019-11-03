@@ -65,6 +65,12 @@
     },
     "done": true
   },
+  "enderioconduits:energy/2_energy_conduit_enhanced": {
+    "criteria": {
+      "inv_changed-enderio:power_conduit_enhanced": "2019-11-03 22:58:08 +0100"
+    },
+    "done": true
+  },
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2019-10-31 19:56:26 +0100"
@@ -169,8 +175,10 @@
   },
   "enderioconduits:goals/all_conduits": {
     "criteria": {
+      "inv_changed-enderio:power_conduit_enhanced2": "2019-11-03 22:58:08 +0100",
       "inv_changed-enderio:liquid_conduit2": "2019-10-31 20:48:44 +0100",
       "inv_changed-enderio:power_conduit_ender2": "2019-11-01 12:53:51 +0100",
+      "inv_changed-enderio:power_conduit2": "2019-11-03 22:58:06 +0100",
       "inv_changed-enderio:liquid_conduit_ender2": "2019-10-31 20:48:26 +0100"
     },
     "done": false
@@ -259,6 +267,12 @@
     },
     "done": true
   },
+  "enderio:start/1_infinity_powder_get": {
+    "criteria": {
+      "inv_changed-enderio:item_material": "2019-11-03 20:56:21 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2019-10-31 19:35:04 +0100"
@@ -280,6 +294,12 @@
   "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
       "entered_water": "2019-11-01 13:25:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2019-11-03 21:07:00 +0100"
     },
     "done": true
   },
@@ -472,9 +492,10 @@
   "enderioconduits:root": {
     "criteria": {
       "inv_changed-enderio:gravel": "2019-10-31 19:56:30 +0100",
+      "inv_changed-enderio:clay": "2019-11-03 21:07:00 +0100",
       "inv_changed-enderio:sand": "2019-10-31 19:19:54 +0100"
     },
-    "done": false
+    "done": true
   },
   "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
     "criteria": {
