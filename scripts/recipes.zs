@@ -22,6 +22,9 @@ val waterBucket = <minecraft:water_bucket>;
 val iron = <minecraft:iron_ingot>;
 val steel = <immersiveengineering:metal:8>;
 val cobalt = <tconstruct:ingots>;
+val diamond = <minecraft:diamond>;
+val emerald = <minecraft:emerald>;
+val lapisLazuli = <minecraft:dye:4>;
 
 recipes.addShapeless("CacteenToWood1",woodPlanks,[cactus,cactus,cactus]);
 recipes.remove(cactusJuice);
@@ -78,6 +81,8 @@ val nickelGrit = <immersiveengineering:metal:13>;
 val uraniumGrit = <immersiveengineering:metal:14>;
 val ironGrit = <immersiveengineering:metal:18>;
 val nitrate = <immersiveengineering:material:24>;
+val cobaltDust = <enderio:item_material:31>;
+val arditeDust = <enderio:item_material:30>;
 
 //fluids
 val sodiumHydroxide = <liquid:water_white>;
@@ -99,6 +104,10 @@ val nitricAcid = <liquid:water_pink>;
 val destiWater = <liquid:dist_water>;
 val water = <liquid:water>;
 val lava = <liquid:lava>;
+val arditicAcidumSulfoNitrosum = <liquid:glowing_water_pink>;
+val acidumSulfoNitrosum = <liquid:glowing_water_orange>;
+val cobalticAcidumSulfoNitrosum = <liquid:glowing_water_purple>;
+val silverNitrate = <liquid:glowing_water_silver>;
 
 //crusher
 mods.immersiveengineering.Crusher.removeRecipe(gravel);
@@ -113,12 +122,34 @@ mods.immersiveengineering.Mixer.addRecipe(plumbumSludge*120,sulfuricAcid*50,[cob
 mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*500,destiWater*500,[sulfur],1024);
 mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*120,sulfuricAcid*50,[gravel*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*120,sulfuricAcid*50,[sand*4],1024);
-
+mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],1024);
 
 //bottling
 mods.immersiveengineering.BottlingMachine.addRecipe(leadGrit,slag,plumbumSludge*60);
 mods.immersiveengineering.BottlingMachine.addRecipe(ironGrit,industrialSalt,ferrumLateriteSludge*240);
 mods.immersiveengineering.BottlingMachine.addRecipe(copperGrit,industrialSalt,cuprumSludge*240);
+mods.immersiveengineering.BottlingMachine.addRecipe(arditeDust,sulfur,arditicAcidumSulfoNitrosum*1000);
+mods.immersiveengineering.BottlingMachine.addRecipe(cobaltDust,silverGrit,cobaldHydroxide*1000);
+
+//refinery
+mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,1024);
+mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*120,sodiumHydroxide*50,1024);
+mods.immersiveengineering.Refinery.addRecipe(silverNitrate*150,cuprumSludge*120,nitricAcid*50,1024);
+mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,1024);
+mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,1024);
+mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*60,acidumSulfoNitrosum*100,1024);
+mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,1024);
+mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,1024);
+mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,1024);
+
+//fermenter
+mods.immersiveengineering.Fermenter.addRecipe(slag,carbonSlury*100,charCoal,1024);
+
+//destilTower
+//addRecipe(fliud[] out, item[] out, fluid in, energy, time, change[])
+mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],crystalSlury*150,4096,8,[0.016,0.032,0.008]);
+mods.immersivepetroleum.Distillation.addRecipe([],[uraniumGrit],uranNuclide*200,4096,8,[0.06]);
+mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,4096,8,[0.25,0.125]);
 
 
 
@@ -136,9 +167,7 @@ val steelExchangeItems = [
     <bigreactors:turbinecontroller>,
     <bigreactors:turbinefluidport>,
     <bigreactors:reactorcasing>,
-    <bigreactors:turbinehousing>,
     <bigreactors:turbinerotorblade>,
-    <bigreactors:turbinehousingcores>,
     <bigreactors:reactorcasingcores>,
     <bigreactors:reactorcontroller>,
     <bigreactors:turbinerotorshaft>,
