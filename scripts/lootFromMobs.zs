@@ -7,4 +7,4 @@ skeleton.getPool("main").removeEntry("minecraft:arrow");
 
 val stray = LootTables.getTable("minecraft:entities/stray");
 stray.getPool("main").removeEntry("minecraft:arrow");
-stray.getPool("main").removeEntry("minecraft:tipped_arrow");
+stray.getPool("pool2").removeEntry("minecraft:tipped_arrow");
