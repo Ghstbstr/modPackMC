@@ -1,1 +1,2 @@
-mods.initialinventory.InvHandler.addStartingItem(<minecraft:dirt>, 5);
+mods.initialinventory.InvHandler.addStartingItem(<minecraft:potion>, 5);
+mods.initialinventory.InvHandler.addStartingItem(<minecraft:bread>, 5);

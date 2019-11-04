@@ -80,7 +80,8 @@
 [INITIALIZATION][CLIENT][INFO] Translating item.immersiveengineering.mold.packing9.name to Metal Press Mold: Pressing
 [INITIALIZATION][CLIENT][INFO] Removing Yellorium Ingot from ore dictionary entry ingotUranium
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:dirt>:5
+[INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:potion>:5
+[INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:bread>:5
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: tinkerMaterials.zs}
 [INITIALIZATION][CLIENT][INFO] Material wasn't null
 [INITIALIZATION][CLIENT][INFO] Material wasn't null
@@ -196,7 +197,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting defense of gaia to 50.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of yellorium to 26.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of cyanite to 36.0
-[INITIALIZATION][CLIENT][INFO] Setting defense of cyanite to 40.0
+[INITIALIZATION][CLIENT][INFO] Setting defense of blutonium to 40.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of ludicrite to 45.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of quartzenrichediron to 24.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of psi to 30.0
@@ -222,12 +223,12 @@
 [INITIALIZATION][CLIENT][INFO] Setting Attack of gaia to 15.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of yellorium to 10.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of cyanite to 11.5 for head
-[INITIALIZATION][CLIENT][INFO] Setting Attack of cyanite to 13.0 for head
+[INITIALIZATION][CLIENT][INFO] Setting Attack of blutonium to 13.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of ludicrite to 14.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of quartzenrichediron to 5.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of psi to 10.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of psigem to 9.0 for head
-[INITIALIZATION][CLIENT][INFO] Setting Attack of ivorypsi to 11.5 for head
+[INITIALIZATION][CLIENT][INFO] Setting Attack of ivorypsi to 12.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of ebonypsi to 13.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of electrical_steel to 6.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of energetic_alloy to 6.5 for head
@@ -248,7 +249,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of gaia to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of yellorium to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of cyanite to 3.0
-[INITIALIZATION][CLIENT][INFO] Setting toughness of cyanite to 4.0
+[INITIALIZATION][CLIENT][INFO] Setting toughness of blutonium to 4.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of ludicrite to 2.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of quartzenrichediron to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of psi to 0.0
@@ -268,7 +269,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of electrum to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of steel to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of constantan to 0.0
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 337ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 350ms
 [INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
 [INITIALIZATION][CLIENT][INFO] Translating item.immersiveengineering.mold.packing9.name to Metal Press Mold: Pressing
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
@@ -285,9 +286,13 @@
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:gold_ingot> and replacing them with <botania:manaresource>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:gold_nugget> and replacing them with <tconstruct:ingots:2>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <toughasnails:magma_shard> and replacing them with <minecraft:blaze_rod>
 [POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Oak Wood Planks with name CacteenToWood1
 [POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Obsidian with name EnchantmentTableToObsidian
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Gold Nugget with name Goldwashing
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Ice Cube with name Diafreezing
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Packed Ice with name PackingIce
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Fuel Rod (Legacy) with name bigreactors-reactorfuelrod_vanillaglass-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Fluid Port (Legacy) with name bigreactors-turbinefluidport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Casing (Legacy) with name bigreactors-reactorcasing-modified
@@ -297,6 +302,10 @@
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Access Port (Legacy) with name bigreactors-reactoraccessport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Coolant Port (Legacy) with name bigreactors-reactorcoolantport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Rod Constructor with name magipsi-cad_assembler-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Machine Frame with name rftools-machine_frame-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Temperature Regulator with name tanaddons-recipes0-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Magma Block with name toughasnails-magma_block-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Heating Coil with name toughasnails-heating_coil-modified
 [AVAILABLE][CLIENT][INFO] Fixed the RecipeBook
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
@@ -317,22 +326,3 @@
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/woodland_mansion
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest

@@ -270,3 +270,28 @@ for item in conduitRemoveFromCrafting {
 
 
 
+//rfTools****************************************************
+val manyullyn = <tconstruct:ingots:2>;
+val machineFrame = <rftools:machine_frame>;
+recipes.replaceAllOccurences(goldNugget,manyullyn,machineFrame);
+
+//toughAsNails*********************************************************
+val packedIce = <minecraft:packed_ice>;
+val iceCube = <toughasnails:ice_cube>;
+val magmaShard = <toughasnails:magma_shard>;
+val blazeRod = <minecraft:blaze_rod>;
+val ice = <minecraft:ice>;
+
+recipes.addShaped("Diafreezing",iceCube,[
+    [diamond,diamond,diamond],
+    [diamond,waterBucket,diamond],
+    [diamond,diamond,diamond]
+]);
+
+recipes.addShaped("PackingIce",packedIce,[
+    [ice,ice,ice],
+    [ice,waterBucket,ice],
+    [ice,ice,ice]
+]);
+
+recipes.replaceAllOccurences(magmaShard,blazeRod);
