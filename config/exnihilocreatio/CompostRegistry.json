@@ -79,6 +79,11 @@
     "compostBlock": "minecraft:dirt:0",
     "color": "ff443b"
   },
+  "tp:dead_reed": {
+    "value": 0.1,
+    "compostBlock": "minecraft:dirt:0",
+    "color": "ff443b"
+  },
   "minecraft:pumpkin:0": {
     "value": 0.16666667,
     "compostBlock": "minecraft:dirt:0",

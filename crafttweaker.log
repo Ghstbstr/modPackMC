@@ -1054,6 +1054,8 @@
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
 [INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:potion>.withTag({Potion: "minecraft:water"}) * 5:-1
 [INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:bread> * 5:-1
+[INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:torch> * 16:-1
+[INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:flint_and_steel>:-1
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: tinkerMaterials.zs}
 [INITIALIZATION][CLIENT][INFO] Material wasn't null
 [INITIALIZATION][CLIENT][INFO] Material wasn't null
@@ -1241,7 +1243,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of electrum to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of steel to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of constantan to 0.0
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 462ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 499ms
 [INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
 [INITIALIZATION][CLIENT][INFO] Translating item.immersiveengineering.mold.packing9.name to Metal Press Mold: Pressing
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
@@ -1323,40 +1325,3 @@
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/end_city_treasure
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/simple_dungeon
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/nether_bridge
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/desert_pyramid
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/woodland_mansion
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/woodland_mansion
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/end_city_treasure
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
