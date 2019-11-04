@@ -101,7 +101,7 @@ val temp2 = <liquid:water_green>;
 val temp3 = <liquid:water_cyan>;
 val crystalSlury = <liquid:water_light_blue>;
 val cobaldHydroxide = <liquid:water_blue>;
-val temp4 = <liquid:water_purple>;
+val cobalticAcidumSulfoNitrosum = <liquid:water_purple>;
 val uranNuclide = <liquid:water_magenta>;
 val nitricAcid = <liquid:water_pink>;
 val destiWater = <liquid:dist_water>;
@@ -109,12 +109,22 @@ val water = <liquid:water>;
 val lava = <liquid:lava>;
 val arditicAcidumSulfoNitrosum = <liquid:glowing_water_pink>;
 val acidumSulfoNitrosum = <liquid:glowing_water_orange>;
-val cobalticAcidumSulfoNitrosum = <liquid:glowing_water_purple>;
+val temp4 = <liquid:glowing_water_purple>;
 val silverNitrate = <liquid:glowing_water_silver>;
 val redstoneDust = <minecraft:redstone>;
 val pressingMold =  <immersiveengineering:mold:6>;
 val grainsOfInfinity = <enderio:item_material:20>;
 val yellorium = <bigreactors:ingotyellorium>;
+
+arditicAcidumSulfoNitrosum.definition.luminosity = 0;
+acidumSulfoNitrosum.definition.luminosity = 0;
+silverNitrate.definition.luminosity = 0;
+sulfuricAcid.definition.luminosity = 1;
+nitricAcid.definition.luminosity = 1;
+acidumSulfoNitrosum.definition.luminosity = 2;
+uranylHydroxide.definition.luminosity = 4;
+uranNuclide.definition.luminosity = 8;
+
 
 //crusher
 mods.immersiveengineering.Crusher.removeRecipe(gravel);
@@ -163,8 +173,17 @@ mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*1
 mods.immersiveengineering.MetalPress.addRecipe(redstoneDust,dust,pressingMold,1024,16);
 pressingMold.displayName="Metal Press Mold: Pressing";
 
+val enderIOremoveFromARC = [
+    <enderio:item_alloy_ingot>,
+    <enderio:item_alloy_ingot:1>,
+    <enderio:item_alloy_ingot:4>,
+    <enderio:item_alloy_ingot:7>,
+    <enderio:item_alloy_ingot:6>
+] as IItemStack[];
 
-
+for item in enderIOremoveFromARC {
+    mods.immersiveengineering.ArcFurnace.removeRecipe(item);
+}
 
 //extrem reactors************************************************************************************
 val steelReactors = <bigreactors:ingotsteel>;
@@ -175,24 +194,6 @@ recipes.remove(steelReactors);
 recipes.remove(blockSteelReactors);
 <ore:ingotUranium>.remove(yellorium);
 
-/*
-val removeYelloriumFromCrafting = [
-    <immersiveengineering:metal:35>,
-    <bigreactors:reactorcontrolrod>,
-    <bigreactors:reactorcontroller>,
-    <bigreactors:ingotcyanite>,
-    <immersiveposts:fence_uranium>,
-    <bigreactors:reactorfuelrod>
-] as IItemStack[];
-
-recipes.removeShaped(<bigreactors:reactorcontrolrod>,[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<yellorium>,<*>]]);
-recipes.removeShaped(<bigreactors:reactorcontroller>,[[<*>,<*>,<*>],[<yellorium>,<*>,<yellorium>],[<*>,<*>,<*>]]);
-recipes.removeShaped(<bigreactors:reactorfuelrod>,[[<*>,<*>,<*>],[<*>,<yellorium>,<*>],[<*>,<*>,<*>]]);
-recipes.removeShaped(<immersiveposts:fence_uranium>,[[<*>,<*>,<*>],[<yellorium>,<*>,<yellorium>],[<yellorium>,<*>,<yellorium>]]);
-
-recipes.removeShapeless(<immersiveengineering:metal:35>,[yellorium]);
-recipes.removeShapeless(<bigreactors:ingotcyanite>,[yellorium]);
-*/
 recipes.removeShaped(<bigreactors:ingotcyanite>,[[sand,ingotUranium,null],[null,null,null],[null,null,null]]);
 
 val steelExchangeItems = [
@@ -295,3 +296,23 @@ recipes.addShaped("PackingIce",packedIce,[
 ]);
 
 recipes.replaceAllOccurences(magmaShard,blazeRod);
+
+
+//openModularTurrets
+val electricalSteel = <enderio:item_alloy_ingot>;
+val capacitorT1 = <enderio:item_basic_capacitor>;
+
+val incendaryAmmo = <openmodularturrets:ammo_meta>;
+val bulletAmmo = <openmodularturrets:ammo_meta:1>;
+val railGunAmmo = <openmodularturrets:ammo_meta:2>;
+val granateAmmo = <openmodularturrets:ammo_meta:3>;
+val rocketAmmo = <openmodularturrets:ammo_meta:4>;
+
+val gunTurret = <openmodularturrets:machine_gun_turret>;
+val barrelT2 = <openmodularturrets:intermediate_tiered:11>;
+val chamberT2 = <openmodularturrets:intermediate_tiered:6>;
+
+recipes.replaceAllOccurences(electricalSteel,iron,gunTurret);
+recipes.replaceAllOccurences(electricalSteel,iron,barrelT2);
+recipes.replaceAllOccurences(electricalSteel,iron,chamberT2);
+recipes.replaceAllOccurences(capacitorT1,null,chamberT2);

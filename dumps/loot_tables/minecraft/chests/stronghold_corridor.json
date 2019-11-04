@@ -107,20 +107,6 @@
           "name": "minecraft:apple"
         },
         {
-          "entryName": "minecraft:iron_pickaxe",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_pickaxe"
-        },
-        {
-          "entryName": "minecraft:iron_sword",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_sword"
-        },
-        {
           "entryName": "minecraft:iron_chestplate",
           "weight": 5,
           "quality": 0,
@@ -156,34 +142,6 @@
           "name": "minecraft:golden_apple"
         },
         {
-          "entryName": "minecraft:saddle",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:saddle"
-        },
-        {
-          "entryName": "minecraft:iron_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "entryName": "minecraft:golden_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "entryName": "minecraft:diamond_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:diamond_horse_armor"
-        },
-        {
           "entryName": "minecraft:book",
           "weight": 1,
           "quality": 0,
@@ -202,6 +160,19 @@
         "min": 2.0,
         "max": 3.0
       }
+    },
+    {
+      "name": "botania_inject_pool",
+      "entries": [
+        {
+          "entryName": "botania_inject_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "loot_table",
+          "name": "botania:inject/stronghold_corridor"
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

@@ -84,13 +84,6 @@
           "name": "minecraft:sapling"
         },
         {
-          "entryName": "minecraft:saddle",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:saddle"
-        },
-        {
           "entryName": "blueprint_electrode",
           "weight": 1,
           "quality": 0,
@@ -133,6 +126,19 @@
         "min": 1.0,
         "max": 3.0
       }
+    },
+    {
+      "name": "botania_inject_pool",
+      "entries": [
+        {
+          "entryName": "botania_inject_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "loot_table",
+          "name": "botania:inject/village_blacksmith"
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

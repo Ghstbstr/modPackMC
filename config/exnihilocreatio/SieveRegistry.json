@@ -320,6 +320,11 @@
       "meshLevel": 1
     },
     {
+      "drop": "<immersiveengineering:seed:-1>",
+      "chance": 0.05,
+      "meshLevel": 1
+    },
+    {
       "drop": "<botania:fertilizer:-1>",
       "chance": 0.05,
       "meshLevel": 4

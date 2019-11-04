@@ -188,6 +188,19 @@
         }
       ],
       "rolls": 4.0
+    },
+    {
+      "name": "botania_inject_pool",
+      "entries": [
+        {
+          "entryName": "botania_inject_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "loot_table",
+          "name": "botania:inject/spawn_bonus_chest"
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

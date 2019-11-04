@@ -100,34 +100,6 @@
           "name": "minecraft:rotten_flesh"
         },
         {
-          "entryName": "minecraft:saddle",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:saddle"
-        },
-        {
-          "entryName": "minecraft:iron_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "entryName": "minecraft:golden_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "entryName": "minecraft:diamond_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:diamond_horse_armor"
-        },
-        {
           "entryName": "minecraft:book",
           "weight": 1,
           "quality": 0,
@@ -162,6 +134,19 @@
         "min": 1.0,
         "max": 3.0
       }
+    },
+    {
+      "name": "botania_inject_pool",
+      "entries": [
+        {
+          "entryName": "botania_inject_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "loot_table",
+          "name": "botania:inject/jungle_temple"
+        }
+      ],
+      "rolls": 1.0
     },
     {
       "name": "moms_spaghetti",

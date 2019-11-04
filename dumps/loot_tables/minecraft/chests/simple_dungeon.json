@@ -4,13 +4,6 @@
       "name": "main",
       "entries": [
         {
-          "entryName": "minecraft:saddle",
-          "weight": 20,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:saddle"
-        },
-        {
           "entryName": "minecraft:golden_apple",
           "weight": 15,
           "quality": 0,
@@ -50,27 +43,6 @@
           "quality": 0,
           "type": "item",
           "name": "minecraft:name_tag"
-        },
-        {
-          "entryName": "minecraft:golden_horse_armor",
-          "weight": 10,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "entryName": "minecraft:iron_horse_armor",
-          "weight": 15,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "entryName": "minecraft:diamond_horse_armor",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:diamond_horse_armor"
         },
         {
           "entryName": "minecraft:book",
@@ -326,6 +298,19 @@
         "min": 1.0,
         "max": 3.0
       }
+    },
+    {
+      "name": "botania_inject_pool",
+      "entries": [
+        {
+          "entryName": "botania_inject_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "loot_table",
+          "name": "botania:inject/simple_dungeon"
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

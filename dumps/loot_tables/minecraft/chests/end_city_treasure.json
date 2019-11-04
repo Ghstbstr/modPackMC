@@ -84,51 +84,6 @@
           "name": "minecraft:beetroot_seeds"
         },
         {
-          "entryName": "minecraft:saddle",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:saddle"
-        },
-        {
-          "entryName": "minecraft:iron_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "entryName": "minecraft:golden_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "entryName": "minecraft:diamond_horse_armor",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:diamond_horse_armor"
-        },
-        {
-          "entryName": "minecraft:diamond_sword",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "levels": {
-                "min": 20.0,
-                "max": 39.0
-              },
-              "treasure": true,
-              "function": "minecraft:enchant_with_levels"
-            }
-          ],
-          "name": "minecraft:diamond_sword"
-        },
-        {
           "entryName": "minecraft:diamond_boots",
           "weight": 3,
           "quality": 0,
@@ -197,57 +152,6 @@
           "name": "minecraft:diamond_helmet"
         },
         {
-          "entryName": "minecraft:diamond_pickaxe",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "levels": {
-                "min": 20.0,
-                "max": 39.0
-              },
-              "treasure": true,
-              "function": "minecraft:enchant_with_levels"
-            }
-          ],
-          "name": "minecraft:diamond_pickaxe"
-        },
-        {
-          "entryName": "minecraft:diamond_shovel",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "levels": {
-                "min": 20.0,
-                "max": 39.0
-              },
-              "treasure": true,
-              "function": "minecraft:enchant_with_levels"
-            }
-          ],
-          "name": "minecraft:diamond_shovel"
-        },
-        {
-          "entryName": "minecraft:iron_sword",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "levels": {
-                "min": 20.0,
-                "max": 39.0
-              },
-              "treasure": true,
-              "function": "minecraft:enchant_with_levels"
-            }
-          ],
-          "name": "minecraft:iron_sword"
-        },
-        {
           "entryName": "minecraft:iron_boots",
           "weight": 3,
           "quality": 0,
@@ -314,40 +218,6 @@
             }
           ],
           "name": "minecraft:iron_helmet"
-        },
-        {
-          "entryName": "minecraft:iron_pickaxe",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "levels": {
-                "min": 20.0,
-                "max": 39.0
-              },
-              "treasure": true,
-              "function": "minecraft:enchant_with_levels"
-            }
-          ],
-          "name": "minecraft:iron_pickaxe"
-        },
-        {
-          "entryName": "minecraft:iron_shovel",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "levels": {
-                "min": 20.0,
-                "max": 39.0
-              },
-              "treasure": true,
-              "function": "minecraft:enchant_with_levels"
-            }
-          ],
-          "name": "minecraft:iron_shovel"
         },
         {
           "entryName": "auw_ozzy_chestplate_end",

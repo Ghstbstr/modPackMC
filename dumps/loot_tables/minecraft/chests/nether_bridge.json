@@ -52,13 +52,6 @@
           "name": "minecraft:gold_ingot"
         },
         {
-          "entryName": "minecraft:golden_sword",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:golden_sword"
-        },
-        {
           "entryName": "minecraft:golden_chestplate",
           "weight": 5,
           "quality": 0,
@@ -87,34 +80,6 @@
             }
           ],
           "name": "minecraft:nether_wart"
-        },
-        {
-          "entryName": "minecraft:saddle",
-          "weight": 10,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:saddle"
-        },
-        {
-          "entryName": "minecraft:golden_horse_armor",
-          "weight": 8,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "entryName": "minecraft:iron_horse_armor",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "entryName": "minecraft:diamond_horse_armor",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:diamond_horse_armor"
         },
         {
           "entryName": "minecraft:obsidian",

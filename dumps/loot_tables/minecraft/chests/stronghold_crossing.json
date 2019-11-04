@@ -100,13 +100,6 @@
           "name": "minecraft:apple"
         },
         {
-          "entryName": "minecraft:iron_pickaxe",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "minecraft:iron_pickaxe"
-        },
-        {
           "entryName": "minecraft:book",
           "weight": 1,
           "quality": 0,
