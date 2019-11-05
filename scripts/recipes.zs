@@ -284,15 +284,15 @@ val blazeRod = <minecraft:blaze_rod>;
 val ice = <minecraft:ice>;
 
 recipes.addShaped("Diafreezing",iceCube,[
-    [diamond,diamond,diamond],
-    [diamond,waterBucket,diamond],
-    [diamond,diamond,diamond]
+    [null,null,null],
+    [null,waterBucket,diamond],
+    [null,null,null]
 ]);
 
 recipes.addShaped("PackingIce",packedIce,[
-    [ice,ice,ice],
-    [ice,waterBucket,ice],
-    [ice,ice,ice]
+    [ice,ice,null],
+    [ice,ice,null],
+    [null,null,null]
 ]);
 
 recipes.replaceAllOccurences(magmaShard,blazeRod);
