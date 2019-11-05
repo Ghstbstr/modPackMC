@@ -4,7 +4,7 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:1.0
 saturation:0.0
-renderDistance:20
+renderDistance:37
 guiScale:0
 particles:0
 bobView:true
@@ -164,7 +164,7 @@ key_enderio.keybind.fovminusfast:0
 soundCategory_master:0.3178808
 soundCategory_music:0.0
 soundCategory_record:1.0
-soundCategory_weather:1.0
+soundCategory_weather:0.3802817
 soundCategory_block:1.0
 soundCategory_hostile:0.14788732
 soundCategory_neutral:0.36619717

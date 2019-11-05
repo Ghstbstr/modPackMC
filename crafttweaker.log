@@ -1243,7 +1243,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of electrum to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of steel to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of constantan to 0.0
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 499ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 440ms
 [INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
 [INITIALIZATION][CLIENT][INFO] Translating item.immersiveengineering.mold.packing9.name to Metal Press Mold: Pressing
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
