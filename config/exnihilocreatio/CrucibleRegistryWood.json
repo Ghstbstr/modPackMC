@@ -10,17 +10,17 @@
   },
   "ore:listAllveggie": {
     "fluid": "water",
-    "amount": 250,
+    "amount": 500,
     "color": "minecraft:leaves:0"
   },
   "minecraft:apple:0": {
     "fluid": "water",
-    "amount": 250,
+    "amount": 500,
     "color": "minecraft:leaves:0"
   },
   "ore:listAllfruit": {
     "fluid": "water",
-    "amount": 250,
+    "amount": 500,
     "color": "minecraft:leaves:0"
   }
 }

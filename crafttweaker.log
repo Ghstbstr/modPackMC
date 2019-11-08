@@ -5,7 +5,7 @@
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: recipes.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: startingItems.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: tinkerMaterials.zs} as we are currently loading with a different loader
-[PREINITIALIZATION][CLIENT][INFO] Completed script loading in: 3ms
+[PREINITIALIZATION][CLIENT][INFO] Completed script loading in: 2ms
 [INITIALIZATION][CLIENT][INFO] CraftTweaker: Building registry
 [INITIALIZATION][CLIENT][INFO] CraftTweaker: Successfully built item registry
 [INITIALIZATION][CLIENT][INFO] Current loaders after merging: [[preinit], [recipeevent | crafttweaker]]
@@ -1243,7 +1243,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of electrum to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of steel to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of constantan to 0.0
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 521ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 587ms
 [INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
 [INITIALIZATION][CLIENT][INFO] Translating item.immersiveengineering.mold.packing9.name to Metal Press Mold: Pressing
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
@@ -1280,6 +1280,7 @@
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Access Port (Legacy) with name bigreactors-reactoraccessport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Coolant Port (Legacy) with name bigreactors-reactorcoolantport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Rod Constructor with name magipsi-cad_assembler-modified
+[POSTINITIALIZATION][CLIENT][INFO] Trying to add shapedrecipe without correct output
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Machine Frame with name rftools-machine_frame-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Temperature Regulator with name tanaddons-recipes0-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Magma Block with name toughasnails-magma_block-modified
