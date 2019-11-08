@@ -17,6 +17,27 @@
     },
     "done": true
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2019-11-08 20:02:14 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "husk": "2019-11-08 20:02:14 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "wither_skeleton": "2019-11-08 20:02:17 +0100",
+      "skeleton": "2019-11-08 20:02:19 +0100",
+      "husk": "2019-11-08 20:02:14 +0100",
+      "zombie": "2019-11-08 20:02:55 +0100"
+    },
+    "done": false
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "desert": "2019-11-04 18:41:52 +0100"
