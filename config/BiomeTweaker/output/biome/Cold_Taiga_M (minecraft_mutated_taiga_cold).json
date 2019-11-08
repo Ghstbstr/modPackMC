@@ -24,10 +24,10 @@
   "Dictionary Types": [
     "RARE",
     "MOUNTAIN",
-    "COLD",
+    "FOREST",
     "CONIFEROUS",
     "SNOWY",
-    "FOREST"
+    "COLD"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

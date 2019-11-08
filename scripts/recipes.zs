@@ -115,6 +115,7 @@ val redstoneDust = <minecraft:redstone>;
 val pressingMold =  <immersiveengineering:mold:6>;
 val grainsOfInfinity = <enderio:item_material:20>;
 val yellorium = <bigreactors:ingotyellorium>;
+val glowstonedust = <minecraft:glowstone_dust>;
 
 arditicAcidumSulfoNitrosum.definition.luminosity = 0;
 acidumSulfoNitrosum.definition.luminosity = 0;
@@ -169,8 +170,14 @@ mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],
 mods.immersivepetroleum.Distillation.addRecipe([],[yellorium,uraniumGrit,grainsOfInfinity],uranNuclide*200,4096,80,[0.01,0.06,0.01]);
 mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,1024,80,[0.25,0.125]);
 
+//cokeoven
+//mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
+mods.immersiveengineering.CokeOven.addRecipe(coal,1,charCoal,100);
+
+
 //metalpress
-mods.immersiveengineering.MetalPress.addRecipe(redstoneDust,dust,pressingMold,1024,16);
+mods.immersiveengineering.MetalPress.addRecipe(redstoneDust,sand,pressingMold,1024,16);
+mods.immersiveengineering.MetalPress.addRecipe(glowstonedust,dust,pressingMold,1024,32);
 pressingMold.displayName="Metal Press Mold: Pressing";
 
 val enderIOremoveFromARC = [

@@ -24,8 +24,8 @@
   "Dictionary Types": [
     "RARE",
     "MOUNTAIN",
-    "DENSE",
-    "FOREST"
+    "FOREST",
+    "DENSE"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
