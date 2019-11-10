@@ -26,6 +26,7 @@ val diamond = <minecraft:diamond>;
 val emerald = <minecraft:emerald>;
 val lapisLazuli = <minecraft:dye:4>;
 
+
 recipes.addShapeless("CacteenToWood1",woodPlanks,[cactus,cactus,cactus]);
 recipes.remove(cactusJuice);
 recipes.addShapeless("EnchantmentTableToObsidian",obsidian,[enchantmentTable]);
@@ -86,6 +87,13 @@ val ironGrit = <immersiveengineering:metal:18>;
 val nitrate = <immersiveengineering:material:24>;
 val cobaltDust = <enderio:item_material:31>;
 val arditeDust = <enderio:item_material:30>;
+val blackPowder = <enderio:item_material:50>;
+
+recipes.addShaped("CharcoalColor",blackPowder*4,[
+    [charCoal,charCoal,charCoal],
+    [charCoal,industrialSalt,charCoal],
+    [charCoal,charCoal,charCoal]
+]);
 
 //fluids
 val sodiumHydroxide = <liquid:water_white>;
@@ -344,3 +352,51 @@ recipes.replaceAllOccurences(electricalSteel,iron,gunTurret);
 recipes.replaceAllOccurences(electricalSteel,iron,barrelT2);
 recipes.replaceAllOccurences(electricalSteel,iron,chamberT2);
 recipes.replaceAllOccurences(capacitorT1,null,chamberT2);
+
+
+
+//vanillaSpawns:
+val chickenSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}});
+val cowSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
+val pigSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:pig"}});
+val rabbitSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:rabbit"}});
+val sheepSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:sheep"}});
+val feather = <minecraft:feather>;
+val leather = <minecraft:leather>;
+val rabbitHide = <minecraft:rabbit_hide>;
+val fleshBlock = <tp:flesh_block>;
+val wool = <minecraft:wool>;
+val shears = <minecraft:shears>;
+
+
+recipes.addShaped("SpawnEggChicken",chickenSpawn,[
+    [feather,feather,feather],
+    [feather,emerald,feather],
+    [feather,feather,feather]
+]);
+
+recipes.addShaped("SpawnEggCow",cowSpawn,[
+    [leather,leather,leather],
+    [leather,emerald,leather],
+    [leather,leather,leather]
+]);
+
+recipes.addShaped("SpawnEggPig",pigSpawn,[
+    [fleshBlock,fleshBlock,fleshBlock],
+    [fleshBlock,emerald,fleshBlock],
+    [fleshBlock,fleshBlock,fleshBlock]
+]);
+
+recipes.addShaped("SpawnEggRabbit",rabbitSpawn,[
+    [rabbitHide,rabbitHide,rabbitHide],
+    [rabbitHide,emerald,rabbitHide],
+    [rabbitHide,rabbitHide,rabbitHide]
+]);
+
+recipes.addShaped("SpawnEggSheep",sheepSpawn,[
+    [wool,wool,wool],
+    [wool,emerald,wool],
+    [wool,wool,wool]
+]);
+
+recipes.addShapeless("LeatherToHide",rabbitHide,[leather,shears.anyDamage().transformDamage(15)]);
