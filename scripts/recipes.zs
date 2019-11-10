@@ -269,6 +269,7 @@ val netherstar = <minecraft:nether_star>;
 val vibrantAlloy = <enderio:item_alloy_ingot:2>;
 val fusedQuartzGlass = <enderio:block_fused_quartz>;
 val glass = <minecraft:glass>;
+val conduitBinder = <enderio:item_material:4>;
 
 
 val conduitRemoveFromCrafting = [
@@ -289,8 +290,12 @@ for item in conduitRemoveFromCrafting {
     recipes.remove(item);
 }
 
-recipes.replaceAllOccurences(fusedQuartzGlass,glass,enderIOEnderFluidConduit);
-recipes.replaceAllOccurences(vibrantAlloy,emerald,enderIOEnderFluidConduit);
+recipes.remove(enderIOEnderFluidConduit);
+recipes.addShaped("FluidFilterConduit",enderIOEnderFluidConduit*4,[
+    [conduitBinder,conduitBinder,conduitBinder],
+    [emerald,glass,emerald],
+    [conduitBinder,conduitBinder,conduitBinder]
+]);
 recipes.replaceAllOccurences(fusedQuartzGlass,netherstar,endervoir);
 enderIOEnderFluidConduit.displayName="Fluid Filter Conduit";
 
