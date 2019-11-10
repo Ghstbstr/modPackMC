@@ -180,8 +180,8 @@ for lootTable in allTables{
     lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:23>,12,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
     lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:22>,12,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
 
-    lootTable.getPool("ore").addItemEntry(<minecraft:diamond>,1);
-    lootTable.getPool("ore").addItemEntry(<minecraft:ender_pearl>,1);    
+    lootTable.getPool("ore").addItemEntry(<minecraft:diamond>,3);
+    lootTable.getPool("ore").addItemEntry(<minecraft:ender_pearl>,3);    
 
 
     lootTable.addPool("slime",1,2,0,0);

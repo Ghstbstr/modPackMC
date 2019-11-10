@@ -55,6 +55,40 @@ val electrum = <conmat:electrum>;
 val steel = <conmat:steel>;
 val constantan = <conmat:constantan>;
 val soul = <conmat:soularium>;
+val nickel = <conmat:nickel>;
+val treatedWood = <conmat:treatedwood>;
+val conductiv = <conmat:conductive_iron>;
+val redstoneAlloy = <conmat:redstone_alloy>;
+val aluminum = <conmat:aluminum>;
+
+
+
+
+electricalsteel.modifier=0.7;
+psigem.modifier=2.5;
+ebony.modifier=3.5;
+ivory.modifier=3.0;
+psimetal.modifier=2.0;
+quartzenriched.modifier=1.1;
+ludicrite.modifier=8;
+energetic.modifier=3;
+blutonium.modifier=5;
+cyanite.modifier=4;
+yellorium.modifier=4.5;
+gaiaspirit.modifier=6;
+elementium.modifier=3.5;
+terrasteel.modifier=4;
+manasteel.modifier=2;
+nickel.modifier=1.7;
+constantan.modifier=1.3;
+treatedWood.modifier=2;
+end.modifier=7;
+dark.modifier=1.4;
+pulsating.modifier=0.8;
+conductiv.modifier=0.9;
+redstoneAlloy.modifier=3;
+vibrant.modifier=3.5;
+aluminum.modifier=2.2;
 
 
 manasteel.defense=18;

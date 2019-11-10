@@ -116,6 +116,9 @@ val pressingMold =  <immersiveengineering:mold:6>;
 val grainsOfInfinity = <enderio:item_material:20>;
 val yellorium = <bigreactors:ingotyellorium>;
 val glowstonedust = <minecraft:glowstone_dust>;
+val blazePowder = <minecraft:blaze_powder>;
+val blazeRod = <minecraft:blaze_rod>;
+val rodMold = <immersiveengineering:mold:2>;
 
 arditicAcidumSulfoNitrosum.definition.luminosity = 0;
 acidumSulfoNitrosum.definition.luminosity = 0;
@@ -178,6 +181,7 @@ mods.immersiveengineering.CokeOven.addRecipe(coal,1,charCoal,100);
 //metalpress
 mods.immersiveengineering.MetalPress.addRecipe(redstoneDust,sand,pressingMold,1024,16);
 mods.immersiveengineering.MetalPress.addRecipe(glowstonedust,dust,pressingMold,1024,32);
+mods.immersiveengineering.MetalPress.addRecipe(blazeRod,blazePowder,rodMold,1024,4);
 pressingMold.displayName="Metal Press Mold: Pressing";
 
 val enderIOremoveFromARC = [
@@ -258,6 +262,15 @@ for item in juiceRemoveFromCrafting {
 }
 
 //enderio******************************************
+val enderIOFluidFilter = <enderio:item_fluid_filter>;
+val enderIOEnderFluidConduit = <enderio:item_liquid_conduit:2>;
+val endervoir = <enderio:block_reservoir>;
+val netherstar = <minecraft:nether_star>;
+val vibrantAlloy = <enderio:item_alloy_ingot:2>;
+val fusedQuartzGlass = <enderio:block_fused_quartz>;
+val glass = <minecraft:glass>;
+
+
 val conduitRemoveFromCrafting = [
     <enderio:item_endergy_conduit:6>,
     <enderio:item_endergy_conduit:5>,
@@ -276,6 +289,10 @@ for item in conduitRemoveFromCrafting {
     recipes.remove(item);
 }
 
+recipes.replaceAllOccurences(fusedQuartzGlass,glass,enderIOEnderFluidConduit);
+recipes.replaceAllOccurences(vibrantAlloy,emerald,enderIOEnderFluidConduit);
+recipes.replaceAllOccurences(fusedQuartzGlass,netherstar,endervoir);
+enderIOEnderFluidConduit.displayName="Fluid Filter Conduit";
 
 
 //rfTools****************************************************
@@ -287,7 +304,6 @@ recipes.replaceAllOccurences(goldNugget,manyullyn,machineFrame);
 val packedIce = <minecraft:packed_ice>;
 val iceCube = <toughasnails:ice_cube>;
 val magmaShard = <toughasnails:magma_shard>;
-val blazeRod = <minecraft:blaze_rod>;
 val ice = <minecraft:ice>;
 
 recipes.addShaped("Diafreezing",iceCube,[
