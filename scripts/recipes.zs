@@ -160,6 +160,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(ironGrit,industrialSalt,ferr
 mods.immersiveengineering.BottlingMachine.addRecipe(copperGrit,industrialSalt,cuprumSludge*240);
 mods.immersiveengineering.BottlingMachine.addRecipe(arditeDust,sulfur,arditicAcidumSulfoNitrosum*1000);
 mods.immersiveengineering.BottlingMachine.addRecipe(cobaltDust,silverGrit,cobaldHydroxide*1000);
+mods.immersiveengineering.BottlingMachine.addRecipe(silverGrit,industrialSalt,silverNitrate*150);
 
 //refinery
 mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,32768);
@@ -183,7 +184,7 @@ mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*1
 
 //cokeoven
 //mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
-mods.immersiveengineering.CokeOven.addRecipe(coal,1,charCoal,100);
+mods.immersiveengineering.CokeOven.addRecipe(coal,1,charCoal,500);
 
 
 //metalpress
