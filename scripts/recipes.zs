@@ -319,6 +319,7 @@ val packedIce = <minecraft:packed_ice>;
 val iceCube = <toughasnails:ice_cube>;
 val magmaShard = <toughasnails:magma_shard>;
 val ice = <minecraft:ice>;
+val coolingGoo = <armorunder:cooling_goo>;
 
 recipes.addShaped("Diafreezing",iceCube,[
     [null,null,null],
@@ -333,6 +334,7 @@ recipes.addShaped("PackingIce",packedIce,[
 ]);
 
 recipes.replaceAllOccurences(magmaShard,blazeRod);
+recipes.replaceAllOccurences(packedIce,iceCube,coolingGoo);
 
 
 //openModularTurrets
