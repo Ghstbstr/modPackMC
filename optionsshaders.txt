@@ -1,4 +1,4 @@
-#Mon Nov 11 20:49:41 CET 2019
+#Tue Nov 12 15:38:35 CET 2019
 shaderPack=Sildurs Vibrant Shaders v1.22 High.zip
 antialiasingLevel=0
 normalMapEnabled=true
