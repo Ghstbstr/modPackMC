@@ -115,8 +115,8 @@ val nitricAcid = <liquid:water_pink>;
 val destiWater = <liquid:dist_water>;
 val water = <liquid:water>;
 val lava = <liquid:lava>;
-val arditicAcidumSulfoNitrosum = <liquid:glowing_water_pink>;
-val acidumSulfoNitrosum = <liquid:glowing_water_orange>;
+val arditicAcidumSulfoNitrosum = <liquid:glowing_water_orange>;
+val acidumSulfoNitrosum = <liquid:glowing_water_pink>;
 val temp4 = <liquid:glowing_water_purple>;
 val silverNitrate = <liquid:glowing_water_silver>;
 val redstoneDust = <minecraft:redstone>;
@@ -128,6 +128,14 @@ val blazePowder = <minecraft:blaze_powder>;
 val blazeRod = <minecraft:blaze_rod>;
 val rodMold = <immersiveengineering:mold:2>;
 
+val cuprumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_orange", Amount: 1000});
+val silverNitrateBucket = <forge:bucketfilled>.withTag({FluidName: "glowing_water_silver", Amount: 1000});
+val cobaldHydroxideBucket = <forge:bucketfilled>.withTag({FluidName: "water_blue", Amount: 1000});
+val ferrumLateriteSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_brown", Amount: 1000});
+val plumbumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_black", Amount: 1000});
+val arditicAcidumSulfoNitrosumBucket = <forge:bucketfilled>.withTag({FluidName: "glowing_water_orange", Amount: 1000});
+
+
 arditicAcidumSulfoNitrosum.definition.luminosity = 0;
 acidumSulfoNitrosum.definition.luminosity = 0;
 silverNitrate.definition.luminosity = 0;
@@ -138,6 +146,43 @@ uranylHydroxide.definition.luminosity = 4;
 uranNuclide.definition.luminosity = 8;
 
 
+//assembler
+recipes.addShaped("PlumbumToLead",leadGrit*8,[
+    [slag,slag,slag],
+    [slag,plumbumSludgeBucket,slag],
+    [slag,slag,slag]
+]);
+
+recipes.addShaped("FerrumToIron",ironGrit*4,[
+    [null,industrialSalt,null],
+    [industrialSalt,ferrumLateriteSludgeBucket,industrialSalt],
+    [null,industrialSalt,null]
+]);
+
+recipes.addShaped("CuprumToCopper",copperGrit*4,[
+    [null,industrialSalt,null],
+    [industrialSalt,cuprumSludgeBucket,industrialSalt],
+    [null,industrialSalt,null]
+]);
+
+recipes.addShaped("SilverToSilver",silverGrit*8,[
+    [industrialSalt,industrialSalt,industrialSalt],
+    [industrialSalt,silverNitrateBucket,industrialSalt],
+    [industrialSalt,industrialSalt,industrialSalt]
+]);
+
+recipes.addShaped("CobalticToCobalt",cobaltDust*2,[
+    [null,null,null],
+    [industrialSalt,cobaldHydroxideBucket,industrialSalt],
+    [null,null,null]
+]);
+
+recipes.addShaped("ArditicToArdite",arditeDust*1,[
+    [null,null,null],
+    [null,arditicAcidumSulfoNitrosumBucket,industrialSalt],
+    [null,null,null]
+]);
+
 //crusher
 mods.immersiveengineering.Crusher.removeRecipe(gravel);
 mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,2048,industrialSalt,0.25);
@@ -147,28 +192,30 @@ mods.immersiveengineering.Crusher.addRecipe(null,uraniumGrit,16384,yellorium,0.2
 mods.immersiveengineering.Crusher.addRecipe(dust,sand,512);
 
 //mixer
-mods.immersiveengineering.Mixer.addRecipe(plumbumSludge*120,sulfuricAcid*50,[cobblestone*8],4096);
+mods.immersiveengineering.Mixer.addRecipe(plumbumSludge*125,sulfuricAcid*50,[cobblestone*8],4096);
 mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*500,destiWater*500,[sulfur],2048);
-mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*120,sulfuricAcid*50,[gravel*4],2048);
-mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*120,sulfuricAcid*50,[sand*4],1024);
+mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*125,sulfuricAcid*50,[gravel*4],2048);
+mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*125,sulfuricAcid*50,[sand*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],8192);
 mods.immersiveengineering.Mixer.addRecipe(nitricAcid*1000,sulfuricAcid*1000,[nitrate],8192);
 
 //bottling
+/*
 mods.immersiveengineering.BottlingMachine.addRecipe(leadGrit,slag,plumbumSludge*60);
 mods.immersiveengineering.BottlingMachine.addRecipe(ironGrit,industrialSalt,ferrumLateriteSludge*240);
 mods.immersiveengineering.BottlingMachine.addRecipe(copperGrit,industrialSalt,cuprumSludge*240);
 mods.immersiveengineering.BottlingMachine.addRecipe(arditeDust,sulfur,arditicAcidumSulfoNitrosum*1000);
 mods.immersiveengineering.BottlingMachine.addRecipe(cobaltDust,silverGrit,cobaldHydroxide*1000);
 mods.immersiveengineering.BottlingMachine.addRecipe(silverGrit,industrialSalt,silverNitrate*150);
+*/
 
 //refinery
 mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,32768);
-mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*120,sodiumHydroxide*50,16384);
-mods.immersiveengineering.Refinery.addRecipe(silverNitrate*150,cuprumSludge*120,nitricAcid*50,16384);
+mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*125,sodiumHydroxide*50,16384);
+mods.immersiveengineering.Refinery.addRecipe(silverNitrate*125,cuprumSludge*125,nitricAcid*50,16384);
 mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,32768);
 mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,16384);
-mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*60,acidumSulfoNitrosum*100,32768);
+mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*125,acidumSulfoNitrosum*100,32768);
 mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,32768);
 mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,32768);
 mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,32768);

@@ -2,16 +2,16 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:1.0
+gamma:0.5
 saturation:0.0
-renderDistance:19
+renderDistance:16
 guiScale:0
 particles:0
 bobView:true
 anaglyph3d:false
 maxFps:120
 fboEnable:true
-difficulty:2
+difficulty:1
 fancyGraphics:false
 ao:2
 renderClouds:false
@@ -88,8 +88,8 @@ key_key.hotbar.9:10
 key_of.key.zoom:46
 key_keybind.baublesinventory:48
 key_key.conarm.toggle_helm.desc:80
-key_key.conarm.toggle_chest.desc:81
-key_key.conarm.toggle_leg.desc:79
+key_key.conarm.toggle_chest.desc:19
+key_key.conarm.toggle_leg.desc:-97
 key_key.personalBackpack:48
 key_cos.key.opencosarmorinventory:0
 key_psimisc.keybind:0
@@ -102,7 +102,7 @@ key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
 key_key.jei.toggleEditMode:0
-key_key.jei.showRecipe:19
+key_key.jei.showRecipe:40
 key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.previousPage:201
@@ -120,7 +120,7 @@ key_waila.keybind.wailadisplay:13
 key_waila.keybind.liquid:13
 key_waila.keybind.recipe:13
 key_waila.keybind.usage:13
-key_invtweaks.key.sort:19
+key_invtweaks.key.sort:40
 key_key.refinedstorage.focusSearchBar:15
 key_key.refinedstorage.clearGridCraftingMatrix:45:CONTROL
 key_key.refinedstorage.openWirelessGrid:0
@@ -165,7 +165,7 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.3178808
+soundCategory_master:0.44701988
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.3802817
