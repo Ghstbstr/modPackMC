@@ -193,7 +193,7 @@ mods.immersiveengineering.Crusher.addRecipe(dust,sand,512);
 
 //mixer
 mods.immersiveengineering.Mixer.addRecipe(plumbumSludge*125,sulfuricAcid*50,[cobblestone*8],4096);
-mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*500,destiWater*500,[sulfur],2048);
+mods.immersiveengineering.Mixer.addRecipe(sulfuricAcid*2000,destiWater*2000,[sulfur],2048);
 mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*125,sulfuricAcid*50,[gravel*4],2048);
 mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*125,sulfuricAcid*50,[sand*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],8192);
