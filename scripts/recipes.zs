@@ -210,15 +210,15 @@ mods.immersiveengineering.BottlingMachine.addRecipe(silverGrit,industrialSalt,si
 */
 
 //refinery
-mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,32768);
-mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*125,sodiumHydroxide*50,16384);
-mods.immersiveengineering.Refinery.addRecipe(silverNitrate*125,cuprumSludge*125,nitricAcid*50,16384);
-mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,32768);
-mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,16384);
-mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*125,acidumSulfoNitrosum*100,32768);
-mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,32768);
-mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,32768);
-mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,32768);
+mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,512);
+mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*125,sodiumHydroxide*50,256);
+mods.immersiveengineering.Refinery.addRecipe(silverNitrate*125,cuprumSludge*125,nitricAcid*50,256);
+mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,512);
+mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,256);
+mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*125,acidumSulfoNitrosum*100,512);
+mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,512);
+mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,512);
+mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,512);
 
 //fermenter
 mods.immersiveengineering.Fermenter.addRecipe(slag,carbonSlury*100,charCoal,8192);
