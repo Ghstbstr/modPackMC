@@ -398,6 +398,10 @@ val gunTurret = <openmodularturrets:machine_gun_turret>;
 val barrelT2 = <openmodularturrets:intermediate_tiered:11>;
 val chamberT2 = <openmodularturrets:intermediate_tiered:6>;
 
+val turretBase2 = <openmodularturrets:turret_base:1>;
+val turretSensor2 = <openmodularturrets:intermediate_tiered:1>;
+val simpleMachineChassi = <enderio:item_material>;
+
 val ironNugget = <minecraft:iron_nugget>;
 val conductivIronNugget = <enderio:item_alloy_nugget:4>;
 val conductivIron = <enderio:item_alloy_ingot:4>;
@@ -420,6 +424,10 @@ recipes.replaceAllOccurences(electricalSteel,iron,barrelT2);
 recipes.replaceAllOccurences(electricalSteel,iron,chamberT2);
 recipes.replaceAllOccurences(capacitorT1,null,chamberT2);
 
+recipes.replaceAllOccurences(capacitorT1,null,turretBase2);
+recipes.replaceAllOccurences(simpleMachineChassi,null,turretBase2);
+recipes.replaceAllOccurences(electricalSteel,iron,turretBase2);
+recipes.replaceAllOccurences(electricalSteel,iron,turretSensor2);
 
 
 
