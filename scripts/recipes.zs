@@ -171,15 +171,15 @@ recipes.addShaped("SilverToSilver",silverGrit*8,[
     [industrialSalt,industrialSalt,industrialSalt]
 ]);
 
-recipes.addShaped("CobalticToCobalt",cobaltDust*2,[
+recipes.addShaped("CobalticToCobalt",cobaltDust,[
     [null,null,null],
-    [industrialSalt,cobaldHydroxideBucket,industrialSalt],
+    [null,cobaldHydroxideBucket,silverGrit],
     [null,null,null]
 ]);
 
-recipes.addShaped("ArditicToArdite",arditeDust*1,[
+recipes.addShaped("ArditicToArdite",arditeDust,[
     [null,null,null],
-    [null,arditicAcidumSulfoNitrosumBucket,industrialSalt],
+    [null,arditicAcidumSulfoNitrosumBucket,sulfur],
     [null,null,null]
 ]);
 
