@@ -217,7 +217,7 @@ mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,
 mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,256);
 mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*125,acidumSulfoNitrosum*100,512);
 mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,512);
-mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,nitricAcid*50,512);
+mods.immersiveengineering.Refinery.addRecipe(cobaldHydroxide*500,cobalticAcidumSulfoNitrosum*450,sodiumHydroxide*50,512);
 mods.immersiveengineering.Refinery.addRecipe(cobalticAcidumSulfoNitrosum*450,acidumSulfoNitrosum*100,cuprumSludge*360,512);
 
 //fermenter
@@ -225,9 +225,9 @@ mods.immersiveengineering.Fermenter.addRecipe(slag,carbonSlury*100,charCoal,8192
 
 //destilTower
 //addRecipe(fliud[] out, item[] out, fluid in, energy, time, change[])
-mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],crystalSlury*150,2048,80,[0.016,0.032,0.008]);
-mods.immersivepetroleum.Distillation.addRecipe([],[yellorium,uraniumGrit,grainsOfInfinity],uranNuclide*200,4096,80,[0.01,0.06,0.01]);
-mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,1024,80,[0.25,0.125]);
+mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],crystalSlury*150,32768,32,[0.016,0.032,0.008]);
+mods.immersivepetroleum.Distillation.addRecipe([],[yellorium,uraniumGrit,grainsOfInfinity],uranNuclide*200,65536,32,[0.01,0.06,0.01]);
+mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,16384,32,[0.25,0.125]);
 
 //cokeoven
 //mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
