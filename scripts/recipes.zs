@@ -252,6 +252,12 @@ for item in enderIOremoveFromARC {
     mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 }
 
+val additionalCapacitorRailgun = <immersiveengineering:toolupgrade:9>;
+val HVwireCoil = <immersiveengineering:wirecoil:2>;
+val melodicCapacitor = <enderio:item_capacitor_melodic>;
+
+recipes.replaceAllOccurences(HVwireCoil,melodicCapacitor,additionalCapacitorRailgun);
+
 //extrem reactors************************************************************************************
 val steelReactors = <bigreactors:ingotsteel>;
 val blockSteelReactors = <bigreactors:blocksteel>;
@@ -339,7 +345,12 @@ val conduitRemoveFromCrafting = [
     <enderio:item_power_conduit:1>,
     <enderio:item_power_conduit>,
     <enderio:item_endergy_conduit:7>,
-    <enderio:item_power_conduit:2>
+    <enderio:item_power_conduit:2>,
+    <enderio:item_capacitor_grainy>,
+    <enderio:item_capacitor_silver>,
+    <enderio:item_capacitor_energetic_silver>,
+    <enderio:item_capacitor_vivid>,
+    <enderio:item_capacitor_totemic>
 ] as IItemStack[];
 
 for item in conduitRemoveFromCrafting {

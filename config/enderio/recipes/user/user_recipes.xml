@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
+
+
+<capacitor key="enderio:block_simple_alloy_smelter/intake" base="256" scaler="FIXED" />
+  <capacitor key="enderio:block_simple_alloy_smelter/buffer" base="25600" scaler="FIXED" />
+  <capacitor key="enderio:block_simple_alloy_smelter/use" base="128" scaler="FIXED" />
+  <capacitor key="enderio:block_simple_alloy_smelter/loss" base="5" scaler="CENT" />
+
+  <capacitor key="enderio:block_alloy_smelter/intake" base="1024" scaler="POWER" />
+  <capacitor key="enderio:block_alloy_smelter/buffer" base="102400" scaler="POWER" />
+  <capacitor key="enderio:block_alloy_smelter/use" base="512" scaler="POWER" />
+
+  <capacitor key="enderio:block_enhanced_alloy_smelter/intake" base="2048" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_alloy_smelter/buffer" base="204800" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_alloy_smelter/use" base="1024" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_alloy_smelter/efficiency" base="150" scaler="CENT" />
+  <capacitor key="enderio:block_enhanced_alloy_smelter/double_op_chance" base="1" scaler="QUADRATIC" />
+
+  <capacitor key="enderio:block_sag_mill/intake" base="1024" scaler="POWER" />
+  <capacitor key="enderio:block_sag_mill/buffer" base="102400" scaler="POWER" />
+  <capacitor key="enderio:block_sag_mill/use" base="512" scaler="POWER" />
+  
+  <capacitor key="enderio:block_simple_sag_mill/intake" base="256" scaler="FIXED" />
+  <capacitor key="enderio:block_simple_sag_mill/buffer" base="25600" scaler="FIXED" />
+  <capacitor key="enderio:block_simple_sag_mill/use" base="128" scaler="FIXED" />
+  <capacitor key="enderio:block_simple_sag_mill/loss" base="5" scaler="CENT" />
+
+  <capacitor key="enderio:block_enhanced_sag_mill/intake" base="2048" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_sag_mill/buffer" base="204800" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_sag_mill/use" base="1024" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_sag_mill/efficiency" base="150" scaler="CENT" />
+  <capacitor key="enderio:block_enhanced_sag_mill/double_op_chance" base="1" scaler="QUADRATIC" />
+  
+  <capacitor key="enderio:block_slice_and_splice/intake" base="2048" scaler="QUADRATIC" />
+  <capacitor key="enderio:block_slice_and_splice/buffer" base="204800" scaler="POWER" />
+  <capacitor key="enderio:block_slice_and_splice/use" base="1024" scaler="QUADRATIC" />
+  
+  <capacitor key="enderio:block_soul_binder/intake" base="8192" scaler="QUADRATIC" />
+  <capacitor key="enderio:block_soul_binder/buffer" base="819200" scaler="POWER" />
+  <capacitor key="enderio:block_soul_binder/use" base="4096" scaler="QUADRATIC" />
+  <capacitor key="enderio:block_soul_binder/pitch" base="1" scaler="IDENTITY" />
+  
+  <capacitor key="enderio:block_powered_spawner/intake" base="2048" scaler="SPAWNER" />
+  <capacitor key="enderio:block_powered_spawner/buffer" base="204800" scaler="POWER" />
+  <capacitor key="enderio:block_powered_spawner/use" base="1024" scaler="SPAWNER" />
+  <capacitor key="enderio:block_powered_spawner/speed" base="1" scaler="QUADRATIC" />
+
   <recipe name="Alloy: Steel (Oredict)" required="false">
-    <alloying energy="16384" exp="0">
+    <alloying energy="65536" exp="0">
       <input name="ingotIron"/>
       <input name="fuelCoke"/>
       <output name="ingotSteel"/>
@@ -10,7 +56,7 @@
   </recipe>
 
     <recipe name="Alloy: Electrum Ingot (Thermal Expansion)" required="false">
-    <alloying energy="65536" exp="0.25">
+    <alloying energy="262144" exp="0.25">
       <input name="ingotGold"/>
       <input name="ingotSilver"/>
       <output name="ingotElectrum" amount="2"/>
@@ -18,7 +64,7 @@
   </recipe>
 
     <recipe name="Alloy: Steel" required="false">
-    <alloying energy="65536" exp="0">
+    <alloying energy="262144" exp="0">
       <input name="ingotIron"/>
       <input name="dustCoal" amount="4"/>
       <output name="ingotSteel"/>
@@ -26,7 +72,7 @@
   </recipe>
 
     <recipe name="Alloy: Manyullyn" required="false">
-    <alloying energy="65536" exp="0.25">
+    <alloying energy="262144" exp="0.25">
       <input name="ingotCobalt"/>
       <input name="ingotArdite"/>
       <output name="ingotManyullyn"/>
@@ -34,7 +80,7 @@
   </recipe>
 
 <recipe name="Alloy: Electrical Steel" required="true">
-    <alloying energy="65536" exp="0.5">
+    <alloying energy="262144" exp="0.5">
       <input name="ingotIron"/>
       <input name="dustCoal"/>
       <input name="itemSilicon"/>
@@ -43,7 +89,7 @@
   </recipe>
 
   <recipe name="Alloy: Energetic Alloy" required="true">
-    <alloying energy="131072" exp="0.7">
+    <alloying energy="524288" exp="0.7">
       <input name="dustRedstone"/>
       <input name="ingotGold"/>
       <input name="dustGlowstone"/>
@@ -52,7 +98,7 @@
   </recipe>
 
   <recipe name="Alloy: Vibrant Alloy" required="true">
-    <alloying energy="131072" exp="1">
+    <alloying energy="524288" exp="1">
       <input name="ingotEnergeticAlloy"/>
       <input name="oredict:enderpearl"/>
       <output name="ingotVibrantAlloy"/>
@@ -60,7 +106,7 @@
   </recipe>
 
   <recipe name="Alloy: Redstone Alloy" required="true">
-    <alloying energy="65536" exp="0.5">
+    <alloying energy="262144" exp="0.5">
       <input name="dustRedstone"/>
       <input name="itemSilicon"/>
       <output name="ingotRedstoneAlloy"/>
@@ -68,7 +114,7 @@
   </recipe>
 
   <recipe name="Alloy: Conductive Iron" required="true">
-    <alloying energy="65536" exp="0.5">
+    <alloying energy="262144" exp="0.5">
       <input name="dustRedstone"/>
       <input name="ingotIron"/>
       <output name="ingotConductiveIron"/>
@@ -76,7 +122,7 @@
   </recipe>
 
   <recipe name="Alloy: Pulsating Iron" required="true">
-    <alloying energy="65536" exp="0.7">
+    <alloying energy="262144" exp="0.7">
       <input name="ingotIron"/>
       <input name="oredict:enderpearl"/>
       <output name="ingotPulsatingIron"/>
@@ -84,7 +130,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Steel" required="true">
-    <alloying energy="131072" exp="0.5">
+    <alloying energy="524288" exp="0.5">
       <input name="ingotIron"/>
       <input name="dustCoal"/>
       <input name="obsidian"/>
@@ -93,7 +139,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Steel, Variant" required="false">
-    <alloying energy="131072" exp="0.4">
+    <alloying energy="524288" exp="0.4">
       <input name="ingotSteel"/>
       <input name="obsidian"/>
       <output name="ingotDarkSteel"/>
@@ -101,7 +147,7 @@
   </recipe>
 
   <recipe name="Alloy: End Steel" required="true">
-    <alloying energy="131072" exp="0.5">
+    <alloying energy="524288" exp="0.5">
       <input name="oredict:endstone"/>
       <input name="ingotDarkSteel"/>
       <input name="obsidian"/>
@@ -110,7 +156,7 @@
   </recipe>
 
   <recipe name="Alloy: Construction Alloy" required="false">
-    <alloying energy="131072" exp="0">
+    <alloying energy="262144" exp="0">
       <input name="ingotLead,ingotCopper,ingotSilver,ingotAluminium,ingotAluminum,ingotTin,ingotNickel,ingotZinc,ingotPlatinum,ingotOsmium,ingotArdite,ingotCobalt,ingotTitanium,ingotMagnesium,ingotTungsten"/>
       <input name="ingotIron"/>
       <input name="ingotLead,ingotCopper,ingotSilver,ingotAluminium,ingotAluminum,ingotTin,ingotNickel,ingotZinc,ingotPlatinum,ingotOsmium,ingotArdite,ingotCobalt,ingotTitanium,ingotMagnesium,ingotTungsten"/>
@@ -136,14 +182,14 @@
 
 
   <recipe name="Alloy: Photovoltaic Plate" required="true">
-    <alloying energy="65536" exp="0.5">
+    <alloying energy="262144" exp="0.5">
       <input name="itemPowderPhotovoltaic" amount="3"/>
       <output name="itemPlatePhotovoltaic"/>
     </alloying>
   </recipe>
 
   <recipe name="Alloy: Soularium" required="true">
-    <alloying energy="65536" exp="0.7">
+    <alloying energy="262144" exp="0.7">
       <input name="minecraft:soul_sand"/><!-- has no oredict entry -->
       <input name="ingotGold"/>
       <output name="ingotSoularium"/>
@@ -151,28 +197,28 @@
   </recipe>
 
   <recipe name="Alloy: Fused Quartz" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="gemQuartz" amount="4"/>
       <output name="enderio:block_fused_quartz:0"/>
     </alloying>
   </recipe>
 
   <recipe name="Alloy: Fused Quartz from Block" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="blockQuartz"/>
       <output name="enderio:block_fused_quartz:0"/>
     </alloying>
   </recipe>
 
   <recipe name="Alloy: Fused Glass" required="true">
-    <alloying energy="32768" exp="0.1">
+    <alloying energy="131072" exp="0.1">
       <input name="minecraft:glass"/><!-- don't oredict this one -->
       <output name="enderio:block_fused_glass:0"/>
     </alloying>
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Quartz" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="gemQuartz" amount="4"/>
       <input name="dustGlowstone" amount="4"/>
       <output name="enderio:block_enlightened_fused_quartz:0"/>
@@ -180,7 +226,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Quartz, Upgrade" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="enderio:block_fused_quartz:0"/>
       <input name="dustGlowstone" amount="4"/>
       <output name="enderio:block_enlightened_fused_quartz:0"/>
@@ -188,7 +234,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Quartz from Block, Variant 1" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="blockQuartz"/>
       <input name="dustGlowstone" amount="4"/>
       <output name="enderio:block_enlightened_fused_quartz:0"/>
@@ -196,7 +242,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Quartz from Block, Variant 2" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="blockQuartz"/>
       <input name="oredict:glowstone"/>
       <output name="enderio:block_enlightened_fused_quartz:0"/>
@@ -204,7 +250,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Quartz from Block, Variant 3" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="gemQuartz" amount="4"/>
       <input name="oredict:glowstone"/>
       <output name="enderio:block_enlightened_fused_quartz:0"/>
@@ -212,7 +258,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Quartz from Block, Variant 4" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="enderio:block_fused_quartz:0"/>
       <input name="oredict:glowstone"/>
       <output name="enderio:block_enlightened_fused_quartz:0"/>
@@ -220,7 +266,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Glass" required="true">
-    <alloying energy="32768" exp="0.2">
+    <alloying energy="131072" exp="0.2">
       <input name="minecraft:glass"/><!-- don't oredict this one -->
       <input name="dustGlowstone" amount="4"/>
       <output name="enderio:block_enlightened_fused_glass:0"/>
@@ -228,7 +274,7 @@
   </recipe>
 
   <recipe name="Alloy: Enlightened Fused Glass, Upgrade" required="true">
-    <alloying energy="32768" exp="0.2">
+    <alloying energy="131072" exp="0.2">
       <input name="enderio:block_fused_glass:0"/>
       <input name="dustGlowstone" amount="4"/>
       <output name="enderio:block_enlightened_fused_glass:0"/>
@@ -236,7 +282,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Fused Quartz" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="gemQuartz" amount="4"/>
       <input name="dyeBlack"/>
       <output name="enderio:block_dark_fused_quartz:0"/>
@@ -244,7 +290,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Fused Quartz from Block, Variant 1" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="blockQuartz"/>
       <input name="dyeBlack"/>
       <output name="enderio:block_dark_fused_quartz:0"/>
@@ -252,7 +298,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Fused Quartz from Block, Variant 2" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="enderio:block_fused_quartz:0"/>
       <input name="dyeBlack"/>
       <output name="enderio:block_dark_fused_quartz:0"/>
@@ -260,7 +306,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Fused Glass" required="true">
-    <alloying energy="32768" exp="0.2">
+    <alloying energy="131072" exp="0.2">
       <input name="minecraft:glass"/><!-- don't oredict this one -->
       <input name="dyeBlack" amount="2"/>
       <output name="enderio:block_dark_fused_glass:0"/>
@@ -268,7 +314,7 @@
   </recipe>
 
   <recipe name="Alloy: Dark Fused Glass, Upgrade" required="true">
-    <alloying energy="32768" exp="0.2">
+    <alloying energy="131072" exp="0.2">
       <input name="enderio:block_fused_glass:0"/>
       <input name="dyeBlack" amount="2"/>
       <output name="enderio:block_dark_fused_glass:0"/>
@@ -376,7 +422,7 @@
   </recipe>
 
   <recipe name="Clayed Glowstone" required="true">
-    <alloying energy="32768">
+    <alloying energy="131072">
       <input name="dustGlowstone"/>
       <input name="oredict:itemClay"/>
       <output name="itemClayedGlowstone" amount="2"/>
@@ -384,7 +430,7 @@
   </recipe>
 
   <recipe name="Ender Pearl Nuggets" required="true">
-    <alloying energy="32768">
+    <alloying energy="131072">
       <input name="nuggetEnderpearl" amount="9"/>
       <output name="oredict:enderpearl"/>
     </alloying>
@@ -392,7 +438,7 @@
   </recipe>
 
   <recipe name="Chassis">
-    <alloying energy="32768" exp="1">
+    <alloying energy="131072" exp="1">
       <input name="SIMPLE_CHASSIS"/>
       <input name="dyeMachine"/>
       <output name="CHASSIS"/>
@@ -400,7 +446,7 @@
   </recipe>
 
   <recipe name="Enhanced Chassis">
-    <alloying energy="32768" exp="1">
+    <alloying energy="131072" exp="1">
       <input name="END_STEEL_CHASSIS"/>
       <input name="dyeEnhancedMachine"/>
       <output name="ENHANCED_CHASSIS"/>
@@ -408,7 +454,7 @@
   </recipe>
 
   <recipe name="Soul Chassis">
-    <alloying energy="32768" exp="1">
+    <alloying energy="131072" exp="1">
       <input name="SIMPLE_CHASSIS"/>
       <input name="dyeSoulMachine"/>
       <output name="SOUL_CHASSIS"/>
@@ -416,7 +462,7 @@
   </recipe>
   
   <recipe name="Alloy: Industrial Insulation" required="true">
-    <alloying energy="32768" exp="0.5">
+    <alloying energy="131072" exp="0.5">
       <input name="dustLapis"/>
       <input name="minecraft:wool"/>
       <input name="INSULATION_METAL"/>
@@ -425,7 +471,7 @@
   </recipe>
 
   <recipe name="Alloy: Nethercotta" required="true">
-    <alloying energy="65536" exp="1">
+    <alloying energy="262144" exp="1">
       <input name="ingotBrickNether"/>
       <input name="cropNetherWart" amount="4" />
       <input name="oredict:itemClay" amount="6" />
@@ -434,7 +480,7 @@
   </recipe>
 
   <recipe name="Infinity Goop" required="true">
-    <alloying energy="65536">
+    <alloying energy="262144">
       <input name="POWDER_INFINITY"/>
       <input name="dustCoal"/>
       <output name="INFINITY_GOOP"/>
@@ -442,7 +488,7 @@
   </recipe>
 
   <recipe name="Infinity Goop, Charcoal" required="false">
-    <alloying energy="65536">
+    <alloying energy="262144">
       <input name="POWDER_INFINITY"/>
       <input name="dustCharcoal"/>
       <output name="INFINITY_GOOP"/>
@@ -460,7 +506,7 @@
 
 
  <recipe name="Soul Binder: Attractor Crystal" required="true">
-    <soulbinding energy="262144" levels="4">
+    <soulbinding energy="1048576" levels="4">
       <input name="item:minecraft:emerald" />
       <soul name="minecraft:villager" />
       <output name="ATTRACTOR_CRYSTAL" />
@@ -468,7 +514,7 @@
   </recipe>
 
   <recipe name="Soul Binder: Ender Crystal" required="true">
-    <soulbinding energy="524288" levels="6">
+    <soulbinding energy="2097152" levels="6">
       <input name="VIBRANT_CRYSTAL" />
       <soul name="minecraft:enderman" />
       <output name="ENDER_CRYSTAL" />
@@ -476,7 +522,7 @@
   </recipe>
 
   <recipe name="Soul Binder: Patented Crystal" required="true">
-    <soulbinding energy="1048576" levels="8">
+    <soulbinding energy="4194304" levels="8">
       <input name="VIBRANT_CRYSTAL" />
       <soul name="minecraft:shulker" />
       <output name="PRECIENT_CRYSTAL" />
@@ -484,7 +530,7 @@
   </recipe>
 
   <recipe name="Soul Binder: Reanimation" required="true">
-    <soulbinding energy="262144" levels="4">
+    <soulbinding energy="1048576" levels="4">
       <input name="ZOMBIE_CONTROLLER" />
       <soul name="minecraft:zombie" />
       <soul name="minecraft:zombie_villager" />
@@ -494,7 +540,7 @@
   </recipe>
 
   <recipe name="Soul Binder: Sentient Ender" required="true">
-    <soulbinding energy="262144" levels="4">
+    <soulbinding energy="1048576" levels="4">
       <input name="ENDER_RESONATOR" />
       <soul name="minecraft:witch" />
       <soul name="enderzoo:witherwitch" />
@@ -504,35 +550,35 @@
   </recipe>
 
   <recipe name="Soul Binder: Broken Spawner" required="true">
-    <soulbinding energy="4194304" levels="8" logic="APPLY" souls="SPAWNABLE">
+    <soulbinding energy="16777216" levels="8" logic="APPLY" souls="SPAWNABLE">
       <input name="enderio:item_broken_spawner" />
       <output name="enderio:item_broken_spawner" />
     </soulbinding>
   </recipe>
 
   <recipe name="Soul Binder: Tuned Pressure Plate" required="true">
-    <soulbinding energy="524288" levels="2" logic="APPLY" souls="ALL">
+    <soulbinding energy="2097152" levels="2" logic="APPLY" souls="ALL">
       <input name="PPP_SOULARIUM, PPP_TUNED" />
       <output name="PPP_TUNED" />
     </soulbinding>
   </recipe>
 
   <recipe name="Soul Binder: Tuned Pressure Plate, Retuning" required="true">
-    <soulbinding energy="524288" levels="2" logic="APPLY" souls="ALL">
+    <soulbinding energy="2097152" levels="2" logic="APPLY" souls="ALL">
       <input name="PPP_SOULARIUM_SILENT, PPP_TUNED_SILENT" />
       <output name="PPP_TUNED_SILENT" />
     </soulbinding>
   </recipe>
 
   <recipe name="Soul Binder: Soul Filter" required="true">
-    <soulbinding energy="16777216" levels="12" logic="FILTER" souls="ALL">
+    <soulbinding energy="67108864" levels="12" logic="FILTER" souls="ALL">
       <input name="enderio:item_basic_item_filter" />
       <output name="enderio:item_soul_filter_normal" />
     </soulbinding>
   </recipe>
 
   <recipe name="Soul Binder: Big Soul Filter" required="true">
-    <soulbinding energy="16777216" levels="12" logic="FILTER" souls="ALL">
+    <soulbinding energy="67108864" levels="12" logic="FILTER" souls="ALL">
       <input name="enderio:item_big_item_filter" />
       <output name="enderio:item_soul_filter_big" />
     </soulbinding>
@@ -550,14 +596,14 @@
 
 
 <recipe name="Sagmill: Silicon" required="true">
-    <sagmilling energy="2048">
+    <sagmilling energy="32768">
       <input name="oredict:sand"/>
       <output name="itemSilicon" chance="0.5" />
     </sagmilling>
   </recipe>
 
   <recipe name="Sagmill: Coal" required="true">
-    <sagmilling energy="8192">
+    <sagmilling energy="65536">
       <input name="minecraft:coal:0"/>
       <output name="dustCoal" />
       <output name="dustCoal" chance="0.1" />
@@ -568,7 +614,7 @@
 
 
 <recipe name="Sagmill: Cobblestone" required="true">
-    <sagmilling energy="16384">
+    <sagmilling energy="65536">
       <input name="oredict:cobblestone"/>
       <output name="oredict:gravel" chance="0.7" />
       <output name="oredict:gravel" chance="0.3" />
@@ -578,7 +624,7 @@
   </recipe>
 
   <recipe name="Sagmill: Sandstone" required="true">
-    <sagmilling energy="16384" bonus="chance_only">
+    <sagmilling energy="65536" bonus="chance_only">
       <input name="oredict:sandstone"/>
       <output name="oredict:sand" amount="2" />
       <output name="oredict:sand" amount="2" chance="0.4" />
@@ -588,7 +634,7 @@
 
 
  <recipe name="Sagmill: Gravel" required="true">
-    <sagmilling energy="16384">
+    <sagmilling energy="65536">
       <input name="oredict:gravel"/>
       <output name="oredict:sand" chance="0.7" />
       <output name="oredict:sand" chance="0.3" />
@@ -599,7 +645,7 @@
 
 
 <recipe name="Sagmill: oreIron Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreIron" />
       <output name="POWDER_IRON" amount="2" />
       <output name="dustTin" chance="0.05" required="false" />
@@ -609,7 +655,7 @@
   </recipe>
 
 <recipe name="Sagmill: oreGold Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreGold" />
       <output name="dustGold" amount="2" />
       <output name="dustCopper" chance="0.2" required="false" />
@@ -618,7 +664,7 @@
   </recipe>
 
   <recipe name="Sagmill: oreCopper Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreCopper" />
       <output name="dustCopper" amount="2" />
       <output name="dustGold" chance="0.125" required="false" />
@@ -628,7 +674,7 @@
 
 
   <recipe name="Sagmill: oreTin Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreTin" />
       <output name="dustTin" amount="2" />
       <output name="oredict:cobblestone" chance="0.15" />
@@ -638,7 +684,7 @@
 
 
   <recipe name="Sagmill: oreLead Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreLead" />
       <output name="dustLead" amount="2" />
       <output name="dustSilver" chance="0.1" required="false" />
@@ -647,7 +693,7 @@
   </recipe>
 
    <recipe name="Sagmill: oreSilver Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreSilver" />
       <output name="dustSilver" amount="2" />
       <output name="dustLead" chance="0.1" required="false" />
@@ -656,7 +702,7 @@
   </recipe>
 
   <recipe name="Sagmill: oreNickel Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreNickel" />
       <output name="dustNickel" amount="2" />
       <output name="dustPlatinum" chance="0.1" required="false" />
@@ -665,7 +711,7 @@
   </recipe>
 
   <recipe name="Sagmill: oreAluminium Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreAluminium" />
       <output name="dustAluminium" amount="2" />
       <output name="oredict:cobblestone" chance="0.15" />
@@ -674,7 +720,7 @@
   </recipe>
 
    <recipe name="Sagmill: oreAluminum Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreAluminum" />
       <output name="dustAluminum" amount="2" />
       <output name="oredict:cobblestone" chance="0.15" />
@@ -683,7 +729,7 @@
   </recipe>
 
     <recipe name="Sagmill: oreNaturalAluminum Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreNaturalAluminum" />
       <output name="dustNaturalAluminum" amount="2" />
       <output name="oredict:cobblestone" chance="0.15" />
@@ -691,7 +737,7 @@
   </recipe>
 
   <recipe name="Sagmill: oreCoal Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreCoal" />
       <output name="minecraft:coal" amount="3" />
       <output name="dustCoal" chance="0.6" />
@@ -701,7 +747,7 @@
   </recipe>
 
   <recipe name="Sagmill: oreRedstone Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreRedstone" />
       <output name="dustRedstone" amount="8" />
       <output name="dustRedstone" chance="0.2" />
@@ -711,7 +757,7 @@
   </recipe>
 
     <recipe name="Sagmill: oreDiamond Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreDiamond, -railcraft:ore:2" />
       <output name="gemDiamond" amount="2" />
       <output name="gemDiamond" chance="0.25" />
@@ -721,7 +767,7 @@
   </recipe>
 
     <recipe name="Sagmill: oreEmerald Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreEmerald, -railcraft:ore:3" />
       <output name="gemEmerald" amount="2" />
       <output name="gemEmerald" chance="0.25" />
@@ -730,7 +776,7 @@
   </recipe>
 
     <recipe name="Sagmill: oreLapis Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreLapis, -railcraft:ore:4" />
       <output name="minecraft:dye:4" amount="8" />
       <output name="minecraft:dye:4" chance="0.2" />
@@ -739,7 +785,7 @@
   </recipe>
 
     <recipe name="Sagmill: quartz_ore Ore" required="true">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="minecraft:quartz_ore" />
       <output name="gemQuartz" amount="2" />
       <output name="POWDER_QUARTZ" chance="0.1" />
@@ -748,13 +794,12 @@
   </recipe>
 
    <recipe name="Sagmill: oreUranium Ore" required="false">
-    <sagmilling energy="32768">
+    <sagmilling energy="131072">
       <input name="oreUranium" />
       <output name="dustUranium" amount="2" />
       <output name="oredict:cobblestone" chance="0.15" />
     </sagmilling>
   </recipe>
-
 
 
 
