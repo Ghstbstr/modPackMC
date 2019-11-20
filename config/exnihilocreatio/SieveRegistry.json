@@ -320,6 +320,16 @@
       "meshLevel": 1
     },
     {
+      "drop": "<minecraft:brown_mushroom:-1>",
+      "chance": 0.05,
+      "meshLevel": 3
+    },
+    {
+      "drop": "<minecraft:red_mushroom:-1>",
+      "chance": 0.05,
+      "meshLevel": 3
+    },
+    {
       "drop": "<botania:fertilizer:-1>",
       "chance": 0.05,
       "meshLevel": 4
