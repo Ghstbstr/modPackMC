@@ -487,3 +487,20 @@ recipes.addShaped("SpawnEggSheep",sheepSpawn,[
 ]);
 
 recipes.addShapeless("LeatherToHide",rabbitHide,[leather,shears.anyDamage().transformDamage(15)]);
+
+//baubles
+val spectralSilt = <bountifulbaubles:spectralsilt>;
+val manaPowder = <botania:manaresource:23>;
+val psiDust = <psi:material>;
+val experienceBottle = <minecraft:experience_bottle>;
+
+recipes.addShaped("spectralSiltCrafting",spectralSilt,[
+    [manaPowder,manaPowder,manaPowder],
+    [glowstonedust,glowstonedust,glowstonedust],
+    [psiDust,psiDust,psiDust]
+]);
+
+
+
+
+
