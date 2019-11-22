@@ -3,6 +3,7 @@ import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
+import mods.enderio.AlloySmelter;
 
 
 val cactus=<minecraft:cactus>;
@@ -188,7 +189,6 @@ mods.immersiveengineering.Crusher.removeRecipe(gravel);
 mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,2048,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(sand,gravel,1024,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(slag,charCoal,4096,sulfur,0.1);
-mods.immersiveengineering.Crusher.addRecipe(null,uraniumGrit,16384,yellorium,0.2);
 mods.immersiveengineering.Crusher.addRecipe(dust,sand,512);
 
 //mixer
@@ -366,6 +366,10 @@ recipes.addShaped("FluidFilterConduit",enderIOEnderFluidConduit*4,[
 recipes.replaceAllOccurences(fusedQuartzGlass,netherstar,endervoir);
 enderIOEnderFluidConduit.displayName="Fluid Filter Conduit";
 
+val blockUranium = <immersiveengineering:storage:5>;
+val cyanite = <bigreactors:ingotcyanite>;
+
+mods.enderio.AlloySmelter.addRecipe(yellorium,[blockUranium,cyanite],4096000);
 
 //rfTools****************************************************
 val manyullyn = <tconstruct:ingots:2>;
