@@ -213,7 +213,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(silverGrit,industrialSalt,si
 mods.immersiveengineering.Refinery.addRecipe(uranylHydroxide*100,plumbumSludge*60,sulfuricAcid*50,512);
 mods.immersiveengineering.Refinery.addRecipe(alumina*170,ferrumLateriteSludge*125,sodiumHydroxide*50,256);
 mods.immersiveengineering.Refinery.addRecipe(silverNitrate*125,cuprumSludge*125,nitricAcid*50,256);
-mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,nitricAcid*50,512);
+mods.immersiveengineering.Refinery.addRecipe(uranNuclide*100,uranylHydroxide*50,acidumSulfoNitrosum*50,512);
 mods.immersiveengineering.Refinery.addRecipe(crystalSlury*150,carbonSlury*50,lava*100,256);
 mods.immersiveengineering.Refinery.addRecipe(arditicAcidumSulfoNitrosum*150,plumbumSludge*125,acidumSulfoNitrosum*100,512);
 mods.immersiveengineering.Refinery.addRecipe(acidumSulfoNitrosum*200,sulfuricAcid*50,nitricAcid*150,512);
