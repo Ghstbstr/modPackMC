@@ -29,7 +29,7 @@
 			<itemStack>advancedrocketry:planks 6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="100">
+	<Recipe timeRequired="300" power ="8192">
 		<input>
 			<itemStack>advancedrocketry:itemcircuitplate 1 1</itemStack>
 		</input>
@@ -37,7 +37,7 @@
 			<itemStack>advancedrocketry:ic 4 2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="100">
+	<Recipe timeRequired="300" power ="8192">
 		<input>
 			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
 		</input>
@@ -45,7 +45,7 @@
 			<itemStack>advancedrocketry:ic 4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="100">
+	<Recipe timeRequired="300" power ="8192">
 		<input>
 			<itemStack>libvulpes:productboule</itemStack>
 		</input>
