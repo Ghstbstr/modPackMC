@@ -236,7 +236,7 @@ mods.immersiveengineering.CokeOven.addRecipe(coal,1,charCoal,500);
 
 //metalpress
 mods.immersiveengineering.MetalPress.addRecipe(redstoneDust,sand,pressingMold,1024,16);
-mods.immersiveengineering.MetalPress.addRecipe(glowstonedust,dust,pressingMold,1024,32);
+mods.immersiveengineering.MetalPress.addRecipe(glowstonedust,dust,pressingMold,1024,16);
 mods.immersiveengineering.MetalPress.addRecipe(blazeRod,blazePowder,rodMold,1024,4);
 pressingMold.displayName="Metal Press Mold: Pressing";
 
