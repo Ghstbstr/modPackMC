@@ -262,7 +262,7 @@ recipes.replaceAllOccurences(HVwireCoil,melodicCapacitor,additionalCapacitorRail
 val steelReactors = <bigreactors:ingotsteel>;
 val blockSteelReactors = <bigreactors:blocksteel>;
 val ingotUranium = <immersiveengineering:metal:5>;
-val blockSteel = <immersiveengineering:storage:1>;????
+val blockSteel = <immersiveengineering:storage:8>;
 
 recipes.remove(steelReactors);
 recipes.remove(blockSteelReactors);

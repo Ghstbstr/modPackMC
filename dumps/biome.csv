@@ -1,0 +1,81 @@
+Registry Name,ID,Name,Temperature,Rainfall,Spawn Chance,Root Height,Height Variation,Types,Class
+minecraft:ocean,0,Ocean,0.5,0.5,0.1,-1.0,0.1,"OCEAN, WATER",net.minecraft.world.biome.BiomeOcean
+minecraft:plains,1,Plains,0.8,0.4,0.1,0.125,0.05,PLAINS,net.minecraft.world.biome.BiomePlains
+minecraft:desert,2,Desert,2.0,0.0,0.1,0.0125,0.05,"DRY, SANDY, HOT",net.minecraft.world.biome.BiomeDesert
+minecraft:extreme_hills,3,Extreme Hills,0.2,0.3,0.1,1.0,0.5,"HILLS, MOUNTAIN",net.minecraft.world.biome.BiomeHills
+minecraft:forest,4,Forest,0.7,0.8,0.1,0.1,0.2,FOREST,net.minecraft.world.biome.BiomeForest
+minecraft:taiga,5,Taiga,0.25,0.8,0.1,0.2,0.2,"COLD, FOREST, CONIFEROUS",net.minecraft.world.biome.BiomeTaiga
+minecraft:swampland,6,Swampland,0.8,0.9,0.1,-0.2,0.1,"SWAMP, WET",net.minecraft.world.biome.BiomeSwamp
+minecraft:river,7,River,0.5,0.5,0.1,-0.5,0.0,"WATER, RIVER",net.minecraft.world.biome.BiomeRiver
+minecraft:hell,8,Hell,2.0,0.0,0.1,0.1,0.2,"NETHER, DRY, HOT",net.minecraft.world.biome.BiomeHell
+minecraft:sky,9,The End,0.5,0.5,0.1,0.1,0.2,"COLD, END, DRY",net.minecraft.world.biome.BiomeEnd
+minecraft:frozen_ocean,10,FrozenOcean,0.0,0.5,0.1,-1.0,0.1,"COLD, OCEAN, SNOWY, WATER",net.minecraft.world.biome.BiomeOcean
+minecraft:frozen_river,11,FrozenRiver,0.0,0.5,0.1,-0.5,0.0,"COLD, SNOWY, WATER, RIVER",net.minecraft.world.biome.BiomeRiver
+minecraft:ice_flats,12,Ice Plains,0.0,0.5,0.07,0.125,0.05,"COLD, SNOWY, WASTELAND",net.minecraft.world.biome.BiomeSnow
+minecraft:ice_mountains,13,Ice Mountains,0.0,0.5,0.07,0.45,0.3,"COLD, SNOWY, MOUNTAIN",net.minecraft.world.biome.BiomeSnow
+minecraft:mushroom_island,14,MushroomIsland,0.9,1.0,0.1,0.2,0.3,"MUSHROOM, RARE",net.minecraft.world.biome.BiomeMushroomIsland
+minecraft:mushroom_island_shore,15,MushroomIslandShore,0.9,1.0,0.1,0.0,0.025,"BEACH, MUSHROOM, RARE",net.minecraft.world.biome.BiomeMushroomIsland
+minecraft:beaches,16,Beach,0.8,0.4,0.1,0.0,0.025,BEACH,net.minecraft.world.biome.BiomeBeach
+minecraft:desert_hills,17,DesertHills,2.0,0.0,0.1,0.45,0.3,"HILLS, DRY, SANDY, HOT",net.minecraft.world.biome.BiomeDesert
+minecraft:forest_hills,18,ForestHills,0.7,0.8,0.1,0.45,0.3,"FOREST, HILLS",net.minecraft.world.biome.BiomeForest
+minecraft:taiga_hills,19,TaigaHills,0.25,0.8,0.1,0.45,0.3,"COLD, FOREST, HILLS, CONIFEROUS",net.minecraft.world.biome.BiomeTaiga
+minecraft:smaller_extreme_hills,20,Extreme Hills Edge,0.2,0.3,0.1,0.8,0.3,MOUNTAIN,net.minecraft.world.biome.BiomeHills
+minecraft:jungle,21,Jungle,0.95,0.9,0.1,0.1,0.2,"DENSE, JUNGLE, HOT, WET",net.minecraft.world.biome.BiomeJungle
+minecraft:jungle_hills,22,JungleHills,0.95,0.9,0.1,0.45,0.3,"HILLS, DENSE, JUNGLE, HOT, WET",net.minecraft.world.biome.BiomeJungle
+minecraft:jungle_edge,23,JungleEdge,0.95,0.8,0.1,0.1,0.2,"FOREST, RARE, JUNGLE, HOT, WET",net.minecraft.world.biome.BiomeJungle
+minecraft:deep_ocean,24,Deep Ocean,0.5,0.5,0.1,-1.8,0.1,"OCEAN, WATER",net.minecraft.world.biome.BiomeOcean
+minecraft:stone_beach,25,Stone Beach,0.2,0.3,0.1,0.1,0.8,BEACH,net.minecraft.world.biome.BiomeStoneBeach
+minecraft:cold_beach,26,Cold Beach,0.05,0.3,0.1,0.0,0.025,"COLD, BEACH, SNOWY",net.minecraft.world.biome.BiomeBeach
+minecraft:birch_forest,27,Birch Forest,0.6,0.6,0.1,0.1,0.2,FOREST,net.minecraft.world.biome.BiomeForest
+minecraft:birch_forest_hills,28,Birch Forest Hills,0.6,0.6,0.1,0.45,0.3,"FOREST, HILLS",net.minecraft.world.biome.BiomeForest
+minecraft:roofed_forest,29,Roofed Forest,0.7,0.8,0.1,0.1,0.2,"SPOOKY, FOREST, DENSE",net.minecraft.world.biome.BiomeForest
+minecraft:taiga_cold,30,Cold Taiga,-0.5,0.4,0.1,0.2,0.2,"COLD, SNOWY, FOREST, CONIFEROUS",net.minecraft.world.biome.BiomeTaiga
+minecraft:taiga_cold_hills,31,Cold Taiga Hills,-0.5,0.4,0.1,0.45,0.3,"COLD, SNOWY, FOREST, HILLS, CONIFEROUS",net.minecraft.world.biome.BiomeTaiga
+minecraft:redwood_taiga,32,Mega Taiga,0.3,0.8,0.1,0.2,0.2,"COLD, FOREST, CONIFEROUS",net.minecraft.world.biome.BiomeTaiga
+minecraft:redwood_taiga_hills,33,Mega Taiga Hills,0.3,0.8,0.1,0.45,0.3,"COLD, FOREST, HILLS, CONIFEROUS",net.minecraft.world.biome.BiomeTaiga
+minecraft:extreme_hills_with_trees,34,Extreme Hills+,0.2,0.3,0.1,1.0,0.5,"FOREST, SPARSE, MOUNTAIN",net.minecraft.world.biome.BiomeHills
+minecraft:savanna,35,Savanna,1.2,0.0,0.1,0.125,0.05,"PLAINS, SPARSE, SAVANNA, HOT",net.minecraft.world.biome.BiomeSavanna
+minecraft:savanna_rock,36,Savanna Plateau,1.0,0.0,0.1,1.5,0.025,"RARE, PLAINS, SPARSE, SAVANNA, HOT",net.minecraft.world.biome.BiomeSavanna
+minecraft:mesa,37,Mesa,2.0,0.0,0.1,0.1,0.2,"MESA, SANDY, DRY",net.minecraft.world.biome.BiomeMesa
+minecraft:mesa_rock,38,Mesa Plateau F,2.0,0.0,0.1,1.5,0.025,"MESA, SPARSE, SANDY, DRY",net.minecraft.world.biome.BiomeMesa
+minecraft:mesa_clear_rock,39,Mesa Plateau,2.0,0.0,0.1,1.5,0.025,"MESA, SANDY, DRY",net.minecraft.world.biome.BiomeMesa
+randomthings:spectral,40,Spectral,0.2,0.5,0.1,0.1,0.2,MAGICAL,lumien.randomthings.biomes.BiomeSpectral
+defiledlands:desert_defiled,41,Defiled Desert,2.0,0.0,0.13,0.125,0.05,"SPOOKY, DRY, SANDY, HOT",lykrast.defiledlands.common.world.biome.BiomeDesertDefiled
+defiledlands:plains_defiled,42,Defiled Plains,0.8,0.4,0.13,0.125,0.05,"SPOOKY, PLAINS",lykrast.defiledlands.common.world.biome.BiomePlainsDefiled
+defiledlands:forest_tenebra,43,Tenebra Forest,0.7,0.8,0.13,0.1,0.2,"SPOOKY, FOREST",lykrast.defiledlands.common.world.biome.BiomeForestTenebra
+defiledlands:forest_vilespine,44,Vilespine Forest,0.7,0.8,0.13,0.1,0.2,"SPOOKY, FOREST",lykrast.defiledlands.common.world.biome.BiomeForestVilespine
+defiledlands:hills_defiled,45,Defiled Hills,0.2,0.3,0.13,1.0,0.5,"SPOOKY, HILLS, MOUNTAIN",lykrast.defiledlands.common.world.biome.BiomeHillsDefiled
+defiledlands:swamp_defiled,46,Defiled Swamp,0.8,0.9,0.13,-0.2,0.1,"SPOOKY, SWAMP, WET",lykrast.defiledlands.common.world.biome.BiomeSwampDefiled
+defiledlands:ice_plains_defiled,47,Defiled Ice Plains,0.0,0.5,0.13,0.125,0.05,"SPOOKY, COLD, SNOWY, WASTELAND",lykrast.defiledlands.common.world.biome.BiomeIcePlainsDefiled
+advancedrocketry:moon,48,Moon,0.3,0.0,0.0,1.0,0.2,"COLD, WASTELAND, DRY",zmaster587.advancedRocketry.world.biome.BiomeGenMoon
+advancedrocketry:alien forest,49,Alien Forest,0.5,0.5,0.1,0.1,0.2,"FOREST, MAGICAL",zmaster587.advancedRocketry.world.biome.BiomeGenAlienForest
+advancedrocketry:hotdryrock,50,HotDryRock,0.9,0.0,0.0,1.0,0.01,"COLD, WASTELAND, DRY",zmaster587.advancedRocketry.world.biome.BiomeGenHotDryRock
+advancedrocketry:space,51,Space,1.0,0.5,0.0,-2.0,0.0,VOID,zmaster587.advancedRocketry.world.biome.BiomeGenSpace
+advancedrocketry:stormland,52,Stormland,0.9,0.9,1.0,1.0,0.1,"WASTELAND, WET, HOT",zmaster587.advancedRocketry.world.biome.BiomeGenStormland
+advancedrocketry:crystalchasms,53,CrystalChasms,0.1,0.2,0.1,1.0,0.1,"COLD, PLAINS",zmaster587.advancedRocketry.world.biome.BiomeGenCrystal
+advancedrocketry:deepswamp,54,DeepSwamp,0.9,0.9,0.1,-0.1,0.2,"WET, HOT",zmaster587.advancedRocketry.world.biome.BiomeGenDeepSwamp
+advancedrocketry:marsh,55,Marsh,0.5,0.5,0.1,-0.4,0.0,"WET, HOT",zmaster587.advancedRocketry.world.biome.BiomeGenMarsh
+advancedrocketry:oceanspires,56,OceanSpires,0.5,0.5,0.1,-0.5,0.0,"OCEAN, WATER",zmaster587.advancedRocketry.world.biome.BiomeGenOceanSpires
+advancedrocketry:moondark,57,MoonDark,0.3,0.0,0.0,0.5,0.01,"COLD, WASTELAND, DRY",zmaster587.advancedRocketry.world.biome.BiomeGenMoonDark
+minecraft:void,127,The Void,0.5,0.5,0.1,0.1,0.2,VOID,net.minecraft.world.biome.BiomeVoid
+minecraft:mutated_plains,129,Sunflower Plains,0.8,0.4,0.1,0.125,0.05,"RARE, PLAINS",net.minecraft.world.biome.BiomePlains
+minecraft:mutated_desert,130,Desert M,2.0,0.0,0.1,0.225,0.25,"RARE, DRY, SANDY, HOT",net.minecraft.world.biome.BiomeDesert
+minecraft:mutated_extreme_hills,131,Extreme Hills M,0.2,0.3,0.1,1.0,0.5,"RARE, SPARSE, MOUNTAIN",net.minecraft.world.biome.BiomeHills
+minecraft:mutated_forest,132,Flower Forest,0.7,0.8,0.1,0.1,0.4,"FOREST, RARE, HILLS",net.minecraft.world.biome.BiomeForest
+minecraft:mutated_taiga,133,Taiga M,0.25,0.8,0.1,0.3,0.4,"COLD, FOREST, RARE, CONIFEROUS, MOUNTAIN",net.minecraft.world.biome.BiomeTaiga
+minecraft:mutated_swampland,134,Swampland M,0.8,0.9,0.1,-0.1,0.3,"RARE, HILLS, SWAMP, WET",net.minecraft.world.biome.BiomeSwamp
+minecraft:mutated_ice_flats,140,Ice Plains Spikes,0.0,0.5,0.07,0.425,0.45000002,"COLD, SNOWY, RARE, HILLS",net.minecraft.world.biome.BiomeSnow
+minecraft:mutated_jungle,149,Jungle M,0.95,0.9,0.1,0.2,0.4,"RARE, DENSE, JUNGLE, MOUNTAIN, HOT, WET",net.minecraft.world.biome.BiomeJungle
+minecraft:mutated_jungle_edge,151,JungleEdge M,0.95,0.8,0.1,0.2,0.4,"RARE, HILLS, SPARSE, JUNGLE, HOT",net.minecraft.world.biome.BiomeJungle
+minecraft:mutated_birch_forest,155,Birch Forest M,0.6,0.6,0.1,0.2,0.4,"FOREST, RARE, HILLS, DENSE",net.minecraft.world.biome.BiomeForestMutated
+minecraft:mutated_birch_forest_hills,156,Birch Forest Hills M,0.6,0.6,0.1,0.55,0.5,"FOREST, RARE, DENSE, MOUNTAIN",net.minecraft.world.biome.BiomeForestMutated
+minecraft:mutated_roofed_forest,157,Roofed Forest M,0.7,0.8,0.1,0.2,0.4,"SPOOKY, FOREST, RARE, DENSE, MOUNTAIN",net.minecraft.world.biome.BiomeForest
+minecraft:mutated_taiga_cold,158,Cold Taiga M,-0.5,0.4,0.1,0.3,0.4,"COLD, SNOWY, FOREST, RARE, CONIFEROUS, MOUNTAIN",net.minecraft.world.biome.BiomeTaiga
+minecraft:mutated_redwood_taiga,160,Mega Spruce Taiga,0.25,0.8,0.1,0.2,0.2,"FOREST, RARE, DENSE",net.minecraft.world.biome.BiomeTaiga
+minecraft:mutated_redwood_taiga_hills,161,Redwood Taiga Hills M,0.25,0.8,0.1,0.2,0.2,"FOREST, RARE, HILLS, DENSE",net.minecraft.world.biome.BiomeTaiga
+minecraft:mutated_extreme_hills_with_trees,162,Extreme Hills+ M,0.2,0.3,0.1,1.0,0.5,"RARE, SPARSE, MOUNTAIN",net.minecraft.world.biome.BiomeHills
+minecraft:mutated_savanna,163,Savanna M,1.1,0.0,0.1,0.3625,1.225,"RARE, SPARSE, SAVANNA, DRY, MOUNTAIN, HOT",net.minecraft.world.biome.BiomeSavannaMutated
+minecraft:mutated_savanna_rock,164,Savanna Plateau M,1.0,0.0,0.1,1.05,1.2125001,"RARE, HILLS, SPARSE, SAVANNA, DRY, HOT",net.minecraft.world.biome.BiomeSavannaMutated
+minecraft:mutated_mesa,165,Mesa (Bryce),2.0,0.0,0.1,0.1,0.2,"RARE, SPARSE, DRY, MOUNTAIN, HOT",net.minecraft.world.biome.BiomeMesa
+minecraft:mutated_mesa_rock,166,Mesa Plateau F M,2.0,0.0,0.1,0.45,0.3,"RARE, HILLS, SPARSE, DRY, HOT",net.minecraft.world.biome.BiomeMesa
+minecraft:mutated_mesa_clear_rock,167,Mesa Plateau M,2.0,0.0,0.1,0.45,0.3,"RARE, SPARSE, DRY, MOUNTAIN, HOT",net.minecraft.world.biome.BiomeMesa

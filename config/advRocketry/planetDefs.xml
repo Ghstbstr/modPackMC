@@ -17,21 +17,21 @@
                 <orbitalDistance>100</orbitalDistance>
                 <orbitalTheta>190</orbitalTheta>
                 <rotationalPeriod>48000</rotationalPeriod>
-                <biomeIds>110</biomeIds>
+                <biomeIds>48</biomeIds>
             </planet>
         </planet>
 
-        <planet name="Borumg" DIMID="10" customIcon="GasGiantBlue">
-            <fogColor>0.1,1,0.7</fogColor>
-            <skyColor>0.05,0.3,0.2</skyColor>
-            <atmosphereDensity>200</atmosphereDensity>
+        <planet name="Borumg" DIMID="10" dimMapping="10" customIcon="GasGiantBlue">
+            <fogColor>0.41,0.92,0.15</fogColor>
+            <skyColor>0.41,0.92,0.15</skyColor>
+            <atmosphereDensity>70</atmosphereDensity>
             <gravitationalMultiplier>100</gravitationalMultiplier>
             <orbitalDistance>120</orbitalDistance>
             <orbitalTheta>160</orbitalTheta>
             <orbitalPhi>90</orbitalPhi>
-            <rotationalPeriod>36000</rotationalPeriod>
-            <biomeIds>Tenebra Forest</biomeIds>    
-            <fillerBlock>stoneDefiled</fillerBlock>    
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>43,44,46,45,1</biomeIds>
+            <oceanBlock>Minecraft:lava</oceanBlock>
             <planet name="Valveon" DIMID="11" customIcon="IceWorld">
                 <fogColor>1,1,1</fogColor>
                 <skyColor>0,0.2,0.1</skyColor>
@@ -40,22 +40,20 @@
                 <orbitalDistance>120</orbitalDistance>
                 <orbitalTheta>75</orbitalTheta>
                 <rotationalPeriod>12000</rotationalPeriod>
-                <biomeIds>46</biomeIds>
+                <biomeIds>53</biomeIds>
             </planet>                
         </planet>
 
         <planet name="Pyrithrol" DIMID="20" customIcon="GasGiantRed">
-            <fogColor>1,0.1,0.2</fogColor>
-            <skyColor>1,0.2,0.4</skyColor>
+            <fogColor>1,0.2,0.2</fogColor>
+            <skyColor>1,0.2,0.2</skyColor>
             <atmosphereDensity>125</atmosphereDensity>
             <gravitationalMultiplier>150</gravitationalMultiplier>
             <orbitalDistance>40</orbitalDistance>
             <orbitalTheta>60</orbitalTheta>
             <orbitalPhi>60</orbitalPhi>
             <rotationalPeriod>48000</rotationalPeriod>
-            <biomeIds>47</biomeIds>    
-            <fillerBlock>minecraft:netherrack</fillerBlock>    
-            <oceanBlock>Minecraft:lava</oceanBlock>       
+            <biomeIds>52,55,7</biomeIds>   
             <spawnable weight="2" groupMin="1" groupMax="5">minecraft:blaze</spawnable>
             <spawnable weight="1" groupMin="1" groupMax="5">minecraft:wither_skeleton</spawnable>
             <planet name="Terebus" DIMID="21" customIcon="MarsLike">
@@ -66,14 +64,13 @@
                 <orbitalDistance>120</orbitalDistance>
                 <orbitalTheta>75</orbitalTheta>
                 <rotationalPeriod>12000</rotationalPeriod>
-                <biomeIds>110Hot Dry Rock</biomeIds>
+                <biomeIds>50</biomeIds>
             </planet>      
         </planet>
 
         <planet name="Ganimed" DIMID="30" customIcon="IceWorld">      
-            <artifact>GanimedWarpItem</artifact>   
             <hasRings>true</hasRings>
-            <fogColor>0.5,0.5,1</fogColor>
+            <fogColor>0,0,1</fogColor>
             <skyColor>0,0,1</skyColor>
             <atmosphereDensity>80</atmosphereDensity>
             <gravitationalMultiplier>90</gravitationalMultiplier>
@@ -86,10 +83,9 @@
         </planet>
 
         <planet name="Hyperion" DIMID="40" customIcon="EarthLike">      
-            <artifact>HyperionWarpItem</artifact>   
             <hasRings>true</hasRings>
             <fogColor>0.75,0.2,1</fogColor>
-            <skyColor>0.5,0,1</skyColor>
+            <skyColor>0.75,0.2,1</skyColor>
             <atmosphereDensity>115</atmosphereDensity>
             <gravitationalMultiplier>100</gravitationalMultiplier>
             <orbitalDistance>85</orbitalDistance>
@@ -97,11 +93,10 @@
             <orbitalPhi>45</orbitalPhi>
             <hasRings>true</hasRings>
             <rotationalPeriod>24000</rotationalPeriod>
-            <biomeIds>42</biomeIds>
+            <biomeIds>49</biomeIds>
         </planet>
 
-        <planet name="Homelands" DIMID="50" customIcon="EarthLike">   
-            <artifact>HomeworldWarpItem</artifact>  
+        <planet name="Homelands" DIMID="50" customIcon="EarthLike">
             <isKnown>True</isKnown>  
             <fogColor>0.5,0.5,1</fogColor>
             <skyColor>0,0,1</skyColor>
@@ -121,7 +116,8 @@
                 <orbitalDistance>80</orbitalDistance>
                 <orbitalTheta>0</orbitalTheta>
                 <rotationalPeriod>36000</rotationalPeriod>
-                <biomeIds>110</biomeIds>
+                <biomeIds>48</biomeIds>
             </planet>
         </planet>
     </star>
+</galaxy>
