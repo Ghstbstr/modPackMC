@@ -21,7 +21,7 @@
             </planet>
         </planet>
 
-        <planet name="Borumg" DIMID="10" dimMapping="10" customIcon="GasGiantBlue">
+        <planet name="Tenebar" DIMID="10" dimMapping="10" customIcon="GasGiantBlue">
             <fogColor>0.41,0.92,0.15</fogColor>
             <skyColor>0.41,0.92,0.15</skyColor>
             <atmosphereDensity>70</atmosphereDensity>
@@ -40,7 +40,7 @@
                 <orbitalDistance>120</orbitalDistance>
                 <orbitalTheta>75</orbitalTheta>
                 <rotationalPeriod>12000</rotationalPeriod>
-                <biomeIds>53</biomeIds>
+                <biomeIds>140</biomeIds>
             </planet>                
         </planet>
 
@@ -70,8 +70,8 @@
 
         <planet name="Ganimed" DIMID="30" customIcon="IceWorld">      
             <hasRings>true</hasRings>
-            <fogColor>0,0,1</fogColor>
-            <skyColor>0,0,1</skyColor>
+            <fogColor>0.8,0.8,1</fogColor>
+            <skyColor>0.8,0.8,1</skyColor>
             <atmosphereDensity>80</atmosphereDensity>
             <gravitationalMultiplier>90</gravitationalMultiplier>
             <orbitalDistance>190</orbitalDistance>
@@ -79,7 +79,7 @@
             <orbitalPhi>270</orbitalPhi>
             <hasRings>true</hasRings>
             <rotationalPeriod>24000</rotationalPeriod>
-            <biomeIds>140,30</biomeIds>
+            <biomeIds>30</biomeIds>
         </planet>
 
         <planet name="Hyperion" DIMID="40" customIcon="EarthLike">      
