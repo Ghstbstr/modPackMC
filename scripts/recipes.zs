@@ -396,7 +396,7 @@ recipes.replaceAllOccurences(magmaShard,blazeRod);
 recipes.replaceAllOccurences(packedIce,iceCube,coolingGoo);
 
 
-//openModularTurrets
+//openModularTurrets*********************************************************
 val electricalSteel = <enderio:item_alloy_ingot>;
 val capacitorT1 = <enderio:item_basic_capacitor>;
 
@@ -443,7 +443,7 @@ recipes.replaceAllOccurences(electricalSteel,iron,turretSensor2);
 
 
 
-//vanillaSpawns:
+//vanillaSpawns:*********************************************************
 val chickenSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}});
 val cowSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
 val pigSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:pig"}});
@@ -488,3 +488,37 @@ recipes.addShaped("SpawnEggSheep",sheepSpawn,[
 ]);
 
 recipes.addShapeless("LeatherToHide",rabbitHide,[leather,shears.anyDamage().transformDamage(15)]);
+
+//environmentalTech:*********************************************************
+
+
+/*
+<environmentaltech:erodium_crystal>
+<environmentaltech:kyronite_crystal>
+<environmentaltech:pladium_crystal>
+<environmentaltech:ionite_crystal>
+<environmentaltech:aethium_crystal>
+
+<environmentaltech:structure_frame_1>
+<environmentaltech:structure_frame_2>
+<environmentaltech:structure_frame_6>
+<environmentaltech:structure_frame_3>
+<environmentaltech:structure_frame_4>
+<environmentaltech:structure_frame_5>
+*/
+
+val lightningRenaming = [
+    <environmentaltech:lightning_cont_4>,
+    <environmentaltech:lightning_cont_5>,
+    <environmentaltech:lightning_cont_2>,
+    <environmentaltech:lightning_cont_3>,
+    <environmentaltech:lightning_cont_1>,
+    <environmentaltech:lightning_cont_6>,
+    <environmentaltech:lightning_rod>,
+    <environmentaltech:lightning_rod_insulated>
+] as IItemStack[];
+
+for item in lightningRenaming {
+    item.displayName="Radioactive " ~ item.displayName;
+}
+
