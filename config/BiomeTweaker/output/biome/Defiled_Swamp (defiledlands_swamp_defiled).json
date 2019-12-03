@@ -23,8 +23,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "SPOOKY",
-    "SWAMP",
-    "WET"
+    "WET",
+    "SWAMP"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

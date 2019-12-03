@@ -22,9 +22,9 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
+    "DRY",
     "HOT",
-    "NETHER",
-    "DRY"
+    "NETHER"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -52,12 +52,6 @@
       "Weight": 1,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "sblectric.lightningcraft.entities.EntityDemonSoldier",
-      "Weight": 15,
-      "Min Group Count": 1,
-      "Max Group Count": 2
     }
   ],
   "Spawnable Water Creatures": [],

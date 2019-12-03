@@ -88,6 +88,14 @@ val nitrate = <immersiveengineering:material:24>;
 val cobaltDust = <enderio:item_material:31>;
 val arditeDust = <enderio:item_material:30>;
 val blackPowder = <enderio:item_material:50>;
+val redstoneDust = <minecraft:redstone>;
+val pressingMold =  <immersiveengineering:mold:6>;
+val grainsOfInfinity = <enderio:item_material:20>;
+val yellorium = <bigreactors:dustyellorium>;
+val glowstonedust = <minecraft:glowstone_dust>;
+val blazePowder = <minecraft:blaze_powder>;
+val blazeRod = <minecraft:blaze_rod>;
+val rodMold = <immersiveengineering:mold:2>;
 
 recipes.addShaped("CharcoalColor",blackPowder*4,[
     [charCoal,charCoal,charCoal],
@@ -119,14 +127,6 @@ val arditicAcidumSulfoNitrosum = <liquid:glowing_water_orange>;
 val acidumSulfoNitrosum = <liquid:glowing_water_pink>;
 val temp4 = <liquid:glowing_water_purple>;
 val silverNitrate = <liquid:glowing_water_silver>;
-val redstoneDust = <minecraft:redstone>;
-val pressingMold =  <immersiveengineering:mold:6>;
-val grainsOfInfinity = <enderio:item_material:20>;
-val yellorium = <bigreactors:ingotyellorium>;
-val glowstonedust = <minecraft:glowstone_dust>;
-val blazePowder = <minecraft:blaze_powder>;
-val blazeRod = <minecraft:blaze_rod>;
-val rodMold = <immersiveengineering:mold:2>;
 
 val cuprumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_orange", Amount: 1000});
 val silverNitrateBucket = <forge:bucketfilled>.withTag({FluidName: "glowing_water_silver", Amount: 1000});
