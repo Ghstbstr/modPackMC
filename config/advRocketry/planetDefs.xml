@@ -37,7 +37,7 @@
                 <skyColor>0,0.2,0.1</skyColor>
                 <atmosphereDensity>25</atmosphereDensity>
                 <gravitationalMultiplier>75</gravitationalMultiplier>
-                <orbitalDistance>120</orbitalDistance>
+                <orbitalDistance>180</orbitalDistance>
                 <orbitalTheta>75</orbitalTheta>
                 <rotationalPeriod>12000</rotationalPeriod>
                 <biomeIds>140</biomeIds>
@@ -45,15 +45,16 @@
         </planet>
 
         <planet name="Pyrithrol" DIMID="20" customIcon="GasGiantRed">
-            <fogColor>1,0.2,0.2</fogColor>
-            <skyColor>1,0.2,0.2</skyColor>
+            <skyColor>0.6,0.2,0.2</skyColor>
             <atmosphereDensity>125</atmosphereDensity>
             <gravitationalMultiplier>150</gravitationalMultiplier>
             <orbitalDistance>40</orbitalDistance>
             <orbitalTheta>60</orbitalTheta>
             <orbitalPhi>60</orbitalPhi>
             <rotationalPeriod>48000</rotationalPeriod>
-            <biomeIds>52,55,7</biomeIds>   
+            <biomeIds>25</biomeIds>   
+            <oceanBlock>Minecraft:lava</oceanBlock>
+            <seaLevel>70</seaLevel>
             <spawnable weight="2" groupMin="1" groupMax="5">minecraft:blaze</spawnable>
             <spawnable weight="1" groupMin="1" groupMax="5">minecraft:wither_skeleton</spawnable>
             <planet name="Terebus" DIMID="21" customIcon="MarsLike">

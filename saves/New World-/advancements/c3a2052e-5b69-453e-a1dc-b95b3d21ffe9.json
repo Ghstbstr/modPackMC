@@ -1,19 +1,14 @@
 {
   "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_lots_of_items": "2019-12-02 20:44:31 +0100"
-    },
-    "done": true
-  },
-  "defiledlands:recipes/misc/foul_candy": {
-    "criteria": {
-      "has_material": "2019-12-02 20:59:10 +0100"
+      "has_lots_of_items": "2019-12-03 20:58:49 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "taiga": "2019-12-02 20:44:31 +0100"
+      "river": "2019-12-03 20:58:49 +0100",
+      "stone_beach": "2019-12-03 21:00:21 +0100"
     },
     "done": false
   }
