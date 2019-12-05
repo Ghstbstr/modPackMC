@@ -52,9 +52,9 @@
             <orbitalTheta>60</orbitalTheta>
             <orbitalPhi>60</orbitalPhi>
             <rotationalPeriod>48000</rotationalPeriod>
-            <biomeIds>25</biomeIds>   
+            <biomeIds>53</biomeIds>   
             <oceanBlock>Minecraft:lava</oceanBlock>
-            <seaLevel>70</seaLevel>
+            <seaLevel>79</seaLevel>
             <spawnable weight="2" groupMin="1" groupMax="5">minecraft:blaze</spawnable>
             <spawnable weight="1" groupMin="1" groupMax="5">minecraft:wither_skeleton</spawnable>
             <planet name="Terebus" DIMID="21" customIcon="MarsLike">
