@@ -3,6 +3,7 @@ import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
+import mods.contenttweaker.Fluid;
 
 
 val cactus=<minecraft:cactus>;
@@ -33,11 +34,10 @@ recipes.addShapeless("EnchantmentTableToObsidian",obsidian,[enchantmentTable]);
 
 //tinker**************************************************************************************
 val steelTinker=<tcomplement:materials:10>;
-val blockSteelTiner=<tcomplement:storage:1>;
+val blockSteelTinker=<tcomplement:storage:1>;
 
 recipes.remove(steelTinker);
-recipes.remove(blockSteelTiner);
-
+recipes.remove(blockSteelTinker);
 //exnihilo**************************
 val dust = <exnihilocreatio:block_dust>;
 
@@ -276,6 +276,8 @@ val steelExchangeItems = [
     <bigreactors:reactorcasing>,
     <bigreactors:turbinerotorblade>,
     <bigreactors:reactorcasingcores>,
+    <bigreactors:turbinecasingcores>,
+    <bigreactors:turbinecasing>,
     <bigreactors:reactorcontroller>,
     <bigreactors:turbinerotorshaft>,
     <bigreactors:reactoraccessport>,
@@ -491,7 +493,6 @@ recipes.addShapeless("LeatherToHide",rabbitHide,[leather,shears.anyDamage().tran
 
 //environmentalTech:*********************************************************
 
-
 /*
 <environmentaltech:erodium_crystal>
 <environmentaltech:kyronite_crystal>
@@ -521,4 +522,35 @@ val lightningRenaming = [
 for item in lightningRenaming {
     item.displayName="Radioactive " ~ item.displayName;
 }
+
+
+
+
+//advancedRocketry:*********************************************************
+val moltenUranium = <liquid:molten_uranium>;?
+val moltenYellorium = <liquid:molten_yellorium>;?
+
+mods.contenttweaker.VanillaFactory.createFluid("pyrithroleum", 13382400);
+val pyrithroleum = <liquid:pyrithroleum>;
+pyrithroleum.density = 250;
+pyrithroleum.luminosity = 5;
+pyrithroleum.temperature = 2500;
+pyrithroleum.viscosity = 500;
+val lavaMaterial = <blockmaterial:lava>;
+pyrithroleum.material = lavaMaterial;
+pyrithroleum.fluidName = "Pyrithroleum"
+pyrithroleum.register();
+
+val pyrithroleumBucket = <forge:bucketfilled>.withTag({FluidName: "pyrithroleum", Amount: 1000});
+val crudeOilBucket = <forge:bucketfilled>.withTag({FluidName: "crudeOil", Amount: 1000});?
+val lavaBucket = <forge:bucketfilled>.withTag({FluidName: "lava", Amount: 1000});?
+
+recipes.addShaped("pyrithroleumCrafting",pyrithroleumBucket,[
+    [lavaBucket,blazePowder,lavaBucket],
+    [grainsOfInfinity,crudeOilBucket.noReturn(),grainsOfInfinity],
+    [lavaBucket,blazePowder,lavaBucket]
+]);
+
+mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:molten_steel>*1000, 80, 65536, pyrithroleum*250, <liquid:molten_iron>*750);????
+
 
