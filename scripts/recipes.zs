@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import mods.contenttweaker.Fluid;
+import mods.enderio.SagMill;
 
 
 val cactus=<minecraft:cactus>;
@@ -188,7 +189,7 @@ mods.immersiveengineering.Crusher.removeRecipe(gravel);
 mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,2048,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(sand,gravel,1024,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(slag,charCoal,4096,sulfur,0.1);
-mods.immersiveengineering.Crusher.addRecipe(null,uraniumGrit,16384,yellorium,0.2);
+//mods.immersiveengineering.Crusher.addRecipe(null,uraniumGrit,16384,yellorium,0.2);
 mods.immersiveengineering.Crusher.addRecipe(dust,sand,512);
 
 //mixer
@@ -552,5 +553,93 @@ recipes.addShaped("pyrithroleumCrafting",pyrithroleumBucket,[
 ]);
 
 mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:molten_steel>*1000, 80, 65536, pyrithroleum*250, <liquid:molten_iron>*750);????
+
+val rutilOre = <>???
+val ironOre = <minecraft:ironore>;?
+var ironVein = Excavator.getMineral("Iron_Ore");
+val chlor = <>;?
+val moltenTitanium = <liquid:molten_titanium>;?
+
+mods.contenttweaker.VanillaFactory.createFluid("liquifiedtitaniumdioxide", 15921906);
+val liquifidetitaniumdioxide = <liquid:liquifiedtitaniumdioxide>;
+liquifidetitaniumdioxide.density = 1000;
+liquifidetitaniumdioxide.luminosity = 1;
+liquifidetitaniumdioxide.temperature = 500;
+liquifidetitaniumdioxide.viscosity = 1250;
+val waterMaterial = <blockmaterial:water>;
+liquifidetitaniumdioxide.material = waterMaterial;
+liquifidetitaniumdioxide.fluidName = "Liquified Titaniumdioxide"
+liquifidetitaniumdioxide.register();
+val liquifiedtitaniumdioxideBucket = <forge:bucketfilled>.withTag({FluidName: "liquifiedtitaniumdioxide", Amount: 1000});?
+
+mods.contenttweaker.VanillaFactory.createFluid("titaniumtetrachloridecarbonmonoxide", 3355443);
+val titaniumtetrachloridecarbonmonoxide = <liquid:titaniumtetrachloridecarbonmonoxide>;
+titaniumtetrachloridecarbonmonoxide.density = 1000;
+titaniumtetrachloridecarbonmonoxide.luminosity = 1;
+titaniumtetrachloridecarbonmonoxide.temperature = 500;
+titaniumtetrachloridecarbonmonoxide.viscosity = 1250;
+val waterMaterial = <blockmaterial:water>;
+titaniumtetrachloridecarbonmonoxide.material = waterMaterial;
+titaniumtetrachloridecarbonmonoxide.fluidName = "Titaniumtetrachloridecarbonmonoxide"
+titaniumtetrachloridecarbonmonoxide.register();
+val titaniumtetrachloridecarbonmonoxideBucket = <forge:bucketfilled>.withTag({FluidName: "titaniumtetrachloridecarbonmonoxide", Amount: 1000});?
+
+mods.contenttweaker.VanillaFactory.createFluid("titaniumtetrachloride", 13227478);
+val titaniumtetrachloride = <liquid:titaniumtetrachloride>;
+titaniumtetrachloride.density = 1000;
+titaniumtetrachloride.luminosity = 1;
+titaniumtetrachloride.temperature = 500;
+titaniumtetrachloride.viscosity = 1250;
+val waterMaterial = <blockmaterial:water>;
+titaniumtetrachloride.material = waterMaterial;
+titaniumtetrachloride.fluidName = "Titaniumtetrachloride"
+titaniumtetrachloride.register();
+val titantetrachloridBucket = <forge:bucketfilled>.withTag({FluidName: "titaniumtetrachloride", Amount: 1000});?
+
+mods.contenttweaker.VanillaFactory.createFluid("liquifiedcarbonmonoxide", 1710618);
+val liquifidecarbonmonoxide = <liquid:liquifiedcarbonmonoxide>;
+liquifidecarbonmonoxide.density = 1000;
+liquifidecarbonmonoxide.luminosity = 1;
+liquifidecarbonmonoxide.temperature = 500;
+liquifidecarbonmonoxide.viscosity = 1250;
+val waterMaterial = <blockmaterial:water>;
+liquifidecarbonmonoxide.material = waterMaterial;
+liquifidecarbonmonoxide.fluidName = "Liquified Carbonmonoxide"
+liquifidecarbonmonoxide.register();
+val liquifidecarbonmonoxideBucket = <forge:bucketfilled>.withTag({FluidName: "liquifiedcarbonmonoxide", Amount: 1000});?
+
+
+
+//mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+// this: mods.enderio.SagMill.addRecipe([ironGrit,rutilOre], [0.95,0.05], ironOre, "NONE", 65536, 0.0);
+//or ironVein.addOre("rutilOre", 0.05);
+
+mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:molten_steel>*1000, 400, 65536, pyrithroleum*250, <liquid:molten_iron>*750);????
+
+//Titanium Crafting:
+mods.immersiveengineering.Mixer.addRecipe(titaniumtetrachloridecarbonmonoxide*1000,liquifidetitaniumdioxide*1000,[coal,chlor],8192);
+mods.advancedrocketry.Electrolyser.addRecipe(titaniumtetrachloride*500,liquifiedcarbonmonoxide*500, 800, 16384, titaniumtetrachloridecarbonmonoxide*1000);
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenTitanium*1000, 400, 16384, titaniumtetrachloride*500, sodiumHydroxide*500);????
+
+//Yellorium
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192, pyrithroleum*250, moltenUranium*750);????
+
+
+//enviromentalTech Crystals
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:erodium_crystal>,2400,1024,<environmentaltech:litherite_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:kyronite_crystal>,2400,2048,<environmentaltech:erodium_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:pladium_crystal>,2400,4096,<environmentaltech:kyronite_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:ionite_crystal>,2400,8192,<environmentaltech:pladium_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:aethium_crystal>,2400,16384,<environmentaltech:ionite_crystal>,diamond*9);
+
+
+
+
+
+
+
+
+
+
 
 

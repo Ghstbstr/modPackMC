@@ -20,7 +20,7 @@
                 <biomeIds>48</biomeIds>
             </planet>
         </planet>
-
+        <!--Tenebar = RF Production-->
         <planet name="Tenebar" DIMID="10" dimMapping="10" customIcon="GasGiantBlue">
             <fogColor>0.41,0.92,0.15</fogColor>
             <skyColor>0.41,0.92,0.15</skyColor>
