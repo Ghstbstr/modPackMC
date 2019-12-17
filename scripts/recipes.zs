@@ -622,7 +622,7 @@ mods.advancedrocketry.Electrolyser.addRecipe(titaniumtetrachloride*500,liquified
 mods.advancedrocketry.ChemicalReactor.addRecipe(moltenTitanium*1000, 400, 16384, titaniumtetrachloride*500, sodiumHydroxide*500);????
 
 //Yellorium
-mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192, pyrithroleum*250, moltenUranium*750);????
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192, pyrithroleum*500, moltenUranium*2000);????
 
 
 //enviromentalTech Crystals
