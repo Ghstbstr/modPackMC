@@ -23,9 +23,9 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "SANDY",
-    "MESA",
     "SPARSE",
-    "DRY"
+    "DRY",
+    "MESA"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],

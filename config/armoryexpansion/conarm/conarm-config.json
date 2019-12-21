@@ -1340,6 +1340,32 @@
       "enableFletching": false,
       "enableProjectile": false
     },
+    "name": "dragonscale_mat",
+    "material": true,
+    "fluid": false,
+    "traits": true,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    }
+  },
+  {
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableBowString": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    },
     "name": "nickel",
     "material": true,
     "fluid": true,
@@ -1453,6 +1479,32 @@
       "enableCore": true,
       "enablePlates": true,
       "enableTrim": true
+    }
+  },
+  {
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableBowString": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    },
+    "name": "stellar_mat",
+    "material": true,
+    "fluid": true,
+    "traits": true,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
     }
   },
   {

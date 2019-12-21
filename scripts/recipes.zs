@@ -3,7 +3,6 @@ import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
-import mods.contenttweaker.Fluid;
 import mods.enderio.SagMill;
 
 
@@ -277,13 +276,16 @@ val steelExchangeItems = [
     <bigreactors:reactorcasing>,
     <bigreactors:turbinerotorblade>,
     <bigreactors:reactorcasingcores>,
-    <bigreactors:turbinecasingcores>,
-    <bigreactors:turbinecasing>,
+    <bigreactors:turbinehousingcores>,
+    <bigreactors:turbinehousing>,
     <bigreactors:reactorcontroller>,
     <bigreactors:turbinerotorshaft>,
     <bigreactors:reactoraccessport>,
     <bigreactors:reactorcoolantport>
 ] as IItemStack[];
+
+
+
 
 recipes.replaceAllOccurences(iron,cobalt,<bigreactors:reactorfuelrod>);
 
@@ -528,23 +530,11 @@ for item in lightningRenaming {
 
 
 //advancedRocketry:*********************************************************
-val moltenUranium = <liquid:molten_uranium>;?
-val moltenYellorium = <liquid:molten_yellorium>;?
-
-mods.contenttweaker.VanillaFactory.createFluid("pyrithroleum", 13382400);
-val pyrithroleum = <liquid:pyrithroleum>;
-pyrithroleum.density = 250;
-pyrithroleum.luminosity = 5;
-pyrithroleum.temperature = 2500;
-pyrithroleum.viscosity = 500;
-val lavaMaterial = <blockmaterial:lava>;
-pyrithroleum.material = lavaMaterial;
-pyrithroleum.fluidName = "Pyrithroleum"
-pyrithroleum.register();
-
+val moltenUranium = <liquid:uranium>;
+val moltenYellorium = <liquid:yellorium>;
 val pyrithroleumBucket = <forge:bucketfilled>.withTag({FluidName: "pyrithroleum", Amount: 1000});
-val crudeOilBucket = <forge:bucketfilled>.withTag({FluidName: "crudeOil", Amount: 1000});?
-val lavaBucket = <forge:bucketfilled>.withTag({FluidName: "lava", Amount: 1000});?
+val crudeOilBucket = <forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000});
+val lavaBucket = <forge:bucketfilled>.withTag({FluidName: "lava", Amount: 1000});
 
 recipes.addShaped("pyrithroleumCrafting",pyrithroleumBucket,[
     [lavaBucket,blazePowder,lavaBucket],
@@ -552,77 +542,38 @@ recipes.addShaped("pyrithroleumCrafting",pyrithroleumBucket,[
     [lavaBucket,blazePowder,lavaBucket]
 ]);
 
-mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:molten_steel>*1000, 80, 65536, pyrithroleum*250, <liquid:molten_iron>*750);????
-
-val rutilOre = <>???
-val ironOre = <minecraft:ironore>;?
-var ironVein = Excavator.getMineral("Iron_Ore");
-val chlor = <>;?
-val moltenTitanium = <liquid:molten_titanium>;?
-
-mods.contenttweaker.VanillaFactory.createFluid("liquifiedtitaniumdioxide", 15921906);
-val liquifidetitaniumdioxide = <liquid:liquifiedtitaniumdioxide>;
-liquifidetitaniumdioxide.density = 1000;
-liquifidetitaniumdioxide.luminosity = 1;
-liquifidetitaniumdioxide.temperature = 500;
-liquifidetitaniumdioxide.viscosity = 1250;
-val waterMaterial = <blockmaterial:water>;
-liquifidetitaniumdioxide.material = waterMaterial;
-liquifidetitaniumdioxide.fluidName = "Liquified Titaniumdioxide"
-liquifidetitaniumdioxide.register();
-val liquifiedtitaniumdioxideBucket = <forge:bucketfilled>.withTag({FluidName: "liquifiedtitaniumdioxide", Amount: 1000});?
-
-mods.contenttweaker.VanillaFactory.createFluid("titaniumtetrachloridecarbonmonoxide", 3355443);
+val rutilOre = <libvulpes:ore0:8>;
+val ironOre = <minecraft:iron_ore>;
+var ironVein = mods.immersiveengineering.Excavator.getMineral("Iron_Ore");
+val moltenTitanium = <liquid:titanium>;
+val pyrithroleum = <liquid:pyrithroleum>;
+val chlor = <liquid:chlor>;
+val moltenSalt = <liquid:moltenSalt>;
+val liquifidetitaniumdioxide = <liquid:liquifidetitaniumdioxide>;
 val titaniumtetrachloridecarbonmonoxide = <liquid:titaniumtetrachloridecarbonmonoxide>;
-titaniumtetrachloridecarbonmonoxide.density = 1000;
-titaniumtetrachloridecarbonmonoxide.luminosity = 1;
-titaniumtetrachloridecarbonmonoxide.temperature = 500;
-titaniumtetrachloridecarbonmonoxide.viscosity = 1250;
-val waterMaterial = <blockmaterial:water>;
-titaniumtetrachloridecarbonmonoxide.material = waterMaterial;
-titaniumtetrachloridecarbonmonoxide.fluidName = "Titaniumtetrachloridecarbonmonoxide"
-titaniumtetrachloridecarbonmonoxide.register();
-val titaniumtetrachloridecarbonmonoxideBucket = <forge:bucketfilled>.withTag({FluidName: "titaniumtetrachloridecarbonmonoxide", Amount: 1000});?
-
-mods.contenttweaker.VanillaFactory.createFluid("titaniumtetrachloride", 13227478);
 val titaniumtetrachloride = <liquid:titaniumtetrachloride>;
-titaniumtetrachloride.density = 1000;
-titaniumtetrachloride.luminosity = 1;
-titaniumtetrachloride.temperature = 500;
-titaniumtetrachloride.viscosity = 1250;
-val waterMaterial = <blockmaterial:water>;
-titaniumtetrachloride.material = waterMaterial;
-titaniumtetrachloride.fluidName = "Titaniumtetrachloride"
-titaniumtetrachloride.register();
-val titantetrachloridBucket = <forge:bucketfilled>.withTag({FluidName: "titaniumtetrachloride", Amount: 1000});?
+val liquifidecarbonmonoxide = <liquid:liquifidecarbonmonoxide>;
 
-mods.contenttweaker.VanillaFactory.createFluid("liquifiedcarbonmonoxide", 1710618);
-val liquifidecarbonmonoxide = <liquid:liquifiedcarbonmonoxide>;
-liquifidecarbonmonoxide.density = 1000;
-liquifidecarbonmonoxide.luminosity = 1;
-liquifidecarbonmonoxide.temperature = 500;
-liquifidecarbonmonoxide.viscosity = 1250;
-val waterMaterial = <blockmaterial:water>;
-liquifidecarbonmonoxide.material = waterMaterial;
-liquifidecarbonmonoxide.fluidName = "Liquified Carbonmonoxide"
-liquifidecarbonmonoxide.register();
-val liquifidecarbonmonoxideBucket = <forge:bucketfilled>.withTag({FluidName: "liquifiedcarbonmonoxide", Amount: 1000});?
-
-
+mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 80, 65536, pyrithroleum*250, <liquid:iron>*750);
 
 //mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
 // this: mods.enderio.SagMill.addRecipe([ironGrit,rutilOre], [0.95,0.05], ironOre, "NONE", 65536, 0.0);
 //or ironVein.addOre("rutilOre", 0.05);
 
-mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:molten_steel>*1000, 400, 65536, pyrithroleum*250, <liquid:molten_iron>*750);????
+mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 400, 65536, pyrithroleum*250, <liquid:iron>*750);
 
 //Titanium Crafting:
-mods.immersiveengineering.Mixer.addRecipe(titaniumtetrachloridecarbonmonoxide*1000,liquifidetitaniumdioxide*1000,[coal,chlor],8192);
-mods.advancedrocketry.Electrolyser.addRecipe(titaniumtetrachloride*500,liquifiedcarbonmonoxide*500, 800, 16384, titaniumtetrachloridecarbonmonoxide*1000);
-mods.advancedrocketry.ChemicalReactor.addRecipe(moltenTitanium*1000, 400, 16384, titaniumtetrachloride*500, sodiumHydroxide*500);????
+mods.immersiveengineering.Mixer.addRecipe(titaniumtetrachloridecarbonmonoxide*1000,chlor*1000,[rutilOre,coal],8192);
+mods.advancedrocketry.Electrolyser.addRecipe(titaniumtetrachloride*500,liquifidecarbonmonoxide*500, 800, 16384, titaniumtetrachloridecarbonmonoxide*1000);
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenTitanium*1000, 400, 16384, titaniumtetrachloride*500, sodiumHydroxide*500);
+mods.advancedrocketry.Electrolyser.addRecipe(chlor*500,sodiumHydroxide*500, 400, 16384, moltenSalt*1000);
+mods.tconstruct.Melting.addRecipe(moltenSalt * 125, industrialSalt);
+mods.tconstruct.Casting.addTableRecipe(industrialSalt, <tconstruct:cast_custom:2>, moltenSalt, 125, false, 100);
+
 
 //Yellorium
-mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192, pyrithroleum*500, moltenUranium*2000);????
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192, pyrithroleum*500, moltenUranium*2000);
+
 
 
 //enviromentalTech Crystals

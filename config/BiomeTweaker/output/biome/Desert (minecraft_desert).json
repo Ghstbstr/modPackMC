@@ -94,6 +94,12 @@
       "Weight": 200,
       "Min Group Count": 4,
       "Max Group Count": 16
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityStray",
+      "Weight": 20,
+      "Min Group Count": 4,
+      "Max Group Count": 8
     }
   ],
   "Spawnable Water Creatures": [],

@@ -23,18 +23,12 @@
   "Enable Snow": true,
   "Dictionary Types": [
     "SNOWY",
+    "RARE",
     "COLD",
-    "HILLS",
-    "RARE"
+    "HILLS"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
-    {
-      "Entity Class": "net.minecraft.entity.passive.EntityRabbit",
-      "Weight": 10,
-      "Min Group Count": 2,
-      "Max Group Count": 3
-    },
     {
       "Entity Class": "net.minecraft.entity.monster.EntityPolarBear",
       "Weight": 1,
@@ -43,12 +37,6 @@
     }
   ],
   "Spawnable Monsters": [
-    {
-      "Entity Class": "net.minecraft.entity.monster.EntitySpider",
-      "Weight": 100,
-      "Min Group Count": 4,
-      "Max Group Count": 4
-    },
     {
       "Entity Class": "net.minecraft.entity.monster.EntityZombie",
       "Weight": 95,
@@ -60,12 +48,6 @@
       "Weight": 5,
       "Min Group Count": 1,
       "Max Group Count": 1
-    },
-    {
-      "Entity Class": "net.minecraft.entity.monster.EntityCreeper",
-      "Weight": 100,
-      "Min Group Count": 4,
-      "Max Group Count": 4
     },
     {
       "Entity Class": "net.minecraft.entity.monster.EntitySlime",
@@ -98,14 +80,7 @@
       "Max Group Count": 4
     }
   ],
-  "Spawnable Water Creatures": [
-    {
-      "Entity Class": "net.minecraft.entity.passive.EntitySquid",
-      "Weight": 10,
-      "Min Group Count": 4,
-      "Max Group Count": 4
-    }
-  ],
+  "Spawnable Water Creatures": [],
   "Spawnable Cave Creatures": [
     {
       "Entity Class": "net.minecraft.entity.passive.EntityBat",
@@ -115,5 +90,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false
+  "Tweaked": true
 }
