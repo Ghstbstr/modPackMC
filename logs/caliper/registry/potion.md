@@ -1,7 +1,7 @@
 # potion Registry Analysis
 
-This file contains information about how mods are using the potion registry. 190
-out of 256 ids available. 74.219% of this registry is still available. This data
+This file contains information about how mods are using the potion registry. 183
+out of 256 ids available. 71.484% of this registry is still available. This data
 is anonymous, and is not automatically submitted to any online service.
 
 
@@ -9,6 +9,7 @@ is anonymous, and is not automatically submitted to any online service.
 |----------------------|---------|-------------|
 | minecraft            | 27      | 10.547%     |
 | tconstruct           | 7       | 2.734%      |
+| midnight             | 7       | 2.734%      |
 | immersiveengineering | 7       | 2.734%      |
 | toughasnails         | 6       | 2.344%      |
 | botania              | 6       | 2.344%      |

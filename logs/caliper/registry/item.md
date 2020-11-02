@@ -1,7 +1,7 @@
 # item Registry Analysis
 
-This file contains information about how mods are using the item registry. 29235
-out of 32000 ids available. 91.359% of this registry is still available. This
+This file contains information about how mods are using the item registry. 28970
+out of 32000 ids available. 90.531% of this registry is still available. This
 data is anonymous, and is not automatically submitted to any online service.
 
 
@@ -9,6 +9,7 @@ data is anonymous, and is not automatically submitted to any online service.
 |--------------------------|---------|-------------|
 | minecraft                | 411     | 1.284%      |
 | botania                  | 336     | 1.050%      |
+| midnight                 | 237     | 0.741%      |
 | chisel                   | 233     | 0.728%      |
 | enderio                  | 221     | 0.691%      |
 | randomthings             | 157     | 0.491%      |
@@ -33,13 +34,16 @@ data is anonymous, and is not automatically submitted to any online service.
 | armorunder               | 21      | 0.066%      |
 | openmodularturrets       | 20      | 0.063%      |
 | toughasnails             | 20      | 0.063%      |
+| reccomplex               | 14      | 0.044%      |
 | engineersdoors           | 14      | 0.044%      |
 | weather2                 | 11      | 0.034%      |
 | immersiveposts           | 11      | 0.034%      |
 | immersivepetroleum       | 9       | 0.028%      |
+| movinglightsource        | 8       | 0.025%      |
 | immersivetech            | 6       | 0.019%      |
 | backpack                 | 6       | 0.019%      |
 | scalinghealth            | 6       | 0.019%      |
+| betterquesting           | 4       | 0.013%      |
 | omlib                    | 4       | 0.013%      |
 | betterbuilderswands      | 4       | 0.013%      |
 | valkyrielib              | 3       | 0.009%      |
@@ -47,6 +51,7 @@ data is anonymous, and is not automatically submitted to any online service.
 | spiceoflife              | 3       | 0.009%      |
 | coroutil                 | 2       | 0.006%      |
 | naturalabsorption        | 1       | 0.003%      |
+| progressivebosses        | 1       | 0.003%      |
 | bonsaitrees              | 1       | 0.003%      |
 | mcjtylib_ng              | 1       | 0.003%      |
 | forge                    | 1       | 0.003%      |
@@ -56,3 +61,4 @@ data is anonymous, and is not automatically submitted to any online service.
 | solcarrot                | 1       | 0.003%      |
 | hw_inv                   | 1       | 0.003%      |
 | refinedstoragerequestify | 1       | 0.003%      |
+| base                     | 1       | 0.003%      |

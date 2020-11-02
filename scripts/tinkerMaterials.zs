@@ -1,11 +1,11 @@
 import modtweaker.tconstruct.ITICMaterial;
 
 
-val stellar = <ticmat:stellar_mat>;
-val stellarArmor = <conmat:stellarArmor_mat>;
+//val stellar = <ticmat:stellar_mat>;
+//val stellarArmor = <conmat:stellarArmor_mat>;
 
-val dragonScale = <ticmat:dragonScale_mat>;
-val dragonScaleArmor = <conmat:dragonScaleArmor_mat>;
+//val dragonScale = <ticmat:dragonScale_mat>;
+//val dragonScaleArmor = <conmat:dragonScaleArmor_mat>;
 
 val manasteel1 = <ticmat:manasteel>;
 val terrasteel1 = <ticmat:terrasteel>;

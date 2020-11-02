@@ -1,14 +1,10 @@
 {
-  "minecraft:recipes/decorations/chest": {
-    "criteria": {
-      "has_lots_of_items": "2019-12-03 20:58:49 +0100"
-    },
-    "done": true
-  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "river": "2019-12-03 20:58:49 +0100",
-      "stone_beach": "2019-12-03 21:00:21 +0100"
+      "taiga_cold_hills": "2020-04-18 22:45:03 +0200",
+      "taiga_cold": "2020-04-18 22:45:11 +0200",
+      "desert": "2020-04-18 22:37:59 +0200",
+      "stone_beach": "2020-04-18 22:45:26 +0200"
     },
     "done": false
   }

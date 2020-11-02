@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:60
 fboEnable:true
-difficulty:2
+difficulty:1
 fancyGraphics:false
 ao:2
 renderClouds:false
@@ -91,6 +91,7 @@ key_key.conarm.toggle_helm.desc:80
 key_key.conarm.toggle_chest.desc:19
 key_key.conarm.toggle_leg.desc:-97
 key_key.personalBackpack:48
+key_key.betterquesting.quests:39
 key_cos.key.opencosarmorinventory:0
 key_psimisc.keybind:0
 key_key.moreoverlays.lightoverlay.desc:65
@@ -186,7 +187,7 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.44701988
+soundCategory_master:0.8741722
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.3802817

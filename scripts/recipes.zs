@@ -554,13 +554,13 @@ val titaniumtetrachloridecarbonmonoxide = <liquid:titaniumtetrachloridecarbonmon
 val titaniumtetrachloride = <liquid:titaniumtetrachloride>;
 val liquifidecarbonmonoxide = <liquid:liquifidecarbonmonoxide>;
 
-mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 80, 65536, pyrithroleum*250, <liquid:iron>*750);
+//mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 80, 65536, pyrithroleum*250, <liquid:iron>*750);
 
 //mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
 // this: mods.enderio.SagMill.addRecipe([ironGrit,rutilOre], [0.95,0.05], ironOre, "NONE", 65536, 0.0);
 //or ironVein.addOre("rutilOre", 0.05);
 
-mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 400, 65536, pyrithroleum*250, <liquid:iron>*750);
+mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*500, 400, 65536, pyrithroleum*250, <liquid:iron>*750);
 
 //Titanium Crafting:
 mods.immersiveengineering.Mixer.addRecipe(titaniumtetrachloridecarbonmonoxide*1000,chlor*1000,[rutilOre,coal],8192);
@@ -584,13 +584,28 @@ mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:ionite_crystal>,
 mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:aethium_crystal>,2400,16384,<environmentaltech:ionite_crystal>,diamond*9);
 
 
+val circuitRecipeExchange = [
+    <advancedrocketry:ic:3>,
+    <advancedrocketry:ic:4>,
+    <advancedrocketry:ic:5>
+] as IItemStack[];
+
+val redstoneAlloy = <enderio:item_alloy_ingot:3>;
+
+for item in circuitRecipeExchange {
+    recipes.replaceAllOccurences(redstoneDust,redstoneAlloy,item);
+}
 
 
 
 
+//<libvulpes:productdust>
+//<advancedrocketry:productdust>
+//<libvulpes:productdust:7>
+//<libvulpes:ore0:8>
 
 
-
-
-
-
+//<gases:gas_natural>
+//<gases:gas_red>
+//<gases:gas_iocalfaeus>
+//<gases:gas_nitrous>

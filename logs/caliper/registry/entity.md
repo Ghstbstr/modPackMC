@@ -1,7 +1,7 @@
 # entity Registry Analysis
 
 This file contains information about how mods are using the entity registry.
-67108676 out of 67108863 ids available. 100.000% of this registry is still
+67108660 out of 67108863 ids available. 100.000% of this registry is still
 available. This data is anonymous, and is not automatically submitted to any
 online service.
 
@@ -10,6 +10,7 @@ online service.
 |----------------------|---------|-------------|
 | minecraft            | 83      | <0.001%     |
 | botania              | 19      | <0.001%     |
+| midnight             | 15      | <0.001%     |
 | randomthings         | 14      | <0.001%     |
 | defiledlands         | 11      | <0.001%     |
 | immersiveengineering | 9       | <0.001%     |
@@ -29,3 +30,4 @@ online service.
 | exnihilocreatio      | 1       | <0.001%     |
 | immersivepetroleum   | 1       | <0.001%     |
 | scalinghealth        | 1       | <0.001%     |
+| betterquesting       | 1       | <0.001%     |

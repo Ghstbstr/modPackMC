@@ -14,10 +14,10 @@
                 <skyColor>0,0,0</skyColor>
                 <atmosphereDensity>0</atmosphereDensity>
                 <gravitationalMultiplier>25</gravitationalMultiplier>
-                <orbitalDistance>100</orbitalDistance>
+                <orbitalDistance>180</orbitalDistance>
                 <orbitalTheta>190</orbitalTheta>
                 <rotationalPeriod>48000</rotationalPeriod>
-                <biomeIds>48</biomeIds>
+                <biomeIds>61</biomeIds>
             </planet>
         </planet>
         <!--Tenebar = RF Production-->
@@ -35,7 +35,7 @@
             <planet name="Valveon" DIMID="11" customIcon="IceWorld">
                 <fogColor>1,1,1</fogColor>
                 <skyColor>0,0.2,0.1</skyColor>
-                <atmosphereDensity>25</atmosphereDensity>
+                <atmosphereDensity>50</atmosphereDensity>
                 <gravitationalMultiplier>75</gravitationalMultiplier>
                 <orbitalDistance>180</orbitalDistance>
                 <orbitalTheta>75</orbitalTheta>
@@ -52,8 +52,8 @@
             <orbitalTheta>60</orbitalTheta>
             <orbitalPhi>60</orbitalPhi>
             <rotationalPeriod>48000</rotationalPeriod>
-            <biomeIds>53</biomeIds>   
-            <oceanBlock>Minecraft:lava</oceanBlock>
+            <biomeIds>66</biomeIds>   
+            <oceanBlock>minecraft:flowing_lava</oceanBlock>
             <seaLevel>79</seaLevel>
             <spawnable weight="2" groupMin="1" groupMax="5">minecraft:blaze</spawnable>
             <spawnable weight="1" groupMin="1" groupMax="5">minecraft:wither_skeleton</spawnable>
@@ -65,7 +65,7 @@
                 <orbitalDistance>120</orbitalDistance>
                 <orbitalTheta>75</orbitalTheta>
                 <rotationalPeriod>12000</rotationalPeriod>
-                <biomeIds>50</biomeIds>
+                <biomeIds>63</biomeIds>
             </planet>      
         </planet>
 
@@ -83,18 +83,28 @@
             <biomeIds>30</biomeIds>
         </planet>
 
-        <planet name="Hyperion" DIMID="40" customIcon="EarthLike">      
-            <hasRings>true</hasRings>
-            <fogColor>0.75,0.2,1</fogColor>
-            <skyColor>0.75,0.2,1</skyColor>
+        <planet name="Hyperion" DIMID="40" dimMapping="40" customIcon="EarthLike">      
             <atmosphereDensity>115</atmosphereDensity>
             <gravitationalMultiplier>100</gravitationalMultiplier>
             <orbitalDistance>85</orbitalDistance>
             <orbitalTheta>300</orbitalTheta>
             <orbitalPhi>45</orbitalPhi>
-            <hasRings>true</hasRings>
             <rotationalPeriod>24000</rotationalPeriod>
-            <biomeIds>49</biomeIds>
+        </planet>
+
+        <planet name="Deathstance" DIMID="45" customIcon="Moon">      
+            <hasRings>true</hasRings>
+            <fogColor>0.2,0.2,0.2</fogColor>
+            <skyColor>0.2,0.2,0.2</skyColor>
+            <atmosphereDensity>20</atmosphereDensity>
+            <gravitationalMultiplier>200</gravitationalMultiplier>
+            <orbitalDistance>175</orbitalDistance>
+            <orbitalTheta>270</orbitalTheta>
+            <orbitalPhi>55</orbitalPhi>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>25</biomeIds>
+            <seaLevel>50</seaLevel>
+            <oceanBlock>Minecraft:lava</oceanBlock>
         </planet>
 
         <planet name="Homelands" DIMID="50" customIcon="EarthLike">
@@ -117,7 +127,7 @@
                 <orbitalDistance>80</orbitalDistance>
                 <orbitalTheta>0</orbitalTheta>
                 <rotationalPeriod>36000</rotationalPeriod>
-                <biomeIds>48</biomeIds>
+                <biomeIds>61</biomeIds>
             </planet>
         </planet>
     </star>

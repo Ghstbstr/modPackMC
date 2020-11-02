@@ -1,7 +1,7 @@
 # block Registry Analysis
 
-This file contains information about how mods are using the block registry. 2232
-out of 4096 ids available. 54.492% of this registry is still available. This
+This file contains information about how mods are using the block registry. 2021
+out of 4096 ids available. 49.341% of this registry is still available. This
 data is anonymous, and is not automatically submitted to any online service.
 
 
@@ -10,6 +10,7 @@ data is anonymous, and is not automatically submitted to any online service.
 | minecraft                | 254     | 6.201%      |
 | botania                  | 235     | 5.737%      |
 | chisel                   | 229     | 5.591%      |
+| midnight                 | 189     | 4.614%      |
 | enderio                  | 166     | 4.053%      |
 | tconstruct               | 130     | 3.174%      |
 | randomthings             | 107     | 2.612%      |
@@ -33,12 +34,16 @@ data is anonymous, and is not automatically submitted to any online service.
 | stupidthings             | 9       | 0.220%      |
 | weather2                 | 9       | 0.220%      |
 | immersivepetroleum       | 9       | 0.220%      |
+| movinglightsource        | 8       | 0.195%      |
+| contenttweaker           | 7       | 0.171%      |
 | immersivetech            | 7       | 0.171%      |
+| reccomplex               | 6       | 0.146%      |
 | psi                      | 4       | 0.098%      |
 | toughasnails             | 4       | 0.098%      |
 | conarm                   | 3       | 0.073%      |
 | coroutil                 | 2       | 0.049%      |
 | bountifulbaubles         | 1       | 0.024%      |
+| betterquesting           | 1       | 0.024%      |
 | omlib                    | 1       | 0.024%      |
 | tanaddons                | 1       | 0.024%      |
 | bonsaitrees              | 1       | 0.024%      |

@@ -49,8 +49,8 @@ translations for these can improve mod compatibility.
 
 Enchant: enderio:repellent Translation Key: enchantment.enderio.repellent.desc
 Enchant: enderio:witherarrow Translation Key: enchantment.enderio.witherarrow.desc
-Enchant: enderio:shimmer Translation Key: enchantment.enderio.shimmer.desc
 Enchant: enderio:soulbound Translation Key: enchantment.enderio.soulbound.desc
+Enchant: enderio:shimmer Translation Key: enchantment.enderio.shimmer.desc
 Enchant: enderio:witherweapon Translation Key: enchantment.enderio.witherweapon.desc
 Enchant: exnihilocreatio:sieve_efficiency Translation Key: enchantment.exnihilocreatio.sieve_efficiency.desc
 Enchant: exnihilocreatio:sieve_fortune Translation Key: enchantment.exnihilocreatio.sieve_fortune.desc

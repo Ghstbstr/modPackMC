@@ -11,7 +11,7 @@ anonymous, and is not automatically submitted to any online service.
 | Mod ID                   | Textures | Pixels  | Est. Size |
 |--------------------------|----------|---------|-----------|
 | chisel                   | 2698     | 1455360 | 5 MB      |
-| immersiveengineering     | 573      | 1296128 | 4 MB      |
+| immersiveengineering     | 569      | 1295104 | 4 MB      |
 | stupidthings             | 63       | 887808  | 3 MB      |
 | tconstruct               | 3408     | 877056  | 3 MB      |
 | conarm                   | 927      | 801792  | 3 MB      |
@@ -26,6 +26,7 @@ anonymous, and is not automatically submitted to any online service.
 | malisisdoors             | 139      | 90624   | 354 KB    |
 | advancedrocketry         | 162      | 84480   | 330 KB    |
 | libvulpes                | 35       | 79616   | 311 KB    |
+| midnight                 | 276      | 75776   | 296 KB    |
 | openmodularturrets       | 64       | 65536   | 256 KB    |
 | exnihilocreatio          | 194      | 65024   | 254 KB    |
 | tcomplement              | 244      | 63232   | 247 KB    |
@@ -41,15 +42,18 @@ anonymous, and is not automatically submitted to any online service.
 | toughasnails             | 61       | 16384   | 64 KB     |
 | immersivepetroleum       | 38       | 15872   | 62 KB     |
 | backpack                 | 61       | 15616   | 61 KB     |
+| reccomplex               | 44       | 11264   | 44 KB     |
 | engineersdoors           | 37       | 9472    | 37 KB     |
 | armorunder               | 22       | 5632    | 22 KB     |
 | weather2                 | 20       | 5120    | 20 KB     |
 | omlib                    | 2        | 5120    | 20 KB     |
 | enderiomachines          | 4        | 4096    | 16 KB     |
 | tanaddons                | 14       | 3584    | 14 KB     |
+| betterquesting           | 7        | 3328    | 13 KB     |
 | bonsaitrees              | 2        | 2048    | 8 KB      |
 | scalinghealth            | 8        | 2048    | 8 KB      |
 | spiceoflife              | 7        | 1792    | 7 KB      |
+| contenttweaker           | 2        | 1280    | 5 KB      |
 | betterbuilderswands      | 4        | 1024    | 4 KB      |
 | forge                    | 4        | 1024    | 4 KB      |
 | zerocore                 | 1        | 1024    | 4 KB      |
@@ -59,10 +63,12 @@ anonymous, and is not automatically submitted to any online service.
 | refinedstoragerequestify | 2        | 512     | 2 KB      |
 | missingno                | 1        | 256     | 1 KB      |
 | naturalabsorption        | 1        | 256     | 1 KB      |
+| progressivebosses        | 1        | 256     | 1 KB      |
 | testdummy                | 1        | 256     | 1 KB      |
 | baubles                  | 1        | 256     | 1 KB      |
 | solcarrot                | 1        | 256     | 1 KB      |
 | hw_inv                   | 1        | 256     | 1 KB      |
+| base                     | 1        | 256     | 1 KB      |
 
 ## Texture: jei:textures
 | Mod ID    | Textures | Pixels | Est. Size |

@@ -122,6 +122,9 @@ online service.
 2 - knightminer
      - Tinkers' Construct
      - Tinkers' Complement
+2 - skysom
+     - B.A.S.E
+     - ContentTweaker
 2 - cpw
      - Forge Mod Loader
      - Minecraft Forge
@@ -137,6 +140,9 @@ online service.
 2 - valkyrieofnight
      - Environmental Tech
      - Valkyrie Lib
+2 - ivorius
+     - IvToolkit
+     - Recurrent Complex
 1 - darkosto
      - Tiny Progressions
 1 - flaxbeard
@@ -155,12 +161,16 @@ online service.
      - Ex Nihilo Creatio
 1 - alexbegt
      - Mantle
+1 - lanse505
+     - B.A.S.E
 1 - ilexiconn
      - OreSpawn
 1 - blusunrize
      - Immersive Engineering
 1 - profmobius
      - Waila
+1 - martacus
+     - Midnight
 1 - leviathan143
      - LootTweaker
 1 - refined storage contributors
@@ -185,6 +195,8 @@ online service.
      - Bookshelf
 1 - nihiltres
      - Engineer's Doors
+1 - endergized
+     - Midnight
 1 - stanhebben
      - CraftTweaker2
 1 - shadowfacts
@@ -201,6 +213,8 @@ online service.
      - MalisisCore
 1 - wiiv, vazkii
      - Magical Psi
+1 - gegy
+     - Midnight
 1 - covers1624
      - CodeChicken Lib
 1 - buuz135
@@ -219,14 +233,22 @@ online service.
      - Just Enough Petroleum
 1 - adubbz
      - Tough As Nails
+1 - ewyboy
+     - B.A.S.E
 1 - furgl
      - Stupid Things
 1 - zlainsama
      - CosmeticArmorReworked
 1 - gendeathrow
      - Tiny Progressions
+1 - funwayguy
+     - Better Questing
 1 - bloodworkxgaming
      - Ex Nihilo Creatio
+1 - insane96mcp
+     - Progressive Bosses
+1 - lachney
+     - Midnight
 1 - angeline (@jellysquid)
      - Phosphor Lighting Engine
 1 - twistedgate
@@ -239,8 +261,12 @@ online service.
      - Ex Nihilo Creatio
 1 - juliand665
      - Spice of Life: Carrot Edition
+1 - cipherzerox
+     - Midnight
 1 - abookfreak
      - Extreme Reactors
+1 - §cjabelar
+     - Torches and Moving Light Sources
 1 - forstride
      - Tough As Nails
 1 - jriwanek
@@ -305,6 +331,8 @@ online service.
      - Immersive Engineering
 1 - the_brainstone
      - Just Enough Reactors
+1 - jared
+     - B.A.S.E
 1 - lykrast
      - Defiled Lands
 1 - wile

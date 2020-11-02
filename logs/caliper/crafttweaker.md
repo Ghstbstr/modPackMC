@@ -7,9 +7,9 @@ automatically submitted to any online service.
 
 | Script Name        | Time  |
 |--------------------|-------|
-| lootFromChest.zs   | 211ms |
-| fluidReservoir.zs  | 135ms |
-| recipes.zs         | 119ms |
-| tinkerMaterials.zs | 23ms  |
-| startingItems.zs   | 16ms  |
+| lootFromChest.zs   | 159ms |
+| recipes.zs         | 143ms |
+| tinkerMaterials.zs | 31ms  |
+| startingItems.zs   | 11ms  |
 | lootFromMobs.zs    | 5ms   |
+| fluidReservoir.zs  | 1ms   |

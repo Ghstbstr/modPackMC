@@ -1,18 +1,18 @@
 
 {
-  "ID": 53,
+  "ID": 66,
   "Name": "CrystalChasms",
   "Resource Location": "advancedrocketry:crystalchasms",
   "Class": "zmaster587.advancedRocketry.world.biome.BiomeGenCrystal",
   "Root Height": 0.9,
   "Height Variation": 0.15,
   "Top Block": "minecraft:netherrack",
-  "Filler Block": "minecraft:netherrack",
+  "Filler Block": "chisel:netherrack[variation\u003d0]",
   "Ocean Top Block": "Disabled. Activate in BiomeTweakerCore.",
   "Ocean Filler Block": "Disabled. Activate in BiomeTweakerCore.",
   "Actual Filler Blocks": [
     "minecraft:stone[variant\u003dstone]",
-    "minecraft:netherrack"
+    "chisel:netherrack[variation\u003d0]"
   ],
   "Grass Color": "Not set. Check in-game.",
   "Foliage Color": "Disabled. Activate in BiomeTweakerCore.",
@@ -24,7 +24,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "PLAINS",
-    "COLD"
+    "NETHER",
+    "HOT"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],

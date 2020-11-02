@@ -18,4 +18,5 @@ anonymous, and is not automatically submitted to any online service.
 | JED Hell             | -1         | false |
 | JED End              | 1          | false |
 | lostcities           | 111        | false |
+| midnight             | -23        | false |
 | Spectre              | -343800852 | true  |
