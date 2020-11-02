@@ -4,12 +4,12 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:0.5
 saturation:0.0
-renderDistance:4
+renderDistance:24
 guiScale:0
 particles:0
 bobView:true
 anaglyph3d:false
-maxFps:120
+maxFps:60
 fboEnable:true
 difficulty:1
 fancyGraphics:false
@@ -91,6 +91,7 @@ key_key.conarm.toggle_helm.desc:80
 key_key.conarm.toggle_chest.desc:19
 key_key.conarm.toggle_leg.desc:-97
 key_key.personalBackpack:48
+key_key.betterquesting.quests:39
 key_cos.key.opencosarmorinventory:0
 key_psimisc.keybind:0
 key_key.moreoverlays.lightoverlay.desc:65
@@ -127,10 +128,30 @@ key_key.refinedstorage.openWirelessGrid:0
 key_key.refinedstorage.openWirelessFluidGrid:0
 key_key.refinedstorage.openPortableGrid:0
 key_key.refinedstorage.openWirelessCraftingMonitor:0
+key_nei.options.keys.gui.enchant:45
+key_nei.options.keys.gui.potion:25
+key_nei.options.keys.gui.prev:201
+key_nei.options.keys.gui.next:209
+key_nei.options.keys.world.chunkoverlay:67
+key_nei.options.keys.world.moboverlay:65
+key_nei.options.keys.world.dawn:0
+key_nei.options.keys.world.noon:0
+key_nei.options.keys.world.dusk:0
+key_nei.options.keys.world.midnight:0
+key_nei.options.keys.world.rain:0
+key_nei.options.keys.world.heal:0
+key_nei.options.keys.world.creative:0
 key_key.porterNextDestination:27
 key_key.porterPrevDestination:26
 key_key.debugDumpNBTItem:0
 key_key.debugDumpNBTBlock:0
+key_Toggle Jetpack:45
+key_Open Rocket GUI:0
+key_Toggle RCS:19
+key_Rotate Rocket Right:32
+key_Rotate Rocket Left:30
+key_Move Rocket Up:44
+key_Move Rocket Down:45
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
 key_key.journeymap.minimap_type:26
@@ -147,6 +168,7 @@ key_key.journeymap.fullscreen.north:200
 key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
+key_Profile GUI:210
 key_enderio.keybind.inventory:23
 key_enderio.keybind.dsu:0
 key_enderio.keybind.glidertoggle:34
@@ -165,7 +187,7 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.44701988
+soundCategory_master:0.8741722
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.3802817
@@ -175,6 +197,8 @@ soundCategory_neutral:0.36619717
 soundCategory_player:1.0
 soundCategory_ambient:1.0
 soundCategory_voice:1.0
+soundCategory_ds_footsteps:0.36619717
+soundCategory_ds_biome:1.0
 modelPart_cape:true
 modelPart_jacket:true
 modelPart_left_sleeve:true

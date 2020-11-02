@@ -1,0 +1,108 @@
+{
+  "entries": [
+    {
+      "block": "environmentaltech:lightning_rod_insulated",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_cont_2",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_cont_3",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_cont_1",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_cont_6",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_cont_4",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_rod",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    },
+    {
+      "block": "environmentaltech:lightning_cont_5",
+      "meta": 0,
+      "ignoreMeta": true,
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "reverse": false,
+          "ignoreMeta": false,
+          "id": 10
+        }
+      ]
+    }
+  ]
+}

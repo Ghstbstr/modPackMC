@@ -1,0 +1,11 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "taiga_cold_hills": "2020-04-18 22:45:03 +0200",
+      "taiga_cold": "2020-04-18 22:45:11 +0200",
+      "desert": "2020-04-18 22:37:59 +0200",
+      "stone_beach": "2020-04-18 22:45:26 +0200"
+    },
+    "done": false
+  }
+}

@@ -1,5 +1,12 @@
 import modtweaker.tconstruct.ITICMaterial;
 
+
+//val stellar = <ticmat:stellar_mat>;
+//val stellarArmor = <conmat:stellarArmor_mat>;
+
+//val dragonScale = <ticmat:dragonScale_mat>;
+//val dragonScaleArmor = <conmat:dragonScaleArmor_mat>;
+
 val manasteel1 = <ticmat:manasteel>;
 val terrasteel1 = <ticmat:terrasteel>;
 val elementium1 = <ticmat:elvenelementium>;
@@ -94,7 +101,7 @@ aluminum.modifier=2.2;
 manasteel.defense=18;
 terrasteel.defense=37;
 elementium.defense=33;
-gaiaspirit.defense=50;
+gaiaspirit.defense=60;
 yellorium.defense=26;
 cyanite.defense=36;
 blutonium.defense=40;
@@ -122,11 +129,11 @@ constantan.defense=18;
 manasteel1.attackHead=6.5;
 terrasteel1.attackHead=13;
 elementium1.attackHead=10.5;
-gaiaspirit1.attackHead=15.5;
+gaiaspirit1.attackHead=18.5;
 yellorium1.attackHead=10;
 cyanite1.attackHead=11.5;
 blutonium1.attackHead=13;
-ludicrite1.attackHead=16;
+ludicrite1.attackHead=15;
 quartzenriched1.attackHead=5.5;
 psimetal1.attackHead=10;
 psigem1.attackHead=9;
@@ -154,7 +161,7 @@ gaiaspirit.toughness=0;
 yellorium.toughness=3;
 cyanite.toughness=3;
 blutonium.toughness=4;
-ludicrite.toughness=7;
+ludicrite.toughness=8;
 quartzenriched.toughness=0;
 psimetal.toughness=0;
 psigem.toughness=0;

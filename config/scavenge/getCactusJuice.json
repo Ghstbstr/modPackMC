@@ -14,8 +14,8 @@
                 {"type":"consume_item", "amount":1},
                 {"type":"change_health", "increase":false, "amount":2},
                 {"type":"add_Potions", "chance":50.0, "potions":[
-                    {"name":"Nausea", "duration":600, "amplifier":1},
-                    {"name":"Weakness", "duration":3600, "amplifier":4}
+                    {"name":"Nausea", "duration":1800, "amplifier":1},
+                    {"name":"Weakness", "duration":1800, "amplifier":3}
                 ]}
             ],
             "drops":[

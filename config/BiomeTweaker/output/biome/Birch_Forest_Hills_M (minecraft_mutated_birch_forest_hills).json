@@ -13,7 +13,7 @@
   "Actual Filler Blocks": [
     "minecraft:stone[variant\u003dstone]"
   ],
-  "Grass Color": "Disabled. Activate in BiomeTweakerCore.",
+  "Grass Color": "Not set. Check in-game.",
   "Foliage Color": "Disabled. Activate in BiomeTweakerCore.",
   "Water Color": "16777215",
   "Temperature": 0.6,
@@ -22,10 +22,12 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DENSE",
     "MOUNTAIN",
+    "SUPER_BIRCH_TREES",
     "RARE",
-    "FOREST"
+    "FOREST",
+    "THEMED_TREES",
+    "DENSE"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

@@ -1,0 +1,44 @@
+{ "dimensions": [ 
+    {
+      "dim": 10,
+      "biome": "advancedrocketry:stormland",
+      "dimensiontype": {
+        "id": 10,
+        "name": "Dimension 10 - Tenebar",
+        "suffix": "_dim10",
+        "keeploaded": false,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "colors": {
+        "FoliageColors": [
+          { "biome": "advancedrocketry:stormland",  "color": "b0f21d" }
+        ],
+        "GrassColors": [
+          { "biome": "advancedrocketry:stormland",  "color": "a455db" }
+        ],
+        "WaterColors": [
+          { "biome": "advancedrocketry:stormland",  "color": "6aec28" }
+        ]
+      },
+      "worldinfo_onetime": {
+        "generatorName": "default",
+        "rainTime": 24000,
+        "raining": true,
+        "thunderTime": 24000,
+        "thundering": true,
+        "GameRules": {
+          "doWeatherCycle": "false"
+        }
+      },
+      "jed": {
+        "MusicType": "nether",
+        "HasXZFog": true,
+        "FogColor": "6aec28",
+        "SkyColor": "6aec28",
+        "CloudColor": "6aec28",
+        "CanDoLightning": true,
+        "SkyRenderType": 1,
+        "SkyDisableFlags": 3
+      }
+    }
+]}

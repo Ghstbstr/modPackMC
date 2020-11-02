@@ -3,7 +3,7 @@ import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
-import mods.enderio.AlloySmelter;
+import mods.enderio.SagMill;
 
 
 val cactus=<minecraft:cactus>;
@@ -34,11 +34,10 @@ recipes.addShapeless("EnchantmentTableToObsidian",obsidian,[enchantmentTable]);
 
 //tinker**************************************************************************************
 val steelTinker=<tcomplement:materials:10>;
-val blockSteelTiner=<tcomplement:storage:1>;
+val blockSteelTinker=<tcomplement:storage:1>;
 
 recipes.remove(steelTinker);
-recipes.remove(blockSteelTiner);
-
+recipes.remove(blockSteelTinker);
 //exnihilo**************************
 val dust = <exnihilocreatio:block_dust>;
 
@@ -89,6 +88,14 @@ val nitrate = <immersiveengineering:material:24>;
 val cobaltDust = <enderio:item_material:31>;
 val arditeDust = <enderio:item_material:30>;
 val blackPowder = <enderio:item_material:50>;
+val redstoneDust = <minecraft:redstone>;
+val pressingMold =  <immersiveengineering:mold:6>;
+val grainsOfInfinity = <enderio:item_material:20>;
+val yellorium = <bigreactors:dustyellorium>;
+val glowstonedust = <minecraft:glowstone_dust>;
+val blazePowder = <minecraft:blaze_powder>;
+val blazeRod = <minecraft:blaze_rod>;
+val rodMold = <immersiveengineering:mold:2>;
 
 recipes.addShaped("CharcoalColor",blackPowder*4,[
     [charCoal,charCoal,charCoal],
@@ -120,14 +127,6 @@ val arditicAcidumSulfoNitrosum = <liquid:glowing_water_orange>;
 val acidumSulfoNitrosum = <liquid:glowing_water_pink>;
 val temp4 = <liquid:glowing_water_purple>;
 val silverNitrate = <liquid:glowing_water_silver>;
-val redstoneDust = <minecraft:redstone>;
-val pressingMold =  <immersiveengineering:mold:6>;
-val grainsOfInfinity = <enderio:item_material:20>;
-val yellorium = <bigreactors:ingotyellorium>;
-val glowstonedust = <minecraft:glowstone_dust>;
-val blazePowder = <minecraft:blaze_powder>;
-val blazeRod = <minecraft:blaze_rod>;
-val rodMold = <immersiveengineering:mold:2>;
 
 val cuprumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_orange", Amount: 1000});
 val silverNitrateBucket = <forge:bucketfilled>.withTag({FluidName: "glowing_water_silver", Amount: 1000});
@@ -189,6 +188,7 @@ mods.immersiveengineering.Crusher.removeRecipe(gravel);
 mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,2048,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(sand,gravel,1024,industrialSalt,0.25);
 mods.immersiveengineering.Crusher.addRecipe(slag,charCoal,4096,sulfur,0.1);
+//mods.immersiveengineering.Crusher.addRecipe(null,uraniumGrit,16384,yellorium,0.2);
 mods.immersiveengineering.Crusher.addRecipe(dust,sand,512);
 
 //mixer
@@ -262,6 +262,7 @@ recipes.replaceAllOccurences(HVwireCoil,melodicCapacitor,additionalCapacitorRail
 val steelReactors = <bigreactors:ingotsteel>;
 val blockSteelReactors = <bigreactors:blocksteel>;
 val ingotUranium = <immersiveengineering:metal:5>;
+val blockSteel = <immersiveengineering:storage:8>;
 
 recipes.remove(steelReactors);
 recipes.remove(blockSteelReactors);
@@ -275,16 +276,21 @@ val steelExchangeItems = [
     <bigreactors:reactorcasing>,
     <bigreactors:turbinerotorblade>,
     <bigreactors:reactorcasingcores>,
+    <bigreactors:turbinehousingcores>,
+    <bigreactors:turbinehousing>,
     <bigreactors:reactorcontroller>,
     <bigreactors:turbinerotorshaft>,
     <bigreactors:reactoraccessport>,
     <bigreactors:reactorcoolantport>
 ] as IItemStack[];
 
+
+
+
 recipes.replaceAllOccurences(iron,cobalt,<bigreactors:reactorfuelrod>);
 
 for item in steelExchangeItems {
-    recipes.replaceAllOccurences(iron, steel, item);
+    recipes.replaceAllOccurences(iron, blockSteel, item);
 }
 
 //psi**************************************************************
@@ -399,7 +405,7 @@ recipes.replaceAllOccurences(magmaShard,blazeRod);
 recipes.replaceAllOccurences(packedIce,iceCube,coolingGoo);
 
 
-//openModularTurrets
+//openModularTurrets*********************************************************
 val electricalSteel = <enderio:item_alloy_ingot>;
 val capacitorT1 = <enderio:item_basic_capacitor>;
 
@@ -446,7 +452,7 @@ recipes.replaceAllOccurences(electricalSteel,iron,turretSensor2);
 
 
 
-//vanillaSpawns:
+//vanillaSpawns:*********************************************************
 val chickenSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}});
 val cowSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
 val pigSpawn = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:pig"}});
@@ -491,6 +497,122 @@ recipes.addShaped("SpawnEggSheep",sheepSpawn,[
 ]);
 
 recipes.addShapeless("LeatherToHide",rabbitHide,[leather,shears.anyDamage().transformDamage(15)]);
+
+//environmentalTech:*********************************************************
+
+/*
+<environmentaltech:erodium_crystal>
+<environmentaltech:kyronite_crystal>
+<environmentaltech:pladium_crystal>
+<environmentaltech:ionite_crystal>
+<environmentaltech:aethium_crystal>
+
+<environmentaltech:structure_frame_1>
+<environmentaltech:structure_frame_2>
+<environmentaltech:structure_frame_6>
+<environmentaltech:structure_frame_3>
+<environmentaltech:structure_frame_4>
+<environmentaltech:structure_frame_5>
+*/
+
+val lightningRenaming = [
+    <environmentaltech:lightning_cont_4>,
+    <environmentaltech:lightning_cont_5>,
+    <environmentaltech:lightning_cont_2>,
+    <environmentaltech:lightning_cont_3>,
+    <environmentaltech:lightning_cont_1>,
+    <environmentaltech:lightning_cont_6>,
+    <environmentaltech:lightning_rod>,
+    <environmentaltech:lightning_rod_insulated>
+] as IItemStack[];
+
+for item in lightningRenaming {
+    item.displayName="Radioactive " ~ item.displayName;
+}
+
+
+
+
+//advancedRocketry:*********************************************************
+val moltenUranium = <liquid:uranium>;
+val moltenYellorium = <liquid:yellorium>;
+val pyrithroleumBucket = <forge:bucketfilled>.withTag({FluidName: "pyrithroleum", Amount: 1000});
+val crudeOilBucket = <forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000});
+val lavaBucket = <forge:bucketfilled>.withTag({FluidName: "lava", Amount: 1000});
+
+recipes.addShaped("pyrithroleumCrafting",pyrithroleumBucket,[
+    [lavaBucket,blazePowder,lavaBucket],
+    [grainsOfInfinity,crudeOilBucket.noReturn(),grainsOfInfinity],
+    [lavaBucket,blazePowder,lavaBucket]
+]);
+
+val rutilOre = <libvulpes:ore0:8>;
+val ironOre = <minecraft:iron_ore>;
+var ironVein = mods.immersiveengineering.Excavator.getMineral("Iron_Ore");
+val moltenTitanium = <liquid:titanium>;
+val pyrithroleum = <liquid:pyrithroleum>;
+val chlor = <liquid:chlor>;
+val moltenSalt = <liquid:moltenSalt>;
+val liquifidetitaniumdioxide = <liquid:liquifidetitaniumdioxide>;
+val titaniumtetrachloridecarbonmonoxide = <liquid:titaniumtetrachloridecarbonmonoxide>;
+val titaniumtetrachloride = <liquid:titaniumtetrachloride>;
+val liquifidecarbonmonoxide = <liquid:liquifidecarbonmonoxide>;
+
+//mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 80, 65536, pyrithroleum*250, <liquid:iron>*750);
+
+//mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+// this: mods.enderio.SagMill.addRecipe([ironGrit,rutilOre], [0.95,0.05], ironOre, "NONE", 65536, 0.0);
+//or ironVein.addOre("rutilOre", 0.05);
+
+mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*500, 400, 65536, pyrithroleum*250, <liquid:iron>*750);
+
+//Titanium Crafting:
+mods.immersiveengineering.Mixer.addRecipe(titaniumtetrachloridecarbonmonoxide*1000,chlor*1000,[rutilOre,coal],8192);
+mods.advancedrocketry.Electrolyser.addRecipe(titaniumtetrachloride*500,liquifidecarbonmonoxide*500, 800, 16384, titaniumtetrachloridecarbonmonoxide*1000);
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenTitanium*1000, 400, 16384, titaniumtetrachloride*500, sodiumHydroxide*500);
+mods.advancedrocketry.Electrolyser.addRecipe(chlor*500,sodiumHydroxide*500, 400, 16384, moltenSalt*1000);
+mods.tconstruct.Melting.addRecipe(moltenSalt * 125, industrialSalt);
+mods.tconstruct.Casting.addTableRecipe(industrialSalt, <tconstruct:cast_custom:2>, moltenSalt, 125, false, 100);
+
+
+//Yellorium
+mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192, pyrithroleum*500, moltenUranium*2000);
+
+
+
+//enviromentalTech Crystals
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:erodium_crystal>,2400,1024,<environmentaltech:litherite_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:kyronite_crystal>,2400,2048,<environmentaltech:erodium_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:pladium_crystal>,2400,4096,<environmentaltech:kyronite_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:ionite_crystal>,2400,8192,<environmentaltech:pladium_crystal>,diamond*9);
+mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:aethium_crystal>,2400,16384,<environmentaltech:ionite_crystal>,diamond*9);
+
+
+val circuitRecipeExchange = [
+    <advancedrocketry:ic:3>,
+    <advancedrocketry:ic:4>,
+    <advancedrocketry:ic:5>
+] as IItemStack[];
+
+val redstoneAlloy = <enderio:item_alloy_ingot:3>;
+
+for item in circuitRecipeExchange {
+    recipes.replaceAllOccurences(redstoneDust,redstoneAlloy,item);
+}
+
+
+
+
+//<libvulpes:productdust>
+//<advancedrocketry:productdust>
+//<libvulpes:productdust:7>
+//<libvulpes:ore0:8>
+
+
+//<gases:gas_natural>
+//<gases:gas_red>
+//<gases:gas_iocalfaeus>
+//<gases:gas_nitrous>
 
 //baubles
 val spectralSilt = <bountifulbaubles:spectralsilt>;

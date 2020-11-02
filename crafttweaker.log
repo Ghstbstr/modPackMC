@@ -1,15 +1,31 @@
 [PREINITIALIZATION][CLIENT][INFO] Current loaders after merging: [[preinit]]
 [PREINITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [preinit]
+[PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:contenttweaker]: contentTweaker.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: fluidReservoir.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: lootFromChest.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: lootFromMobs.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: recipes.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: startingItems.zs} as we are currently loading with a different loader
 [PREINITIALIZATION][CLIENT][INFO] [preinit | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: tinkerMaterials.zs} as we are currently loading with a different loader
-[PREINITIALIZATION][CLIENT][INFO] Completed script loading in: 2ms
+[PREINITIALIZATION][CLIENT][INFO] Completed script loading in: 3ms
+[PREINITIALIZATION][CLIENT][INFO] Current loaders after merging: [[preinit], [contenttweaker]]
+[PREINITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [contenttweaker]
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Loading Script: {[0:contenttweaker]: contentTweaker.zs}
+[PREINITIALIZATION][CLIENT][INFO] Liquid <liquid:stellar_alloy> has not been found, trying to use a ghost representative. This message will only be printed once, all subsequent missing fluids will be handled the same way.
+[PREINITIALIZATION][CLIENT][INFO] Item <item:enderio:item_alloy_endergy_ingot:3> has not been found, trying to use a ghost representative. This message will only be printed once, all subsequent missing items will be handled the same way.
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: fluidReservoir.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: lootFromChest.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: lootFromMobs.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: recipes.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: startingItems.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] [contenttweaker | SIDE_CLIENT]: Skipping file {[0:crafttweaker]: tinkerMaterials.zs} as we are currently loading with a different loader
+[PREINITIALIZATION][CLIENT][INFO] Completed script loading in: 351ms
 [INITIALIZATION][CLIENT][INFO] CraftTweaker: Building registry
 [INITIALIZATION][CLIENT][INFO] CraftTweaker: Successfully built item registry
-[INITIALIZATION][CLIENT][INFO] Current loaders after merging: [[preinit], [recipeevent | crafttweaker]]
+[INITIALIZATION][CLIENT][INFO] Current loaders after merging: [[preinit], [contenttweaker], [recipeevent | crafttweaker]]
 [INITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
+[INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Skipping file {[0:contenttweaker]: contentTweaker.zs} as we are currently loading with a different loader
+[INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: fluidReservoir.zs}
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromChest.zs}
 [INITIALIZATION][CLIENT][INFO] Queuing pool food for addition to table minecraft:chests/abandoned_mineshaft
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:bread for addition to pool food of table minecraft:chests/abandoned_mineshaft
@@ -29,13 +45,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/abandoned_mineshaft
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/abandoned_mineshaft
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/abandoned_mineshaft
@@ -100,13 +109,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/desert_pyramid
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table minecraft:chests/desert_pyramid
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table minecraft:chests/desert_pyramid
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table minecraft:chests/desert_pyramid
@@ -161,13 +163,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/end_city_treasure
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/end_city_treasure
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/end_city_treasure
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/end_city_treasure
@@ -232,13 +227,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/igloo_chest
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table minecraft:chests/igloo_chest
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table minecraft:chests/igloo_chest
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table minecraft:chests/igloo_chest
@@ -293,13 +281,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple_dispenser
@@ -364,13 +345,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/jungle_temple
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table minecraft:chests/jungle_temple
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table minecraft:chests/jungle_temple
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table minecraft:chests/jungle_temple
@@ -425,13 +399,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/nether_bridge
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/nether_bridge
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/nether_bridge
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/nether_bridge
@@ -496,13 +463,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/simple_dungeon
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table minecraft:chests/simple_dungeon
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table minecraft:chests/simple_dungeon
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table minecraft:chests/simple_dungeon
@@ -557,13 +517,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/stronghold_corridor
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/stronghold_corridor
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/stronghold_corridor
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_corridor
@@ -628,13 +581,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_crossing
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table minecraft:chests/stronghold_crossing
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table minecraft:chests/stronghold_crossing
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table minecraft:chests/stronghold_crossing
@@ -689,13 +635,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/stronghold_library
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/stronghold_library
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/stronghold_library
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/stronghold_library
@@ -760,13 +699,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/village_blacksmith
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table minecraft:chests/village_blacksmith
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table minecraft:chests/village_blacksmith
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table minecraft:chests/village_blacksmith
@@ -821,13 +753,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table minecraft:chests/woodland_mansion
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table minecraft:chests/woodland_mansion
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table minecraft:chests/woodland_mansion
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table minecraft:chests/woodland_mansion
@@ -892,13 +817,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/lostcitychest
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:diamond for addition to pool ore of table lostcities:chests/lostcitychest
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:ender_pearl for addition to pool ore of table lostcities:chests/lostcitychest
 [INITIALIZATION][CLIENT][INFO] Queuing pool slime for addition to table lostcities:chests/lostcitychest
@@ -953,13 +871,6 @@
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:coal for addition to pool ore of table lostcities:chests/raildungeonchest
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:iron_ingot for addition to pool ore of table lostcities:chests/raildungeonchest
 [INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_ingot for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
-[INITIALIZATION][CLIENT][INFO] Queuing entry minecraft:gold_nugget for addition to pool ore of table lostcities:chests/raildungeonchest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
 [INITIALIZATION][CLIENT][INFO] Queuing entry immersiveengineering:metal for addition to pool ore of table lostcities:chests/raildungeonchest
@@ -1020,7 +931,6 @@
 [INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Gravel
 [INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Sand
 [INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Slag
-[INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Air
 [INITIALIZATION][CLIENT][INFO] Adding Crusher Recipe for Dust
 [INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Plumbum-Sludge
 [INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid Sulfuric-Acid
@@ -1048,8 +958,20 @@
 [INITIALIZATION][CLIENT][INFO] Removing ArcFurnace Recipe for Conductive Iron Ingot
 [INITIALIZATION][CLIENT][INFO] Removing ArcFurnace Recipe for Soularium Ingot
 [INITIALIZATION][CLIENT][INFO] Removing ArcFurnace Recipe for Dark Steel Ingot
-[INITIALIZATION][CLIENT][INFO] Removing Yellorium Ingot from ore dictionary entry ingotUranium
 [INITIALIZATION][CLIENT][INFO] Translating enderio.item_liquid_conduit_ender.name to Fluid Filter Conduit
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_4.name to Radioactive Lightning Controller Tier 4
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_5.name to Radioactive Lightning Controller Tier 5
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_2.name to Radioactive Lightning Controller Tier 2
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_3.name to Radioactive Lightning Controller Tier 3
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_1.name to Radioactive Lightning Controller Tier 1
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_6.name to Radioactive Lightning Controller Tier 6
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_rod.name to Radioactive Lightning Rod
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_rod_insulated.name to Radioactive Insulated Lightning Rod
+[INITIALIZATION][CLIENT][INFO] Adding Fermenter Recipe for Fluid fluid.Titaniumtetrachloridecarbonmonoxide
+[INITIALIZATION][CLIENT][ERROR] Trying to access Ghost liquid before its ready: <liquid:liquifidecarbonmonoxide>
+[INITIALIZATION][CLIENT][ERROR] Trying to access Ghost liquid before its ready: <liquid:moltenSalt>
+[INITIALIZATION][CLIENT][ERROR] Trying to access Ghost liquid before its ready: <liquid:moltenSalt>
+[INITIALIZATION][CLIENT][ERROR] Trying to access Ghost liquid before its ready: <liquid:moltenSalt>
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
 [INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:potion>.withTag({Potion: "minecraft:water"}) * 5:-1
 [INITIALIZATION][CLIENT][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:bread> * 5:-1
@@ -1201,11 +1123,11 @@
 [INITIALIZATION][CLIENT][INFO] Setting defense of manasteel to 18.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of terrasteel to 40.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of elvenelementium to 33.0
-[INITIALIZATION][CLIENT][INFO] Setting defense of gaia to 50.0
+[INITIALIZATION][CLIENT][INFO] Setting defense of gaia to 60.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of yellorium to 26.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of cyanite to 36.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of blutonium to 40.0
-[INITIALIZATION][CLIENT][INFO] Setting defense of ludicrite to 45.0
+[INITIALIZATION][CLIENT][INFO] Setting defense of ludicrite to 55.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of quartzenrichediron to 24.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of psi to 30.0
 [INITIALIZATION][CLIENT][INFO] Setting defense of psigem to 28.0
@@ -1227,11 +1149,11 @@
 [INITIALIZATION][CLIENT][INFO] Setting Attack of manasteel to 6.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of terrasteel to 13.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of elvenelementium to 10.5 for head
-[INITIALIZATION][CLIENT][INFO] Setting Attack of gaia to 15.5 for head
+[INITIALIZATION][CLIENT][INFO] Setting Attack of gaia to 18.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of yellorium to 10.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of cyanite to 11.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of blutonium to 13.0 for head
-[INITIALIZATION][CLIENT][INFO] Setting Attack of ludicrite to 14.0 for head
+[INITIALIZATION][CLIENT][INFO] Setting Attack of ludicrite to 15.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of quartzenrichediron to 5.5 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of psi to 10.0 for head
 [INITIALIZATION][CLIENT][INFO] Setting Attack of psigem to 9.0 for head
@@ -1257,7 +1179,7 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of yellorium to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of cyanite to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of blutonium to 4.0
-[INITIALIZATION][CLIENT][INFO] Setting toughness of ludicrite to 2.0
+[INITIALIZATION][CLIENT][INFO] Setting toughness of ludicrite to 8.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of quartzenrichediron to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of psi to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of psigem to 0.0
@@ -1276,32 +1198,55 @@
 [INITIALIZATION][CLIENT][INFO] Setting toughness of electrum to 0.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of steel to 3.0
 [INITIALIZATION][CLIENT][INFO] Setting toughness of constantan to 0.0
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 580ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 351ms
 [INITIALIZATION][CLIENT][INFO] Translating item.immersivetech.material.salt.name to Industrial Salt
 [INITIALIZATION][CLIENT][INFO] Translating item.immersiveengineering.mold.packing9.name to Metal Press Mold: Pressing
 [INITIALIZATION][CLIENT][INFO] Translating enderio.item_liquid_conduit_ender.name to Fluid Filter Conduit
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_4.name to Radioactive Lightning Controller Tier 4
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_5.name to Radioactive Lightning Controller Tier 5
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_2.name to Radioactive Lightning Controller Tier 2
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_3.name to Radioactive Lightning Controller Tier 3
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_1.name to Radioactive Lightning Controller Tier 1
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_cont_6.name to Radioactive Lightning Controller Tier 6
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_rod.name to Radioactive Lightning Rod
+[INITIALIZATION][CLIENT][INFO] Translating tile.environmentaltech.lightning_rod_insulated.name to Radioactive Insulated Lightning Rod
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <immersiveengineering:wirecoil:2> and replacing them with <enderio:item_capacitor_melodic>
 [POSTINITIALIZATION][CLIENT][INFO] Removing Shaped recipes for <bigreactors:ingotcyanite>
 [POSTINITIALIZATION][CLIENT][INFO] 0 removed
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <tconstruct:ingots>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
-[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:metal:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:iron_ingot> and replacing them with <immersiveengineering:storage:8>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:gold_ingot> and replacing them with <botania:manaresource>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:block_fused_quartz> and replacing them with <minecraft:nether_star>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:gold_nugget> and replacing them with <tconstruct:ingots:2>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <toughasnails:magma_shard> and replacing them with <minecraft:blaze_rod>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:packed_ice> and replacing them with <toughasnails:ice_cube>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <minecraft:iron_nugget>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot:4> and replacing them with <enderio:item_alloy_nugget:4>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <enderio:item_alloy_nugget>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot:4> and replacing them with <enderio:item_alloy_nugget:4>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot:6> and replacing them with <enderio:item_alloy_nugget:6>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <minecraft:iron_ingot>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <minecraft:iron_ingot>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <minecraft:iron_ingot>
 [POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_basic_capacitor> and replacing them with null
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_basic_capacitor> and replacing them with null
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_material> and replacing them with null
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <minecraft:iron_ingot>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <enderio:item_alloy_ingot> and replacing them with <minecraft:iron_ingot>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:redstone> and replacing them with <enderio:item_alloy_ingot:3>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:redstone> and replacing them with <enderio:item_alloy_ingot:3>
+[POSTINITIALIZATION][CLIENT][INFO] Removing all occurences of ingredient: <minecraft:redstone> and replacing them with <enderio:item_alloy_ingot:3>
 [POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Oak Wood Planks with name CacteenToWood1
 [POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Obsidian with name EnchantmentTableToObsidian
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Gold Nugget with name Goldwashing
@@ -1321,11 +1266,15 @@
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Spawn Rabbit with name SpawnEggRabbit
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Spawn Sheep with name SpawnEggSheep
 [POSTINITIALIZATION][CLIENT][INFO] Adding shapeless recipe for Rabbit Hide with name LeatherToHide
-[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Fuel Rod (Legacy) with name bigreactors-reactorfuelrod_vanillaglass-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for fluid.Pyrithroleum Bucket with name pyrithroleumCrafting
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Additional Capacitors with name immersiveengineering-toolupgrades/railgun_capacitors-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Fuel Rod (Legacy) with name bigreactors-reactorfuelrod_hardenedglass-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Fluid Port (Legacy) with name bigreactors-turbinefluidport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Casing (Legacy) with name bigreactors-reactorcasing-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Rotor Blade (Legacy) with name bigreactors-turbinerotorblade-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Casing Core (Legacy) with name bigreactors-reactorcasingcores-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Housing Core (Legacy) with name bigreactors-turbinehousingcores-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Housing (Legacy) with name bigreactors-turbinehousing-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turbine Rotor Shaft (Legacy) with name bigreactors-turbinerotorshaft-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Access Port (Legacy) with name bigreactors-reactoraccessport-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Reactor Coolant Port (Legacy) with name bigreactors-reactorcoolantport-modified
@@ -1336,39 +1285,62 @@
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Magma Block with name toughasnails-magma_block-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Heating Coil with name toughasnails-heating_coil-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Cooling Goo with name armorunder-cooling_goo-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Ammo - Bullet with name openmodularturrets-ammo_meta_1_enderio-remodified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Ammo - Rocket with name openmodularturrets-ammo_meta_4_enderio-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Ammo - Grenade with name openmodularturrets-ammo_meta_3_enderio-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Ammo - Ferro-Magnetic Slug with name openmodularturrets-ammo_meta_2_enderio-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Gun Turret with name openmodularturrets-machine_gun_turret_enderio-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Barrel (Tier 2) with name openmodularturrets-intermediate_tiered_11_enderio-modified
 [POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Chamber (Tier 2) with name openmodularturrets-intermediate_tiered_6_enderio-remodified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Turret Base (Tier 2) with name openmodularturrets-turret_base_1_enderio-reremodified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Sensor (Tier 2) with name openmodularturrets-intermediate_tiered_1_enderio-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Control Circuit Board with name advancedrocketry-controlcircuitboard-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Item IO Circuit Board with name advancedrocketry-iocircuitboard-modified
+[POSTINITIALIZATION][CLIENT][INFO] Adding shaped recipe for Liquid IO Circuit Board with name advancedrocketry-liquidiocircuitboard-modified
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileChemicalReactor: INPUT:[Fluid: pyrithroleum|Count: 250; Fluid: iron|Count: 750] -> OUTPUT:[Fluid: steel|Count: 1000]; Time: 80; Power: 65536
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileChemicalReactor: INPUT:[Fluid: pyrithroleum|Count: 250; Fluid: iron|Count: 750] -> OUTPUT:[Fluid: steel|Count: 1000]; Time: 400; Power: 65536
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileElectrolyser: INPUT:[Fluid: titaniumtetrachloridecarbonmonoxide|Count: 1000] -> OUTPUT:[Fluid: titaniumtetrachloride|Count: 500; Fluid: water|Count: 500]; Time: 800; Power: 16384
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileChemicalReactor: INPUT:[Fluid: titaniumtetrachloride|Count: 500; Fluid: water_white|Count: 500] -> OUTPUT:[Fluid: titanium|Count: 1000]; Time: 400; Power: 16384
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileElectrolyser: INPUT:[Fluid: water|Count: 1000] -> OUTPUT:[Fluid: chlor|Count: 500; Fluid: water_white|Count: 500]; Time: 400; Power: 16384
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileChemicalReactor: INPUT:[Fluid: pyrithroleum|Count: 500; Fluid: uranium|Count: 2000] -> OUTPUT:[Fluid: yellorium|Count: 1000]; Time: 1200; Power: 8192
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileCrystallizer: INPUT:[Item: Litherite Crystal|Count: 1; Item: Diamond|Count: 9] -> OUTPUT:[Item: Erodium Crystal|Count: 1]; Time: 2400; Power: 1024
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileCrystallizer: INPUT:[Item: Erodium Crystal|Count: 1; Item: Diamond|Count: 9] -> OUTPUT:[Item: Kyronite Crystal|Count: 1]; Time: 2400; Power: 2048
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileCrystallizer: INPUT:[Item: Kyronite Crystal|Count: 1; Item: Diamond|Count: 9] -> OUTPUT:[Item: Pladium Crystal|Count: 1]; Time: 2400; Power: 4096
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileCrystallizer: INPUT:[Item: Pladium Crystal|Count: 1; Item: Diamond|Count: 9] -> OUTPUT:[Item: Ionite Crystal|Count: 1]; Time: 2400; Power: 8192
+[POSTINITIALIZATION][CLIENT][INFO] Added Recipe for TileCrystallizer: INPUT:[Item: Ionite Crystal|Count: 1; Item: Diamond|Count: 9] -> OUTPUT:[Item: Aethium Crystal|Count: 1]; Time: 2400; Power: 16384
 [AVAILABLE][CLIENT][INFO] Fixed the RecipeBook
-[AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:entities/skeleton
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:entities/stray
+[AVAILABLE][CLIENT][INFO] Altering Melting Recipe(s) for <liquid:water> * 125
+[AVAILABLE][CLIENT][INFO] Altering Casting Recipe(s) for <immersivetech:material>
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/simple_dungeon
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
-[AVAILABLE][CLIENT][INFO] Cleared entries of table lostcities:chests/raildungeonchest
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/nether_bridge
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/nether_bridge
-[AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/igloo_chest
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/igloo_chest
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
-[AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/jungle_temple
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/jungle_temple
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/desert_pyramid
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
-[AVAILABLE][CLIENT][INFO] Cleared entries of table lostcities:chests/lostcitychest
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table lostcities:chests/lostcitychest
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/stronghold_library
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/stronghold_library
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
+[AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:entities/skeleton
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:entities/stray
+[AVAILABLE][CLIENT][INFO] Cleared entries of table lostcities:chests/raildungeonchest
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
+[AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/igloo_chest
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/igloo_chest
+[AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
+[AVAILABLE][CLIENT][INFO] Cleared entries of table lostcities:chests/lostcitychest
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table lostcities:chests/lostcitychest
+[AVAILABLE][CLIENT][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/village_blacksmith
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/woodland_mansion
@@ -1376,36 +1348,36 @@
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
 [AVAILABLE][CLIENT][INFO] Cleared entries of table minecraft:chests/end_city_treasure
 [AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
-[AVAILABLE][CLIENT][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/simple_dungeon
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/nether_bridge
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/desert_pyramid
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
-[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_library
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/village_blacksmith
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
-[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/woodland_mansion
@@ -1413,262 +1385,151 @@
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
 [SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/end_city_treasure
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
 [SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
-<enderio:item_alloy_ingot:6>
-<enderio:item_alloy_nugget:6>
-<enderio:item_alloy_nugget>
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [preinit]
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 0ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromChest.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromMobs.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: recipes.zs}
-[SERVER_STARTED][SERVER][ERROR] recipes.zs:408 > No such static member in crafttweaker.item.IIngredient: iron_nugget
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: tinkerMaterials.zs}
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 36ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [preinit]
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 0ms
-[SERVER_STARTED][SERVER][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromChest.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: lootFromMobs.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: recipes.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: startingItems.zs}
-[SERVER_STARTED][SERVER][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: tinkerMaterials.zs}
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Material wasn't null
-[SERVER_STARTED][SERVER][INFO] Completed script loading in: 17ms
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/simple_dungeon
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/nether_bridge
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/abandoned_mineshaft
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/desert_pyramid
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/spawn_bonus_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_corridor
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/skeleton
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:entities/stray
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/raildungeonchest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/igloo_chest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/stronghold_crossing
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table lostcities:chests/lostcitychest
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/village_blacksmith
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/jungle_temple_dispenser
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/woodland_mansion
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table immersiveengineering:chests/stronghold_library
+[SERVER_ABOUT_TO_START][SERVER][INFO] Cleared entries of table minecraft:chests/end_city_treasure
+[SERVER_ABOUT_TO_START][SERVER][INFO] Applied tweaks to table minecraft:chests/end_city_treasure

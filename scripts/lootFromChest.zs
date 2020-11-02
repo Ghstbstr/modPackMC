@@ -160,31 +160,22 @@ for lootTable in allTables{
     lootTable.getPool("food").addItemEntry(<minecraft:rotten_flesh>,15);
 
 
-    lootTable.addPool("ore",4,8,0,0);
-    lootTable.getPool("ore").addItemEntryJson(<minecraft:coal>,10,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<minecraft:coal:1>,5,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<minecraft:iron_ingot>,10,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<minecraft:gold_ingot>,6,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal>,8,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:4>,4,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:1>,4,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:3>,4,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:2>,4,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    
+    lootTable.addPool("ore",2,4,0,0);
+    lootTable.getPool("ore").addItemEntryJson(<minecraft:coal>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<minecraft:coal:1>,5,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<minecraft:iron_ingot>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<minecraft:gold_ingot>,6,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal>,8,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:4>,4,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:1>,4,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:3>,4,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:2>,4,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
 
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:29>,24,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<minecraft:gold_nugget>,16,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:20>,20,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:24>,12,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:21>,12,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:23>,12,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-    lootTable.getPool("ore").addItemEntryJson(<immersiveengineering:metal:22>,12,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 7.0}}],[]);
-
-    lootTable.getPool("ore").addItemEntry(<minecraft:diamond>,3);
-    lootTable.getPool("ore").addItemEntry(<minecraft:ender_pearl>,3);    
+    lootTable.getPool("ore").addItemEntryJson(<minecraft:diamond>,3,0,[{"function": "minecraft:set_count", "count": {"min": 3.0, "max": 6.0}}],[]);
+    lootTable.getPool("ore").addItemEntryJson(<minecraft:ender_pearl>,3,0,[{"function": "minecraft:set_count", "count": {"min": 3.0, "max": 6.0}}],[]);
 
 
-    lootTable.addPool("slime",1,2,0,0);
+    lootTable.addPool("slime",2,3,0,0);
     lootTable.getPool("slime").addItemEntryJson(<minecraft:slime_ball>,20,0,[{"function": "minecraft:set_count", "count": {"min": 8.0, "max": 16.0}}],[]);
     lootTable.getPool("slime").addItemEntryJson(<tconstruct:edible:1>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
     lootTable.getPool("slime").addItemEntryJson(<tconstruct:edible:2>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
@@ -196,25 +187,25 @@ for lootTable in allTables{
     lootTable.getPool("slime").addItemEntryJson(<tconstruct:slime_dirt:2>,1,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 2.0}}],[]);
     lootTable.getPool("slime").addItemEntryJson(<tconstruct:slime_dirt:3>,1,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 2.0}}],[]);
 
-    lootTable.getPool("slime").addItemEntry(<tconstruct:slime_sapling>,1);
-    lootTable.getPool("slime").addItemEntry(<tconstruct:slime_sapling:1>,1);
-    lootTable.getPool("slime").addItemEntry(<tconstruct:slime_sapling:2>,1);
+    lootTable.getPool("slime").addItemEntry(<tconstruct:slime_sapling>,2);
+    lootTable.getPool("slime").addItemEntry(<tconstruct:slime_sapling:1>,2);
+    lootTable.getPool("slime").addItemEntry(<tconstruct:slime_sapling:2>,2);
 
 
-    lootTable.addPool("misc",4,8,0,0);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:glass_bottle>,7,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 2.0}}],[]);
+    lootTable.addPool("misc",2,4,0,0);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:glass_bottle>,7,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 4.0}}],[]);
     lootTable.getPool("misc").addItemEntry(<minecraft:potion>.withTag({Potion: "minecraft:water"}),5);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:nether_wart>,3,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:gunpowder>,9,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:string>,5,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:feather>,5,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 2.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:leather>,4,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:snowball>,1,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:stick>,15,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 4.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<immersiveengineering:material:4>,7,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 4.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:clay_ball>,10,0,[{"function": "minecraft:set_count", "count": {"min": 8.0, "max": 16.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:bone>,6,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 3.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<minecraft:dye:15>,7,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 5.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:nether_wart>,3,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:gunpowder>,9,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:string>,5,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:feather>,5,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 4.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:leather>,4,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:snowball>,1,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:stick>,15,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<immersiveengineering:material:4>,7,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:clay_ball>,10,0,[{"function": "minecraft:set_count", "count": {"min": 16.0, "max": 32.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:bone>,6,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<minecraft:dye:15>,7,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 10.0}}],[]);
 
 
     lootTable.addPool("shader",0,1,0,0);
