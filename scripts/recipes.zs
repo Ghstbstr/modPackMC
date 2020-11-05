@@ -1,9 +1,13 @@
+#loader crafttweaker
+#priority 50
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import mods.enderio.SagMill;
+import crafttweaker.oredict.IOreDict;
 
 
 val cactus=<minecraft:cactus>;
@@ -30,7 +34,7 @@ val lapisLazuli = <minecraft:dye:4>;
 
 recipes.addShapeless("CacteenToWood1",woodPlanks,[cactus,cactus,cactus]);
 recipes.remove(cactusJuice);
-recipes.addShapeless("EnchantmentTableToObsidian",obsidian,[enchantmentTable]);
+recipes.addShapeless("EnchantmentTableToObsidian",obsidian*4,[enchantmentTable]);
 
 //tinker**************************************************************************************
 val steelTinker=<tcomplement:materials:10>;
@@ -41,6 +45,32 @@ recipes.remove(blockSteelTinker);
 //exnihilo**************************
 val dust = <exnihilocreatio:block_dust>;
 
+val exNihiloTools = [
+<exnihilocreatio:crook_diorite>,
+<exnihilocreatio:crook_gold>,
+<exnihilocreatio:crook_iron>,
+<exnihilocreatio:crook_diamond>,
+<exnihilocreatio:crook_bone>,
+<exnihilocreatio:crook_clay_uncooked>,
+<exnihilocreatio:crook_clay>,
+<exnihilocreatio:crook_purpur>,
+<exnihilocreatio:crook_blaze>,
+<exnihilocreatio:hammer_gold>,
+<exnihilocreatio:hammer_diamond>,
+<exnihilocreatio:hammer_wood>,
+<exnihilocreatio:hammer_stone>,
+<exnihilocreatio:hammer_iron>,
+<exnihilocreatio:crook_netherrack>,
+<exnihilocreatio:crook_prismarine>,
+<exnihilocreatio:crook_wood>,
+<exnihilocreatio:crook_stone>,
+<exnihilocreatio:crook_andesite>,
+<exnihilocreatio:crook_granite>
+] as IItemStack[];
+
+for item in exNihiloTools {
+    recipes.remove(item);
+}
 
 
 //immersive Engineering:******************************************************************************
@@ -104,46 +134,32 @@ recipes.addShaped("CharcoalColor",blackPowder*4,[
 ]);
 
 //fluids
-val sodiumHydroxide = <liquid:water_white>;
-val alumina = <liquid:water_silver>;
-val carbonSlury = <liquid:water_gray>;
-val plumbumSludge = <liquid:water_black>;
-val ferrumLateriteSludge = <liquid:water_brown>;
-val uranylHydroxide = <liquid:water_red>;
-val cuprumSludge = <liquid:water_orange>;
-val sulfuricAcid = <liquid:water_yellow>;
-val temp1 = <liquid:water_lime>;
-val temp2 = <liquid:water_green>;
-val temp3 = <liquid:water_cyan>;
-val crystalSlury = <liquid:water_light_blue>;
-val cobaldHydroxide = <liquid:water_blue>;
-val cobalticAcidumSulfoNitrosum = <liquid:water_purple>;
-val uranNuclide = <liquid:water_magenta>;
-val nitricAcid = <liquid:water_pink>;
+val sodiumHydroxide = <liquid:sodium_hydroxide>;
+val alumina = <liquid:alumina>;
+val carbonSlury = <liquid:carbon_slury>;
+val plumbumSludge = <liquid:plumbum_sludge>;
+val ferrumLateriteSludge = <liquid:ferrum_laterite_sludge>;
+val uranylHydroxide = <liquid:uranyl_hydroxide>;
+val cuprumSludge = <liquid:cuprum_sludge>;
+val sulfuricAcid = <liquid:sulfuric_acid>;
+val crystalSlury = <liquid:crystal_slury>;
+val cobaldHydroxide = <liquid:cobald_hydroxide>;
+val cobalticAcidumSulfoNitrosum = <liquid:cobaltic_acidum_sulfo_nitrosum>;
+val uranNuclide = <liquid:uran_nuclide>;
+val nitricAcid = <liquid:nitric_acid>;
 val destiWater = <liquid:dist_water>;
 val water = <liquid:water>;
 val lava = <liquid:lava>;
-val arditicAcidumSulfoNitrosum = <liquid:glowing_water_orange>;
-val acidumSulfoNitrosum = <liquid:glowing_water_pink>;
-val temp4 = <liquid:glowing_water_purple>;
-val silverNitrate = <liquid:glowing_water_silver>;
+val arditicAcidumSulfoNitrosum = <liquid:arditic_acidum_sulfo_nitrosum>;
+val acidumSulfoNitrosum = <liquid:acidum_sulfo_nitrosum>;
+val silverNitrate = <liquid:silver_nitrate>;
 
-val cuprumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_orange", Amount: 1000});
-val silverNitrateBucket = <forge:bucketfilled>.withTag({FluidName: "glowing_water_silver", Amount: 1000});
-val cobaldHydroxideBucket = <forge:bucketfilled>.withTag({FluidName: "water_blue", Amount: 1000});
-val ferrumLateriteSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_brown", Amount: 1000});
-val plumbumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "water_black", Amount: 1000});
-val arditicAcidumSulfoNitrosumBucket = <forge:bucketfilled>.withTag({FluidName: "glowing_water_orange", Amount: 1000});
-
-
-arditicAcidumSulfoNitrosum.definition.luminosity = 0;
-acidumSulfoNitrosum.definition.luminosity = 0;
-silverNitrate.definition.luminosity = 0;
-sulfuricAcid.definition.luminosity = 1;
-nitricAcid.definition.luminosity = 1;
-acidumSulfoNitrosum.definition.luminosity = 2;
-uranylHydroxide.definition.luminosity = 4;
-uranNuclide.definition.luminosity = 8;
+val cuprumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "cuprum_sludge", Amount: 1000});
+val silverNitrateBucket = <forge:bucketfilled>.withTag({FluidName: "silver_nitrate", Amount: 1000});
+val cobaldHydroxideBucket = <forge:bucketfilled>.withTag({FluidName: "cobald_hydroxide", Amount: 1000});
+val ferrumLateriteSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "ferrum_laterite_sludge", Amount: 1000});
+val plumbumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "plumbum_sludge", Amount: 1000});
+val arditicAcidumSulfoNitrosumBucket = <forge:bucketfilled>.withTag({FluidName: "arditic_acidum_sulfo_nitrosum", Amount: 1000});
 
 
 //assembler
@@ -257,6 +273,18 @@ val HVwireCoil = <immersiveengineering:wirecoil:2>;
 val melodicCapacitor = <enderio:item_capacitor_melodic>;
 
 recipes.replaceAllOccurences(HVwireCoil,melodicCapacitor,additionalCapacitorRailgun);
+
+
+val engineerSolar = <engineersdecor:small_solar_panel>;
+val blockOfLead = <immersiveengineering:storage:2>;
+val quartz = <minecraft:quartz>;
+
+recipes.remove(engineerSolar);
+recipes.addShaped("engineerSolarCheaper",engineerSolar,[
+    [quartz,quartz,quartz],
+    [null,steelTinker,null],
+    [redstoneDust,blockOfLead,redstoneDust]
+]);
 
 //extrem reactors************************************************************************************
 val steelReactors = <bigreactors:ingotsteel>;
@@ -389,7 +417,7 @@ val magmaShard = <toughasnails:magma_shard>;
 val ice = <minecraft:ice>;
 val coolingGoo = <armorunder:cooling_goo>;
 
-recipes.addShaped("Diafreezing",iceCube,[
+recipes.addShaped("Diafreezing",iceCube*4,[
     [null,null,null],
     [null,waterBucket,diamond],
     [null,null,null]
@@ -403,6 +431,19 @@ recipes.addShaped("PackingIce",packedIce,[
 
 recipes.replaceAllOccurences(magmaShard,blazeRod);
 recipes.replaceAllOccurences(packedIce,iceCube,coolingGoo);
+
+val paper = <minecraft:paper>;
+val wheatSeeds = <minecraft:wheat_seeds>;
+val gooPakCool = <armorunder:goopak_cool>;
+
+recipes.remove(gooPakCool);
+
+recipes.addShaped("gooPakCoolBetter",gooPakCool*16,[
+    [paper,paper,paper],
+    [wheatSeeds,coolingGoo,wheatSeeds],
+    [paper,paper,paper]
+]);
+
 
 
 //openModularTurrets*********************************************************
@@ -552,11 +593,11 @@ var ironVein = mods.immersiveengineering.Excavator.getMineral("Iron_Ore");
 val moltenTitanium = <liquid:titanium>;
 val pyrithroleum = <liquid:pyrithroleum>;
 val chlor = <liquid:chlor>;
-val moltenSalt = <liquid:moltenSalt>;
-val liquifidetitaniumdioxide = <liquid:liquifidetitaniumdioxide>;
+val moltenSodiumChloride = <liquid:molten_sodium_chloride>;
+val liquifidetitaniumdioxide = <liquid:liquified_titaniumdioxide>;
 val titaniumtetrachloridecarbonmonoxide = <liquid:titaniumtetrachloridecarbonmonoxide>;
 val titaniumtetrachloride = <liquid:titaniumtetrachloride>;
-val liquifidecarbonmonoxide = <liquid:liquifidecarbonmonoxide>;
+val liquifidecarbonmonoxide = <liquid:liquified_carbonmonoxide>;
 
 //mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*1000, 80, 65536, pyrithroleum*250, <liquid:iron>*750);
 
@@ -570,9 +611,83 @@ mods.advancedrocketry.ChemicalReactor.addRecipe(<liquid:steel>*500, 400, 65536, 
 mods.immersiveengineering.Mixer.addRecipe(titaniumtetrachloridecarbonmonoxide*1000,chlor*1000,[rutilOre,coal],8192);
 mods.advancedrocketry.Electrolyser.addRecipe(titaniumtetrachloride*500,liquifidecarbonmonoxide*500, 800, 16384, titaniumtetrachloridecarbonmonoxide*1000);
 mods.advancedrocketry.ChemicalReactor.addRecipe(moltenTitanium*1000, 400, 16384, titaniumtetrachloride*500, sodiumHydroxide*500);
-mods.advancedrocketry.Electrolyser.addRecipe(chlor*500,sodiumHydroxide*500, 400, 16384, moltenSalt*1000);
-mods.tconstruct.Melting.addRecipe(moltenSalt * 125, industrialSalt);
-mods.tconstruct.Casting.addTableRecipe(industrialSalt, <tconstruct:cast_custom:2>, moltenSalt, 125, false, 100);
+mods.advancedrocketry.Electrolyser.addRecipe(chlor*500,sodiumHydroxide*500, 400, 16384, moltenSodiumChloride*1000);
+mods.tconstruct.Melting.addRecipe(moltenSodiumChloride * 125, industrialSalt);
+mods.tconstruct.Casting.addTableRecipe(industrialSalt, <tconstruct:cast_custom:2>, moltenSodiumChloride, 125, false, 100);
+
+
+//Change Plates to immersives plates
+val oreDictIrdiumPlate = <ore:plateIridium>;
+val oreDictTitaniumAluminidePlate = <ore:plateTitaniumAluminide>;
+val oreDictTitaniumIridiumPlate = <ore:plateTitaniumIridium>;
+val oreDictSiliconPlate = <ore:plateSilicon>;
+val oreDictTinPlate = <ore:plateTin>;
+val oreDictTitaniumPlate = <ore:plateTitanium>;
+
+var irdiumPlate = <contenttweaker:metal_plate_iridium>;
+var titaniumAluminidePlate = <contenttweaker:metal_plate_titanium_aluminide>;
+var titaniumIridiumPlate = <contenttweaker:metal_plate_titanium_iridium>;
+var siliconPlate = <contenttweaker:metal_plate_silicon>;
+var tinPlate = <contenttweaker:metal_plate_tin>;
+var titaniumPlate = <contenttweaker:metal_plate_titanium>;
+
+oreDictIrdiumPlate.add(irdiumPlate);
+oreDictTitaniumAluminidePlate.add(titaniumAluminidePlate);
+oreDictTitaniumIridiumPlate.add(titaniumIridiumPlate);
+oreDictSiliconPlate.add(siliconPlate);
+oreDictTinPlate.add(tinPlate);
+oreDictTitaniumPlate.add(titaniumPlate);
+
+val advancedRocketryPlatesRemoveList = [
+    <advancedrocketry:productplate>,
+    <advancedrocketry:productplate:1>,
+    <libvulpes:productplate:1>,
+    <libvulpes:productplate:2>,
+    <libvulpes:productplate:3>,
+    <libvulpes:productplate:4>,
+    <libvulpes:productplate:5>,
+    <libvulpes:productplate:10>,
+    <libvulpes:productplate:9>,
+    <libvulpes:productplate:6>,
+    <libvulpes:productplate:7>
+] as IItemStack[];
+
+for item in advancedRocketryPlatesRemoveList {
+    mods.advancedrocketry.RollingMachine.removeRecipe(item);    
+    oreDictIrdiumPlate.remove(item);
+    oreDictTitaniumAluminidePlate.remove(item);
+    oreDictTitaniumIridiumPlate.remove(item);
+    oreDictSiliconPlate.remove(item);
+    oreDictTinPlate.remove(item);
+    oreDictTitaniumPlate.remove(item);
+}
+
+val plateMold = <immersiveengineering:mold>;
+val siliconIngot = <libvulpes:productingot:3>;
+val tinIngot = <libvulpes:productingot:5>;
+val titaniumIngot = <libvulpes:productingot:7>;
+val iridiumIngot = <libvulpes:productingot:10>;
+val titaniumAluminideIngot = <advancedrocketry:productingot>;
+val titaniumIridiumIngot = <advancedrocketry:productingot:1>;
+
+mods.immersiveengineering.MetalPress.addRecipe(siliconPlate,siliconIngot,plateMold,256);
+mods.immersiveengineering.MetalPress.addRecipe(tinPlate,tinIngot,plateMold,256);
+mods.immersiveengineering.MetalPress.addRecipe(titaniumPlate,titaniumIngot,plateMold,256);
+mods.immersiveengineering.MetalPress.addRecipe(irdiumPlate,iridiumIngot,plateMold,256);
+mods.immersiveengineering.MetalPress.addRecipe(titaniumAluminidePlate,titaniumAluminideIngot,plateMold,256);
+mods.immersiveengineering.MetalPress.addRecipe(titaniumIridiumPlate,titaniumIridiumIngot,plateMold,256);
+
+//mods.advancedrocketry.RollingMachine.addRecipe(output, ticks, rf/t, waterInt, input);
+
+mods.advancedrocketry.RollingMachine.addRecipe(siliconPlate, 20, 512, 100, siliconIngot);
+mods.advancedrocketry.RollingMachine.addRecipe(tinPlate, 20, 100, 512, tinIngot);
+mods.advancedrocketry.RollingMachine.addRecipe(titaniumPlate, 20, 512, 100, titaniumIngot);
+mods.advancedrocketry.RollingMachine.addRecipe(irdiumPlate, 20, 512, 100, iridiumIngot);
+mods.advancedrocketry.RollingMachine.addRecipe(titaniumAluminidePlate, 20, 512, 100, titaniumAluminideIngot);
+mods.advancedrocketry.RollingMachine.addRecipe(titaniumIridiumPlate, 20, 512, 100, titaniumIridiumIngot);
+
+
+
 
 
 //Yellorium
@@ -580,7 +695,7 @@ mods.advancedrocketry.ChemicalReactor.addRecipe(moltenYellorium*1000, 1200, 8192
 
 
 
-//enviromentalTech Crystals
+//enviromentalTech Crystals ??????? todo
 mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:erodium_crystal>,2400,1024,<environmentaltech:litherite_crystal>,diamond*9);
 mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:kyronite_crystal>,2400,2048,<environmentaltech:erodium_crystal>,diamond*9);
 mods.advancedrocketry.Crystallizer.addRecipe(<environmentaltech:pladium_crystal>,2400,4096,<environmentaltech:kyronite_crystal>,diamond*9);

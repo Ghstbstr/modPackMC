@@ -106,7 +106,7 @@
             <seaLevel>50</seaLevel>
             <oceanBlock>Minecraft:lava</oceanBlock>
         </planet>
-
+        <!-- Zu andere Galaxie hinzufügen-->
         <planet name="Homelands" DIMID="50" customIcon="EarthLike">
             <isKnown>True</isKnown>  
             <fogColor>0.5,0.5,1</fogColor>

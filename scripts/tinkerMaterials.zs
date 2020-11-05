@@ -1,3 +1,6 @@
+#loader crafttweaker
+#priority 20
+
 import modtweaker.tconstruct.ITICMaterial;
 
 
