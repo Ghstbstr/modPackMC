@@ -21,6 +21,23 @@
             "drops":[
                 {"name": "toughasnails:fruit_juice", "meta":2, "amount":1}
             ]
+        },
+
+        {
+            "name":"CactusJuice",
+            "type": { 
+                "type": "block", "name": "tp:water_block"
+            },
+            "clicktype":"blockRightClick",
+            "properties":[
+                {"type":"require_item", "name":"minecraft:bucket"},
+                {"type":"per_block_limit", "usage":1,"max":8},
+                {"type":"play_sound", "name":"item.bottle.fill", "pitch":1},
+                {"type":"consume_item", "amount":1}
+            ],
+            "drops":[
+                {"name": "minecraft:water_bucket", "amount":1}
+            ]
         }
     ]
 }

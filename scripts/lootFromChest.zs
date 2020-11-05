@@ -1,3 +1,7 @@
+#loader crafttweaker
+#priority 4
+
+
 import loottweaker.vanilla.loot.LootTables;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
@@ -145,22 +149,22 @@ stronghold_corridor.getPool("main").removeEntry("minecraft:iron_sword");
 for lootTable in allTables{
     lootTable.clear();
 
-    lootTable.addPool("food",5,10,0,0);
-    lootTable.getPool("food").addItemEntry(<minecraft:bread>,20);
-    lootTable.getPool("food").addItemEntry(<minecraft:potato>,10);
-    lootTable.getPool("food").addItemEntry(<minecraft:carrot>,10);
-    lootTable.getPool("food").addItemEntry(<minecraft:apple>,10);
-    lootTable.getPool("food").addItemEntry(<minecraft:melon>,13);
-    lootTable.getPool("food").addItemEntry(<minecraft:melon_block>,4);
-    lootTable.getPool("food").addItemEntry(<minecraft:pumpkin>,2);
-    lootTable.getPool("food").addItemEntry(<minecraft:cookie>,3);
-    lootTable.getPool("food").addItemEntry(<minecraft:cake>,1);
-    lootTable.getPool("food").addItemEntry(<minecraft:beetroot>,10);
-    lootTable.getPool("food").addItemEntry(<minecraft:spider_eye>,10);
-    lootTable.getPool("food").addItemEntry(<minecraft:rotten_flesh>,15);
+    lootTable.addPool("food",2,2,0,0);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:bread>,20,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 4.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:potato>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:carrot>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:apple>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:melon>,13,0,[{"function": "minecraft:set_count", "count": {"min": 8.0, "max": 18.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:melon_block>,4,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 4.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:pumpkin>,2,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 4.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:cookie>,3,0,[{"function": "minecraft:set_count", "count": {"min": 8.0, "max": 24.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:cake>,1,0,[{"function": "minecraft:set_count", "count": {"min": 1.0, "max": 2.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:beetroot>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:spider_eye>,10,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 4.0}}],[]);
+    lootTable.getPool("food").addItemEntryJson(<minecraft:rotten_flesh>,15,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
 
 
-    lootTable.addPool("ore",2,4,0,0);
+    lootTable.addPool("ore",3,4,0,0);
     lootTable.getPool("ore").addItemEntryJson(<minecraft:coal>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
     lootTable.getPool("ore").addItemEntryJson(<minecraft:coal:1>,5,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
     lootTable.getPool("ore").addItemEntryJson(<minecraft:iron_ingot>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 12.0}}],[]);
@@ -175,7 +179,7 @@ for lootTable in allTables{
     lootTable.getPool("ore").addItemEntryJson(<minecraft:ender_pearl>,3,0,[{"function": "minecraft:set_count", "count": {"min": 3.0, "max": 6.0}}],[]);
 
 
-    lootTable.addPool("slime",2,3,0,0);
+    lootTable.addPool("slime",2,2,0,0);
     lootTable.getPool("slime").addItemEntryJson(<minecraft:slime_ball>,20,0,[{"function": "minecraft:set_count", "count": {"min": 8.0, "max": 16.0}}],[]);
     lootTable.getPool("slime").addItemEntryJson(<tconstruct:edible:1>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
     lootTable.getPool("slime").addItemEntryJson(<tconstruct:edible:2>,10,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);

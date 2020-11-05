@@ -24,9 +24,9 @@
   "Dictionary Types": [
     "MEGA_TAIGA_TREES",
     "THEMED_TREES",
-    "CONIFEROUS",
     "COLD",
-    "FOREST"
+    "FOREST",
+    "CONIFEROUS"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
