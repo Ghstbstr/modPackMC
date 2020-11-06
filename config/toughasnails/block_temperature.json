@@ -84,5 +84,12 @@
       "properties": {}
     },
     "temperature": -5.0
+  },
+  {
+    "state": {
+      "block": "defiledlands:glass_obscure",
+      "properties": {}
+    },
+    "temperature": -8.0
   }
 ]

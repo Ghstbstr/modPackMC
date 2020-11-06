@@ -22,11 +22,11 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "THEMED_TREES",
-    "SPOOKY",
     "BIRCH_TREES",
     "DENSE",
-    "FOREST"
+    "SPOOKY",
+    "FOREST",
+    "THEMED_TREES"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
