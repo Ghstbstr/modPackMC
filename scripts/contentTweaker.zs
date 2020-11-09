@@ -16,7 +16,7 @@ import mods.contenttweaker.conarm.ArmorTrait;
 //import crafttweaker.game.IGame;
 import mods.contenttweaker.Item;
 
-/*
+
 
 val stellar = mods.contenttweaker.tconstruct.MaterialBuilder.create("stellar_mat");
 val stellarArmor = mods.contenttweaker.conarm.ExtendedMaterialBuilder.create("stellarArmor_mat");
@@ -119,7 +119,7 @@ dragonScaleArmor.addTrimMaterialStats(75.0);
 dragonScaleArmor.register();
 dragonScale.register();
 
-*/
+
 //Liquids***********************************************************************************************************************
 
 val waterMaterial = <blockmaterial:water>;
@@ -339,6 +339,14 @@ silverNitrate.register();
 
 
 
+val nickelSulfate = mods.contenttweaker.VanillaFactory.createFluid("nickel_sulfate", 65484);
+nickelSulfate.density = 1000;
+nickelSulfate.luminosity = 0;
+nickelSulfate.temperature = 250;
+nickelSulfate.viscosity = 1000;
+nickelSulfate.material = waterMaterial;
+nickelSulfate.unlocalizedName = "nickel_sulfate";
+nickelSulfate.register();
 
 
 //Items***********************************************************************************************************************

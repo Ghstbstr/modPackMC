@@ -24,7 +24,7 @@
         },
 
         {
-            "name":"CactusJuice",
+            "name":"waterblock",
             "type": { 
                 "type": "block", "name": "tp:water_block"
             },
@@ -32,7 +32,26 @@
             "properties":[
                 {"type":"require_item", "name":"minecraft:bucket"},
                 {"type":"per_block_limit", "usage":1,"max":8},
-                {"type":"play_sound", "name":"item.bottle.fill", "pitch":1},
+                {"type":"play_sound", "name":"item.bucket.fill", "pitch":1},
+                {"type":"consume_item", "amount":1}
+            ],
+            "drops":[
+                {"name": "minecraft:water_bucket", "amount":1}
+            ]
+        },
+
+        
+
+        {
+            "name":"wellbroken",
+            "type": { 
+                "type": "block", "name": "harvestcraft:well"
+            },
+            "clicktype":"blockRightClick",
+            "properties":[
+                {"type":"require_item", "name":"minecraft:bucket"},
+                {"type":"per_block_limit", "usage":1,"max":8},
+                {"type":"play_sound", "name":"item.bucket.fill", "pitch":1},
                 {"type":"consume_item", "amount":1}
             ],
             "drops":[

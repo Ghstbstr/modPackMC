@@ -40,5 +40,18 @@
         "SkyRenderType": 1,
         "SkyDisableFlags": 3
       }
+    },
+
+
+
+
+    { "dim": 0,
+      "worldinfo_onetime": {
+        "raining": false,
+        "thundering": false,
+        "GameRules": {
+          "doWeatherCycle": "false"
+        }
+      }
     }
 ]}
