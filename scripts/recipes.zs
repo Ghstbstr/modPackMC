@@ -30,6 +30,8 @@ val cobalt = <tconstruct:ingots>;
 val diamond = <minecraft:diamond>;
 val emerald = <minecraft:emerald>;
 val lapisLazuli = <minecraft:dye:4>;
+val oakLog = <minecraft:log>;
+val oakPlank = <minecraft:planks>;
 
 
 recipes.addShapeless("CacteenToWood1",woodPlanks,[cactus,cactus,cactus]);
@@ -42,6 +44,16 @@ val blockSteelTinker=<tcomplement:storage:1>;
 
 recipes.remove(steelTinker);
 recipes.remove(blockSteelTinker);
+
+recipes.addShaped("LogCreating",oakLog,[
+    [oakPlank,oakPlank,oakPlank],
+    [oakPlank,oakPlank,oakPlank],
+    [oakPlank,oakPlank,oakPlank]
+]);
+
+
+
+
 //exnihilo**************************
 val dust = <exnihilocreatio:block_dust>;
 
@@ -126,6 +138,8 @@ val glowstonedust = <minecraft:glowstone_dust>;
 val blazePowder = <minecraft:blaze_powder>;
 val blazeRod = <minecraft:blaze_rod>;
 val rodMold = <immersiveengineering:mold:2>;
+val coke = <immersiveengineering:material:6>;
+val magmaBlock = <minecraft:magma>;
 
 recipes.addShaped("CharcoalColor",blackPowder*4,[
     [charCoal,charCoal,charCoal],
@@ -153,6 +167,7 @@ val lava = <liquid:lava>;
 val arditicAcidumSulfoNitrosum = <liquid:arditic_acidum_sulfo_nitrosum>;
 val acidumSulfoNitrosum = <liquid:acidum_sulfo_nitrosum>;
 val silverNitrate = <liquid:silver_nitrate>;
+val nickelSulfate = <liquid:nickel_sulfate>;
 
 val cuprumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "cuprum_sludge", Amount: 1000});
 val silverNitrateBucket = <forge:bucketfilled>.withTag({FluidName: "silver_nitrate", Amount: 1000});
@@ -160,7 +175,7 @@ val cobaldHydroxideBucket = <forge:bucketfilled>.withTag({FluidName: "cobald_hyd
 val ferrumLateriteSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "ferrum_laterite_sludge", Amount: 1000});
 val plumbumSludgeBucket = <forge:bucketfilled>.withTag({FluidName: "plumbum_sludge", Amount: 1000});
 val arditicAcidumSulfoNitrosumBucket = <forge:bucketfilled>.withTag({FluidName: "arditic_acidum_sulfo_nitrosum", Amount: 1000});
-
+val nickelSulfateBucket = <forge:bucketfilled>.withTag({FluidName: "nickel_sulfate", Amount: 1000});
 
 //assembler
 recipes.addShaped("PlumbumToLead",leadGrit*8,[
@@ -199,6 +214,12 @@ recipes.addShaped("ArditicToArdite",arditeDust,[
     [null,null,null]
 ]);
 
+recipes.addShaped("nickelSulfateToNickel",nickelGrit*8,[
+    [coke,coke,coke],
+    [coke,nickelSulfateBucket,coke],
+    [coke,coke,coke]
+]);
+
 //crusher
 mods.immersiveengineering.Crusher.removeRecipe(gravel);
 mods.immersiveengineering.Crusher.addRecipe(gravel,cobblestone,2048,industrialSalt,0.25);
@@ -214,6 +235,7 @@ mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*125,sulfuricAcid*
 mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*125,sulfuricAcid*50,[sand*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],8192);
 mods.immersiveengineering.Mixer.addRecipe(nitricAcid*1000,sulfuricAcid*1000,[nitrate],8192);
+mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*1000,nickelSulfate*1000,[industrialSalt,sulfur],8192);
 
 //bottling
 /*
@@ -244,6 +266,7 @@ mods.immersiveengineering.Fermenter.addRecipe(slag,carbonSlury*100,charCoal,8192
 mods.immersivepetroleum.Distillation.addRecipe([],[diamond,lapisLazuli,emerald],crystalSlury*150,32768,32,[0.016,0.032,0.008]);
 mods.immersivepetroleum.Distillation.addRecipe([],[yellorium,uraniumGrit,grainsOfInfinity],uranNuclide*200,65536,32,[0.01,0.06,0.01]);
 mods.immersivepetroleum.Distillation.addRecipe([],[aluminiumGrit,coal],alumina*170,16384,32,[0.25,0.125]);
+mods.immersivepetroleum.Distillation.addRecipe([],[blazePowder,magmaBlock],lava*1000,8192,32,[0.1,0.9]);
 
 //cokeoven
 //mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
@@ -616,6 +639,7 @@ mods.tconstruct.Melting.addRecipe(moltenSodiumChloride * 125, industrialSalt);
 mods.tconstruct.Casting.addTableRecipe(industrialSalt, <tconstruct:cast_custom:2>, moltenSodiumChloride, 125, false, 100);
 
 
+
 //Change Plates to immersives plates
 val oreDictIrdiumPlate = <ore:plateIridium>;
 val oreDictTitaniumAluminidePlate = <ore:plateTitaniumAluminide>;
@@ -676,6 +700,19 @@ mods.immersiveengineering.MetalPress.addRecipe(titaniumPlate,titaniumIngot,plate
 mods.immersiveengineering.MetalPress.addRecipe(irdiumPlate,iridiumIngot,plateMold,256);
 mods.immersiveengineering.MetalPress.addRecipe(titaniumAluminidePlate,titaniumAluminideIngot,plateMold,256);
 mods.immersiveengineering.MetalPress.addRecipe(titaniumIridiumPlate,titaniumIridiumIngot,plateMold,256);
+
+
+//Solar & Silicon
+val solarGenerator = <advancedrocketry:solargenerator>;
+val solarPanelAdvR = <advancedrocketry:solarpanel>;
+val smallBattery = <libvulpes:battery>;
+val advRPowerOutpur = <libvulpes:forgepoweroutput>;
+
+recipes.addShaped("SolarGeneratorUpdate",solarGenerator,[
+    [smallBattery,solarPanelAdvR,null],
+    [advRPowerOutpur,siliconPlate,null],
+    [null,null,null]
+]);
 
 //mods.advancedrocketry.RollingMachine.addRecipe(output, ticks, rf/t, waterInt, input);
 
@@ -745,3 +782,4 @@ recipes.addShaped("spectralSiltCrafting",spectralSilt,[
 
 
 
+//harvestcraft
