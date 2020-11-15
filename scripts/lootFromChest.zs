@@ -206,7 +206,7 @@ for lootTable in allTables{
     lootTable.getPool("misc").addItemEntryJson(<minecraft:leather>,4,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
     lootTable.getPool("misc").addItemEntryJson(<minecraft:snowball>,1,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
     lootTable.getPool("misc").addItemEntryJson(<minecraft:stick>,15,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
-    lootTable.getPool("misc").addItemEntryJson(<immersiveengineering:material:4>,7,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
+    lootTable.getPool("misc").addItemEntryJson(<immersiveengineering:seed>,7,0,[{"function": "minecraft:set_count", "count": {"min": 4.0, "max": 8.0}}],[]);
     lootTable.getPool("misc").addItemEntryJson(<minecraft:clay_ball>,10,0,[{"function": "minecraft:set_count", "count": {"min": 16.0, "max": 32.0}}],[]);
     lootTable.getPool("misc").addItemEntryJson(<minecraft:bone>,6,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 6.0}}],[]);
     lootTable.getPool("misc").addItemEntryJson(<minecraft:dye:15>,7,0,[{"function": "minecraft:set_count", "count": {"min": 2.0, "max": 10.0}}],[]);

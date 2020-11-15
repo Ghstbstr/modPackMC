@@ -45,11 +45,6 @@ val blockSteelTinker=<tcomplement:storage:1>;
 recipes.remove(steelTinker);
 recipes.remove(blockSteelTinker);
 
-recipes.addShaped("LogCreating",oakLog,[
-    [oakPlank,oakPlank,oakPlank],
-    [oakPlank,oakPlank,oakPlank],
-    [oakPlank,oakPlank,oakPlank]
-]);
 
 
 
@@ -707,6 +702,8 @@ val solarGenerator = <advancedrocketry:solargenerator>;
 val solarPanelAdvR = <advancedrocketry:solarpanel>;
 val smallBattery = <libvulpes:battery>;
 val advRPowerOutpur = <libvulpes:forgepoweroutput>;
+
+recipes.remove(solarGenerator);
 
 recipes.addShaped("SolarGeneratorUpdate",solarGenerator,[
     [smallBattery,solarPanelAdvR,null],
