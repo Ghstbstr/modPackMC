@@ -8,7 +8,7 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import mods.enderio.SagMill;
 import crafttweaker.oredict.IOreDict;
-
+import crafttweaker.potions.IPotion;
 
 val cactus=<minecraft:cactus>;
 val woodPlanks=<minecraft:planks>;
@@ -45,11 +45,6 @@ val blockSteelTinker=<tcomplement:storage:1>;
 recipes.remove(steelTinker);
 recipes.remove(blockSteelTinker);
 
-recipes.addShaped("LogCreating",oakLog,[
-    [oakPlank,oakPlank,oakPlank],
-    [oakPlank,oakPlank,oakPlank],
-    [oakPlank,oakPlank,oakPlank]
-]);
 
 
 
@@ -468,7 +463,6 @@ recipes.addShaped("gooPakCoolBetter",gooPakCool*16,[
 ]);
 
 
-
 //openModularTurrets*********************************************************
 val electricalSteel = <enderio:item_alloy_ingot>;
 val capacitorT1 = <enderio:item_basic_capacitor>;
@@ -707,6 +701,8 @@ val solarGenerator = <advancedrocketry:solargenerator>;
 val solarPanelAdvR = <advancedrocketry:solarpanel>;
 val smallBattery = <libvulpes:battery>;
 val advRPowerOutpur = <libvulpes:forgepoweroutput>;
+
+recipes.remove(solarGenerator);
 
 recipes.addShaped("SolarGeneratorUpdate",solarGenerator,[
     [smallBattery,solarPanelAdvR,null],

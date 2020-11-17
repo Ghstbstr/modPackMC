@@ -23,8 +23,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "SPOOKY",
-    "PLAINS",
-    "FOREST"
+    "FOREST",
+    "PLAINS"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],

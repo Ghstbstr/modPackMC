@@ -70,6 +70,7 @@ val treatedWood = <conmat:treatedwood>;
 val conductiv = <conmat:conductive_iron>;
 val redstoneAlloy = <conmat:redstone_alloy>;
 val aluminum = <conmat:aluminum>;
+val tin = <conmat:tin>;
 
 
 
@@ -99,6 +100,7 @@ conductiv.modifier=0.9;
 redstoneAlloy.modifier=3;
 vibrant.modifier=3.5;
 aluminum.modifier=2.2;
+tin.modifier=1.9;
 
 
 manasteel.defense=18;
