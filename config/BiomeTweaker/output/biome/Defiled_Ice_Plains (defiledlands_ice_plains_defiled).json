@@ -24,8 +24,8 @@
   "Dictionary Types": [
     "SPOOKY",
     "SNOWY",
-    "COLD",
-    "WASTELAND"
+    "WASTELAND",
+    "COLD"
   ],
   "BiomeManager Entries": {
     "ICY Weights": [

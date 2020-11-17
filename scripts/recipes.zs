@@ -8,7 +8,7 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import mods.enderio.SagMill;
 import crafttweaker.oredict.IOreDict;
-
+import crafttweaker.potions.IPotion;
 
 val cactus=<minecraft:cactus>;
 val woodPlanks=<minecraft:planks>;
@@ -461,7 +461,6 @@ recipes.addShaped("gooPakCoolBetter",gooPakCool*16,[
     [wheatSeeds,coolingGoo,wheatSeeds],
     [paper,paper,paper]
 ]);
-
 
 
 //openModularTurrets*********************************************************

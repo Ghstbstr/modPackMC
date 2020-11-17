@@ -22,10 +22,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "FOREST",
-    "RARE",
     "DENSE",
     "SUPER_BIRCH_TREES",
+    "FOREST",
+    "RARE",
     "THEMED_TREES",
     "HILLS"
   ],
