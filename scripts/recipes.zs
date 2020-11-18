@@ -95,7 +95,7 @@ for item in exNihiloTools {
 //addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
 //squeezer = mods.immersiveengineering.Squeezer;
 //addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
-
+//mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
 recipes.addShaped("Goldwashing",goldNugget,[
     [sand,sand,sand],
     [sand,waterBucket,sand],
@@ -461,6 +461,56 @@ recipes.addShaped("gooPakCoolBetter",gooPakCool*16,[
     [wheatSeeds,coolingGoo,wheatSeeds],
     [paper,paper,paper]
 ]);
+
+val removeColdJuices = [
+    <extratan:empty_flask>,
+    <extratan:empty_tempered_flask>,
+    <extratan:flask_with_cold_water>,
+    <extratan:flask_with_hot_water>,
+    <extratan:flask_with_super_hot_water>,
+    <extratan:flask_with_super_cold_water>,
+    <extratan:filled_flask>,
+    <extratan:filled_tempered_flask>,
+    <extratan:tempered_flask_with_cold_water>,
+    <harvestcraft:cherryjuiceitem>,
+    <harvestcraft:blueberryjuiceitem>,
+    <harvestcraft:grapejuiceitem>,
+    <harvestcraft:carrotjuiceitem>,
+    <harvestcraft:strawberryjuiceitem>,
+    <harvestcraft:melonjuiceitem>,
+    <harvestcraft:applejuiceitem>,
+    <extratan:tempered_flask_with_super_cold_water>,
+    <extratan:tempered_flask_with_hot_water>,
+    <harvestcraft:cactusfruitjuiceitem>,
+    <harvestcraft:plumjuiceitem>,
+    <harvestcraft:pearjuiceitem>,
+    <harvestcraft:apricotjuiceitem>,
+    <harvestcraft:figjuiceitem>,
+    <harvestcraft:grapefruitjuiceitem>,
+    <harvestcraft:persimmonjuiceitem>,
+    <harvestcraft:starfruitjuiceitem>,
+    <harvestcraft:papayajuiceitem>,
+    <harvestcraft:orangejuiceitem>,
+    <harvestcraft:peachjuiceitem>,
+    <harvestcraft:limejuiceitem>,
+    <harvestcraft:mangojuiceitem>,
+    <harvestcraft:pomegranatejuiceitem>,
+    <harvestcraft:blackberryjuiceitem>,
+    <harvestcraft:raspberryjuiceitem>,
+    <harvestcraft:kiwijuiceitem>,
+    <harvestcraft:cranberryjuiceitem>,
+    <extratan:tempered_flask_with_super_hot_water>,
+    <extratan:orange_juice>,
+    <extratan:lemonade>,
+    <extratan:apple_juice>
+] as IItemStack[];
+
+for item in removeColdJuices {
+    recipes.remove(item);
+}
+
+
+val snowBall =<minecraft:snowball>;
 
 
 //openModularTurrets*********************************************************
