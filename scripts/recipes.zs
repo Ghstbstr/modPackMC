@@ -339,11 +339,39 @@ for item in steelExchangeItems {
     recipes.replaceAllOccurences(iron, blockSteel, item);
 }
 
+val leadedConcrete = <immersiveengineering:stone_decoration:7>;
+val reactorCasing = <bigreactors:reactorcasing>;
+val leadIngot = <immersiveengineering:metal:2>;
+val graphitBarExtremReactor = <bigreactors:ingotgraphite>;
+val reactorCasingCore = <bigreactors:reactorcasingcores>;
+val steelScaffolding = <immersiveengineering:metal_decoration1:1>;
+val goldIngot=<minecraft:gold_ingot>;
+val aluminiumPlate = <immersiveengineering:metal:31>;
+val leadPlate = <immersiveengineering:metal:32>;
+val turbineHousing = <bigreactors:turbinehousing>;
+val turbineHousingCore = <bigreactors:turbinehousingcores>;
+val nickelSheetBlock = <immersiveengineering:sheetmetal:4>;
+val nickelPlate = <immersiveengineering:metal:34>;
+val aluminiumSheetBlock = <immersiveengineering:sheetmetal:1>;
+
+recipes.replaceAllOccurences(graphitBarExtremReactor,leadedConcrete,reactorCasing);
+recipes.replaceAllOccurences(blockSteel,leadIngot,reactorCasingCore);
+recipes.replaceAllOccurences(redstoneDust,steelScaffolding,reactorCasingCore);
+recipes.replaceAllOccurences(goldIngot,leadPlate,reactorCasingCore);
+recipes.replaceAllOccurences(graphitBarExtremReactor,leadPlate,reactorCasingCore);
+
+recipes.replaceAllOccurences(graphitBarExtremReactor,nickelPlate,turbineHousing);
+recipes.replaceAllOccurences(blockSteel,nickelSheetBlock,turbineHousing);
+recipes.replaceAllOccurences(blockSteel,aluminiumSheetBlock,turbineHousingCore);
+recipes.replaceAllOccurences(graphitBarExtremReactor,aluminiumPlate,turbineHousingCore);
+recipes.replaceAllOccurences(goldIngot,aluminiumPlate,turbineHousingCore);
+recipes.replaceAllOccurences(<minecraft:comparator>,steelScaffolding,turbineHousingCore);
+
+
 //psi**************************************************************
-val gold=<minecraft:gold_ingot>;
 val cadAssembler = <psi:cad_assembler>;
 val manasteel = <botania:manaresource>;
-recipes.replaceAllOccurences(gold,manasteel,cadAssembler);
+recipes.replaceAllOccurences(goldIngot,manasteel,cadAssembler);
 
 //tiny progression***********************************************************
 val juiceRemoveFromCrafting = [
