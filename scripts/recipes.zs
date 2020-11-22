@@ -230,7 +230,7 @@ mods.immersiveengineering.Mixer.addRecipe(ferrumLateriteSludge*125,sulfuricAcid*
 mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*125,sulfuricAcid*50,[sand*4],1024);
 mods.immersiveengineering.Mixer.addRecipe(sodiumHydroxide*1000,sulfuricAcid*1000,[industrialSalt],8192);
 mods.immersiveengineering.Mixer.addRecipe(nitricAcid*1000,sulfuricAcid*1000,[nitrate],8192);
-mods.immersiveengineering.Mixer.addRecipe(cuprumSludge*1000,nickelSulfate*1000,[industrialSalt,sulfur],8192);
+mods.immersiveengineering.Mixer.addRecipe(nickelSulfate*1000,cuprumSludge*1000,[industrialSalt,sulfur],8192);
 
 //bottling
 /*
